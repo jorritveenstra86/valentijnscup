@@ -16,7 +16,7 @@ export class UitvoerPdfComponent implements OnInit {
 
   genereerPDF() {
     const doc = new jsPDF();
-    doc.text('Suck it, Veenstra!', 10, 10);
+    doc.text('Suck it yourself, Noorman!', 10, 10);
     doc.save('a4.pdf');
   }
 
