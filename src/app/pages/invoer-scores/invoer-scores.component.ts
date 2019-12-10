@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Niveaus} from '../../model/niveau';
-import {Categorieen} from '../../model/categorie';
+import {Oefeningen} from '../../model/oefening';
 import {Observable} from 'rxjs';
 import {TestService} from '../../shared/test.service';
 
@@ -11,11 +10,9 @@ import {TestService} from '../../shared/test.service';
 })
 export class InvoerScoresComponent implements OnInit {
 
-  public niveaus = Niveaus;
   public teamnummers = ['teamnummer 1', 'teamnummer 2', 'teamnummer 3'];
-  public oefeningen = Categorieen;
+  public oefeningen = Oefeningen;
   public model = {
-    niveau: '',
     teamnummer: '',
     oefening: '',
     technisch: '',
@@ -35,7 +32,6 @@ export class InvoerScoresComponent implements OnInit {
 
   initModel() {
     this.model = {
-      niveau: '',
       teamnummer: '',
       oefening: '',
       technisch: '',
