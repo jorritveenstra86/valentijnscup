@@ -2,6 +2,71 @@
 <div class="vertical-spacer"></div>
 
 <main role="main" class="container">
-  <h1>Invoer scores</h1>
-  <p>Op deze pagina worden de scores ingevoerd.</p>
+  <div class="container">
+    <div class="jumbotron">
+
+      <h1>Invoer scores</h1>
+      <form #invoerForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="niveauSelect">Niveau</label>
+              <select class="form-control" id="niveauSelect" [(ngModel)]="model.niveau" name="niveau" required>
+                <option *ngFor="let niveau of niveaus" [value]="niveau">{{niveau}}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="teamnummerSelect">Teamnummer</label>
+              <select class="form-control" id="teamnummerSelect" [(ngModel)]="model.teamnummer" name="teamnummer"
+                      required>
+                <option *ngFor="let teamnummer of teamnummers" [value]="teamnummer">{{teamnummer}}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="oefeningSelect">Oefening</label>
+              <select class="form-control" id="oefeningSelect" [(ngModel)]="model.oefening" name="oefening" required>
+                <option *ngFor="let oefening of oefeningen" [value]="oefening">{{oefening}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="technischInput">Technisch</label>
+              <input type="text" class="form-control" id="technischInput" [(ngModel)]="model.technisch" name="technisch"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="artistiekInput">Artistiek</label>
+              <input type="text" class="form-control" id="artistiekInput" [(ngModel)]="model.artistiek" name="artistiek"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="moeilijkheidswaardeInput">Moeilijkheidswaarde</label>
+              <input type="text" class="form-control" id="moeilijkheidswaardeInput"
+                     [(ngModel)]="model.moeilijkheidswaarde" name="moeilijkheidswaarde" required>
+            </div>
+            <div class="form-group">
+              <label for="specialeAftrekkenInput">Speciale aftrekken</label>
+              <input type="text" class="form-control" id="specialeAftrekkenInput" [(ngModel)]="model.specialeAftrekken"
+                     name="specialeAftrekken" required>
+            </div>
+          </div>
+        </div>
+        <div class="row float-sm-right">
+          <button type="submit" class="btn btn-success btn-lg" [disabled]="!invoerForm.form.valid">&nbsp;&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button type="button" class="btn btn-secondary btn-lg ml-2" (click)="initModel()">Cancel</button>
+        </div>
+        <div class="row">
+          {{spyOn(model)}}
+        </div>
+        <div class="row">
+          <ul>
+            <li *ngFor="let score of savedScores | async">
+              {{ score | json }}
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
 </main>

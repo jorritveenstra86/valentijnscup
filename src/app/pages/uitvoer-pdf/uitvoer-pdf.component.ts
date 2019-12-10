@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-uitvoer-pdf',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UitvoerPdfComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  genereerPDF() {
+    const doc = new jsPDF();
+    doc.text('Suck it, Veenstra!', 10, 10);
+    doc.save('a4.pdf');
   }
 
 }

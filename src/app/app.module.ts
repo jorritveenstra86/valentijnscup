@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { InvoerScoresComponent } from './pages/invoer-scores/invoer-scores.component';
 import { UitvoerPdfComponent } from './pages/uitvoer-pdf/uitvoer-pdf.component';
 import { PresentatieComponent } from './pages/presentatie/presentatie.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PresentatieComponent } from './pages/presentatie/presentatie.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule, // zodat we formulieren kunnen gebruiken
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
