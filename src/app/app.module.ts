@@ -15,6 +15,8 @@ import { InvoerScoresComponent } from './pages/invoer-scores/invoer-scores.compo
 import { UitvoerPdfComponent } from './pages/uitvoer-pdf/uitvoer-pdf.component';
 import { PresentatieComponent } from './pages/presentatie/presentatie.component';
 import {FormsModule} from '@angular/forms';
+import { CategorieenComponent } from './components/categorieen/categorieen.component';
+// import { TestComponent } from './src/app/test/test.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {FormsModule} from '@angular/forms';
     PageNotFoundComponent,
     InvoerScoresComponent,
     UitvoerPdfComponent,
-    PresentatieComponent
+    PresentatieComponent,
+    CategorieenComponent,
+    // TestComponent
   ],
   imports: [
     BrowserModule,
