@@ -4,30 +4,158 @@
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="Elijn">
                 <label class="form-check-label" for="Elijn">
-                    E-lijn
+                    <H1>E-lijn</H1>
                 </label>
             </div>
-        </div>
-        <div class="w-100">
-        </div>
-        <div class="col" >
-            <div class="form-check" *ngFor="let n of niveaus">
-                <input class="form-check-input" type="checkbox" value="{{n.niveau}}" [(ngModel)]="n.selected" id="Niveau" (change)="selectAllcat()" [checked]="selectedAllcat">
-                <label class="form-check-label" for="Niveau">
-                    {{n.niveau}}
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Elijninstap">
+                <label class="form-check-label" for="Elijninstap">
+                    <H3>Instap</H3>
                 </label>
             </div>
-        </div>
-        <div class="w-100">
-        </div>
-        <div class="col" >
-            <div class="form-check" *ngFor="let n of categorieen">
-                <input class="form-check-input" type="checkbox" value="{{n.categorie}}" [(ngModel)]="n.selected" (change)="checkIfAllSelectedcat()">
-                <label class="form-check-label">
-                    {{n.categorie}}
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijninstapDP" onclick="ElijninstapDPFunction()">
+                <label class="form-check-label" for="ElijninstapDP">
+                    Damespaar
                 </label>
             </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijninstapHP">
+                <label class="form-check-label" for="ElijninstapHP">
+                    Herenpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijninstapMP">
+                <label class="form-check-label" for="ElijninstapMP">
+                    Mixpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijninstapDG">
+                <label class="form-check-label" for="ElijninstapDG">
+                    Damesgroep
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijninstapHG">
+                <label class="form-check-label" for="ElijninstapHG">
+                    Herengroep
+                </label>
+            </div>
+            <p>&nbsp;</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Elijnjeugd">
+                <label class="form-check-label" for="Elijnjeugd">
+                    <H3>Jeugd</H3>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjeugdDP">
+                <label class="form-check-label" for="ElijnjeugdDP">
+                    Damespaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjeugdHP">
+                <label class="form-check-label" for="ElijnjeugdHP">
+                    Herenpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjeugdMP">
+                <label class="form-check-label" for="ElijnjeugdMP">
+                    Mixpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjeugdDG">
+                <label class="form-check-label" for="ElijnjeugdDG">
+                    Damesgroep
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjeugdHG">
+                <label class="form-check-label" for="ElijnjeugdHG">
+                    Herengroep
+                </label>
+            </div>
+            <p>&nbsp;</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Elijnjunioren">
+                <label class="form-check-label" for="Elijnjunioren">
+                    <H3>Junioren</H3>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenDP">
+                <label class="form-check-label" for="ElijnjuniorenDP">
+                    Damespaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenHP">
+                <label class="form-check-label" for="ElijnjuniorenHP">
+                    Herenpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenMP">
+                <label class="form-check-label" for="ElijnjuniorenMP">
+                    Mixpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenDG">
+                <label class="form-check-label" for="ElijnjuniorenDG">
+                    Damesgroep
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenHG">
+                <label class="form-check-label" for="ElijnjuniorenHG">
+                    Herengroep
+                </label>
+            </div>
+            <p>&nbsp;</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Elijnsenioren">
+                <label class="form-check-label" for="Elijnsenioren">
+                    <H3>Senioren</H3>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenDP">
+                <label class="form-check-label" for="ElijnseniorenDP">
+                    Damespaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenHP">
+                <label class="form-check-label" for="ElijnseniorenHP">
+                    Herenpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenMP">
+                <label class="form-check-label" for="ElijnseniorenMP">
+                    Mixpaar
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenDG">
+                <label class="form-check-label" for="ElijnseniorenDG">
+                    Damesgroep
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenHG">
+                <label class="form-check-label" for="ElijnseniorenHG">
+                    Herengroep
+                </label>
+            </div>
+            <p>&nbsp;</p>
         </div>
-        <p>&nbsp;</p>
+
     </div>
 </div>
