@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import * as jsPDF from 'jspdf';
 
 @Component({
@@ -7,7 +7,7 @@ import * as jsPDF from 'jspdf';
   styleUrls: ['./uitvoer-pdf.component.css']
 })
 export class UitvoerPdfComponent implements OnInit {
-
+  @Input() selectie;
   constructor() {
   }
 
@@ -18,6 +18,7 @@ export class UitvoerPdfComponent implements OnInit {
     const doc = new jsPDF();
     doc.text('Suck it yourself, Noorman!', 10, 10);
     doc.save('a4.pdf');
+    console.log(this.selectie);
   }
 
 }

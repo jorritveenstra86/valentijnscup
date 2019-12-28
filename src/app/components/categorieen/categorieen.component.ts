@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-categorieen',
@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class CategorieenComponent implements OnInit {
-
+  @Input() categorieen;
   ngOnInit() {
-    const categorieen = { elijn: {
+    this.categorieen = { elijn: {
         instap: {
           damespaar: false,
           herenpaar: false,
