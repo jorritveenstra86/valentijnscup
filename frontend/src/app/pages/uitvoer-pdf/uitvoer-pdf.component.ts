@@ -21,4 +21,8 @@ export class UitvoerPdfComponent implements OnInit {
     console.log(this.selectie);
   }
 
+  selectieEventHandler(event) {
+    console.log(event);
+  }
+
 }

@@ -1,7 +1,7 @@
 <app-menubalk></app-menubalk>
 <div class="vertical-spacer"></div>
 
-<app-categorieen [categorieen]="selectie"></app-categorieen>
+<app-categorieen (selectie)="selectieEventHandler($event)"></app-categorieen>
 
 <main role="main" class="container">
   <div class="jumbotron">
