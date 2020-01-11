@@ -19,22 +19,18 @@ Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.pr
 ## Further help
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-#Opzet
+# Opzet
 Angular 8 met een Firebase backend. Styling Bootstrap en ngBootstrap
 
-###Angular
+### Angular
 https://angular.io
 
-###Firebase
+### Firebase
 https://firebase.google.com
 https://fireship.io/snippets/install-angularfire/
 
-###Bootstrap 4.4
+### Bootstrap 4.4
 https://getbootstrap.com/docs/4.4/getting-started/introduction/
 
-###ngBootstrap
+### ngBootstrap
 https://ng-bootstrap.github.io/#/home
-
-#Dingen om over na te denken
-- waar wordt de front-end gehost? Dit zou kunnen mbv een google-app of op de acro-website
-
