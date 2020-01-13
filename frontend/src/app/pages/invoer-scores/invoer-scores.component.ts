@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Oefeningen} from '../../model/oefening';
 import {Observable} from 'rxjs';
-import {TestService} from '../../shared/test.service';
 
 @Component({
   selector: 'app-invoer-scores',
@@ -23,8 +22,7 @@ export class InvoerScoresComponent implements OnInit {
 
   savedScores: Observable<any[]>;
 
-  constructor(private testServiceService: TestService) {
-    this.savedScores = testServiceService.getScores();
+  constructor() {
   }
 
   ngOnInit() {
@@ -44,7 +42,6 @@ export class InvoerScoresComponent implements OnInit {
   onSubmit() {
     console.log('BOEM!');
     console.log(this.model);
-    this.testServiceService.saveScore(this.model);
   }
 
   spyOn(obj) {
