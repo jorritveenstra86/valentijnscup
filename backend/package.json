@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "compression": "1.7.4",
-    "express": "4.16.4"
+    "express": "4.16.4",
+    "lowdb": "^1.0.0",
+    "shortid": "^2.2.15"
   }
 }
