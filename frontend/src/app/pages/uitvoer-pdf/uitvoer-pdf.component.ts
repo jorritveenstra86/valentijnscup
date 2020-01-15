@@ -1,11 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
 import * as jsPDF from 'jspdf';
+var mockdata = ['test', 'testdata'];
 
 @Component({
   selector: 'app-uitvoer-pdf',
   templateUrl: './uitvoer-pdf.component.html',
   styleUrls: ['./uitvoer-pdf.component.css']
 })
+
+
 export class UitvoerPdfComponent implements OnInit {
   @Input() selectie;
   constructor() {
@@ -15,14 +18,11 @@ export class UitvoerPdfComponent implements OnInit {
   }
 
   genereerPDF() {
-    const doc = new jsPDF();
-    doc.text('Suck it yourself, Noorman!', 10, 10);
-    doc.save('a4.pdf');
+    const doc = new jsPDF({
+    });
+    doc.text(mockdata, 10, 10);
+    doc.save('uitslagen.pdf');
     console.log(this.selectie);
-  }
-
-  selectieEventHandler(event) {
-    console.log(event);
   }
 
 }

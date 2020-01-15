@@ -1,15 +1,10 @@
 <app-menubalk></app-menubalk>
 <div class="vertical-spacer"></div>
 
-<app-categorieen (selectie)="selectieEventHandler($event)"></app-categorieen>
-
 <main role="main" class="container">
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Uitvoer naar PDF</h1>
-      <p>Ik vond een library die vanuit de browser PDFs kan genereren: <a
-        href="https://github.com/MrRio/jsPDF">jsPDF</a>. Dit is even een testje om te kijken of dat een beetje werkt.</p>
-      <p><button class="btn btn-primary btn-sm" role="button" (click)="genereerPDF()">Genereer PDF</button></p>
-    </div>
+<div class="jumbotron">
+  <div class="container">
+    <app-categorieen (click)="genereerPDF()"></app-categorieen>
   </div>
+</div>
 </main>

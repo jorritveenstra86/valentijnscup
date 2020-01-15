@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Oefeningen} from '../../model/oefening';
+import {Oefeningen} from '../../model/entiteiten/oefening';
 import {Observable} from 'rxjs';
 
 @Component({
