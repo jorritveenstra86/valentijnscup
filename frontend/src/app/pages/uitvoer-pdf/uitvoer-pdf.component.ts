@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import * as jsPDF from 'jspdf';
-var mockdata = ['test', 'testdata'];
+import 'jspdf-autotable';
 
 @Component({
   selector: 'app-uitvoer-pdf',
@@ -20,7 +20,14 @@ export class UitvoerPdfComponent implements OnInit {
   genereerPDF() {
     const doc = new jsPDF({
     });
-    doc.text(mockdata, 10, 10);
+    var head = [["ID", "Country", "Rank", "Capital"]];
+    var body = [
+      [1, "Denmark", 7.526, "Copenhagen"],
+      [2, "Switzerland", 	7.509, "Bern"],
+      [3, "Iceland", 7.501, "Reykjavík"]
+    ];
+    doc.autoTable({head: head, body: body});
+    doc.autoTable({html: '#my-table'});
     doc.save('uitslagen.pdf');
     console.log(this.selectie);
   }
