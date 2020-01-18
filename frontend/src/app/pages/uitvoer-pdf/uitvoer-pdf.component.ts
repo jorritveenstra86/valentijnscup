@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import * as jsPDF from 'jspdf';
 import 'jspdf-autotable';
+import {TeamService} from '../../shared/team.service';
+import {Observable} from 'rxjs';
 
 @Component({
     selector: 'app-uitvoer-pdf',
@@ -11,18 +13,13 @@ import 'jspdf-autotable';
 
 export class UitvoerPdfComponent implements OnInit {
     @Input() selectie;
-
-    mockData = [
-        [1, 123, 'Roel Noorman', 'E-junioren', 'Damespaar', 'Combinatie', 8.35, 7.85, 0.67, 0.30, 24.300],
-        [, , 'Henk Noorman'],
-        [2, 125, 'Jorrit Veenstra', 'E-junioren', 'Damespaar', 'Combinatie', 8.25, 7.50, 0.53, 0.30, 23.300],
-        [, , 'Henk Veenstra']
-    ];
-
-    constructor() {
+    private uitslag = [];
+    constructor(private teamService: TeamService) {
     }
 
     ngOnInit() {
+        this.teamService.getTeamPerCategorie('E-junior', 'Damespaar').subscribe((response:any) => {
+        this.uitslag = response.uitslag});
     }
 
     genereerPDF() {
@@ -30,7 +27,7 @@ export class UitvoerPdfComponent implements OnInit {
         const head = [['Plaats', 'Nummer', 'Team', 'Niveau', 'Categorie', 'Oefening', 'T', 'A', 'MW', 'Aftr', 'Score']];
         doc.autoTable({
             head,
-            body: this.mockData,
+            body: this.uitslag,
             theme: 'grid',
             headStyles: {fillColor: [252, 15, 192]},
             bodyStyles: {fillColor: [255, 255, 255], lineColor: [252, 15, 192]}

@@ -11,6 +11,7 @@ import { UitvoerPdfComponent } from './pages/uitvoer-pdf/uitvoer-pdf.component';
 import { PresentatieComponent } from './pages/presentatie/presentatie.component';
 import {FormsModule} from '@angular/forms';
 import { CategorieenComponent } from './components/categorieen/categorieen.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,14 @@ import { CategorieenComponent } from './components/categorieen/categorieen.compo
     InvoerScoresComponent,
     UitvoerPdfComponent,
     PresentatieComponent,
-    CategorieenComponent,
+    CategorieenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, // zodat we formulieren kunnen gebruiken
-    NgbModule // ngBootstrap
+    NgbModule, // ngBootstrap
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

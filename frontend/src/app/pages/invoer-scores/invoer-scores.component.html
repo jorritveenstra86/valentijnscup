@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="row float-sm-right">
-          <button type="submit" class="btn btn-success btn-lg">OK</button>
+          <button type="submit" class="btn btn-success btn-lg"[disabled]="!invoerForm.form.valid">OK</button>
           <button type="button" class="btn btn-secondary btn-lg ml-2" (click)="initModel()">Cancel</button>
         </div>
         <div class="row">
@@ -63,8 +63,6 @@
   </div>
 </main>
 
-[disabled]="!invoerForm.form.valid"
-
 <!-- Modal -->
 <ng-template #content let-modal>
   <div class="modal-header">
@@ -76,12 +74,13 @@
   <div class="modal-body">
     <div class="container">
       <h5>{{namen}}</h5>
-      <h5>{{teamnummer}} {{niveau}} {{categorie}}</h5>
-      <h5>Oefening = {{oefening}}</h5>
-      <h5>Technisch = {{technisch}}</h5>
-      <h5>Artistiek = {{artistiek}}</h5>
-      <h5>Moeilijkheidswaarde = {{moeilijkheidswaarde}}</h5>
-      <h5>Speciale aftrekken = {{specialeaftrekken}}</h5>
+      <h5>{{model.teamnummer}} {{niveau}} {{categorie}}</h5>
+      <h5>Oefening = {{model.oefening}}</h5>
+      <h5>Technisch = {{model.technisch}}</h5>
+      <h5>Artistiek = {{model.artistiek}}</h5>
+      <h5>Moeilijkheidswaarde = {{model.moeilijkheidswaarde}}</h5>
+      <h5>Speciale aftrekken = {{model.specialeAftrekken}}</h5>
+      <h5>Score = {{getScore()}}</h5>
     </div>
   </div>
   <div class="modal-footer">

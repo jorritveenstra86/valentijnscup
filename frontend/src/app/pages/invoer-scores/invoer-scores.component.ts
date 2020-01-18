@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Oefeningen} from '../../model/entiteiten/oefening';
 import {Observable} from 'rxjs';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {TeamService} from '../../shared/team.service';
 
 @Component({
   selector: 'app-invoer-scores',
@@ -10,7 +11,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class InvoerScoresComponent implements OnInit {
   closeResult: string;
-  public teamnummers = ['teamnummer 1', 'teamnummer 2', 'teamnummer 3'];
+  public teamnummers = ['1', '2', '3'];
   public oefeningen = Oefeningen;
   public model = {
     teamnummer: '',
@@ -20,23 +21,21 @@ export class InvoerScoresComponent implements OnInit {
     moeilijkheidswaarde: '',
     specialeAftrekken: ''
   };
-  public teamnummer; //TODO teamnummer ophalen
-  public niveau; //TODO niveau ophalen
-  public categorie; //TODO categorie ophalen
-  public namen; //TODO naam1+naam2+naam3 ophalen
-  public oefening; //TODO oefening ophalen
-  public technisch; //TODO technisch ophalen
-  public artistiek; //TODO artistiek ophalen
-  public moeilijkheidswaarde; //TODO moeilijkheidswaarde ophalen
-  public specialeaftrekken; //TODO speciale aftrekken ophalen
-
+  public niveau;
+  public categorie;
+  public namen;
 
   savedScores: Observable<any[]>;
 
-  constructor(private modalService: NgbModal) {
+  constructor(private modalService: NgbModal, private teamService: TeamService) {
   }
 
   ngOnInit() {
+    this.teamService.getTeam(this.model.teamnummer).subscribe((response:any) => {
+      this.niveau = response.niveau;
+      this.categorie = response.categorie;
+      this.namen = response.naam1 + '\n' + response.naam2 + '\n' + response.naam3;
+    });
   }
 
   onSubmit(content) {
@@ -70,6 +69,10 @@ export class InvoerScoresComponent implements OnInit {
 
   spyOn(obj) {
     return JSON.stringify(obj);
+  }
+
+  public getScore() {
+    return 0+parseFloat(this.model.technisch)+parseFloat(this.model.technisch)+parseFloat(this.model.artistiek)+parseFloat(this.model.moeilijkheidswaarde)-parseFloat(this.model.specialeAftrekken); //TODO Scores afronden
   }
 
 }
