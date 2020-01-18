@@ -31,17 +31,17 @@ ATC Sneek
 Hercules Tjalleberd
 FC Meppel
 FC Meppel
-Volonté
-Volonté
-Volonté
-Volonté 
-Volonté 
+Volonte
+Volonte
+Volonte
+Volonte
+Volonte
 TGD Acro Dokkum
 TGD Acro Dokkum
 Sportacrobatiek Zwolle
 Sportacrobatiek Zwolle
 WSBF
-Volonté
+Volonte
 GVV Fean/SV Damwâld
 SV Donkerbroek
 SV Donkerbroek
@@ -57,8 +57,8 @@ FC Meppel
 FC Meppel
 FC Meppel
 FC Meppel
-Volonté
-Volonté
+Volonte
+Volonte
 Adonis Sportacrobatiek
 Adonis Sportacrobatiek
 Adonis Sportacrobatiek
@@ -72,7 +72,7 @@ ATC Sneek
 Hercules Tjalleberd
 WSBF
 FC Meppel
-Volonté
+Volonte
 Adonis Sportacrobatiek
 Adonis Sportacrobatiek
 Adonis Sportacrobatiek
@@ -89,8 +89,8 @@ Adonis Sportacrobatiek
 Lycurgisch Hygiea
 SV Donkerbroek
 SV Donkerbroek
-GVV Feanwâlden 
-GVV Feanwâlden 
+GVV Feanwâlden
+GVV Feanwâlden
 Acrogym Ter Apel
 Acrogym Ter Apel
 Acrogym Ter Apel
@@ -98,5 +98,5 @@ Acrogym Ter Apel
 Acrogym Ter Apel
 GYM Academy
 Wardy Kollum
-Volonté 
+Volonte
 SV Dynamica
