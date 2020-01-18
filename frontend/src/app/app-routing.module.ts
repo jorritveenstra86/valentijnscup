@@ -6,7 +6,6 @@ import {InvoerScoresComponent} from './pages/invoer-scores/invoer-scores.compone
 import {PresentatieComponent} from './pages/presentatie/presentatie.component';
 import {UitvoerPdfComponent} from './pages/uitvoer-pdf/uitvoer-pdf.component';
 
-
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'invoer', component: InvoerScoresComponent },

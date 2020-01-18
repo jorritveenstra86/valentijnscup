@@ -4,7 +4,7 @@
   <div class="container">
     <div class="jumbotron">
       <h1>Invoer scores</h1>
-      <form #invoerForm="ngForm" (ngSubmit)="onSubmit()">
+      <form #invoerForm="ngForm" (ngSubmit)="onSubmit(content)">
         <div class="row">
           <div class="col-sm">
             <div class="form-group">
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="row float-sm-right">
-          <button type="submit" class="btn btn-success btn-lg" [disabled]="!invoerForm.form.valid">&nbsp;&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button type="submit" class="btn btn-success btn-lg">OK</button>
           <button type="button" class="btn btn-secondary btn-lg ml-2" (click)="initModel()">Cancel</button>
         </div>
         <div class="row">
@@ -62,3 +62,29 @@
     </div>
   </div>
 </main>
+
+[disabled]="!invoerForm.form.valid"
+
+<!-- Modal -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Controleer gegevens</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <h5>{{namen}}</h5>
+      <h5>{{teamnummer}} {{niveau}} {{categorie}}</h5>
+      <h5>Oefening = {{oefening}}</h5>
+      <h5>Technisch = {{technisch}}</h5>
+      <h5>Artistiek = {{artistiek}}</h5>
+      <h5>Moeilijkheidswaarde = {{moeilijkheidswaarde}}</h5>
+      <h5>Speciale aftrekken = {{specialeaftrekken}}</h5>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Opslaan</button>
+  </div>
+</ng-template>
