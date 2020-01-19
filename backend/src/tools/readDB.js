@@ -1,4 +1,4 @@
-const lineByLine = require('n-readlines', {newLineCharacter: '\r'});
+const lineByLine = require('n-readlines');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('../../storage/db.json');

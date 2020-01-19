@@ -1,0 +1,21 @@
+{
+  "name": "valentijnscup",
+  "version": "1.0.0",
+  "description": "Valentijnscup",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm run build-prod",
+    "start": "cd backend/src && node server",
+    "import-db": "cd backend/src/tools && node readDB"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorritveenstra86/valentijnscup.git"
+  },
+  "author": "Roel Noorman <woetjo@home.nl>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorritveenstra86/valentijnscup/issues"
+  },
+  "homepage": "https://github.com/jorritveenstra86/valentijnscup#readme"
+}

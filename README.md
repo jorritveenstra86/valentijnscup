@@ -1,9 +1,12 @@
 # Valentijnscup
 
-###### How to start
-- `cd frontend`
-- `npm run build-prod`
-- `cd ../backend/`
+##### How to get everything running
 - `npm start`
-- Open browser op `http://localhost:4100`
+- Open browser at `http://localhost:4100`
 - Much wow
+
+##### Build frontend app
+- `npm run build`
+
+##### Import database
+- `npm run import-db`
