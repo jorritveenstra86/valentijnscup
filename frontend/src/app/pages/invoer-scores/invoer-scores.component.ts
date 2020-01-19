@@ -76,3 +76,5 @@ export class InvoerScoresComponent implements OnInit {
   }
 
 }
+
+//TODO model.score toevoegen en in getScore laten vullen. Daarna alles putten als er op opslaan geklikt wordt.
