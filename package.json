@@ -7,7 +7,8 @@
     "install-all": "cd frontend && npm install && cd ../backend && npm install",
     "start": "cd backend/src && node server",
     "build": "cd frontend && npm run build-prod",
-    "import-db": "cd backend/src/tools && node readDB"
+    "import-db": "cd backend/src/tools && node readDB",
+    "all-scripts": "npm run install-all && npm run import-db && npm run build && npm start"
   },
   "repository": {
     "type": "git",

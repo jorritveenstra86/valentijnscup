@@ -1,5 +1,8 @@
 # Valentijnscup
 
+##### Do everything to run this app
+- `npm run all-scripts` - runs all scripts.
+
 ##### Installing all NPM packages
 - `npm run install-all`
 

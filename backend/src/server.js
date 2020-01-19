@@ -9,9 +9,10 @@ const compression = require("compression");
 const Record = require('./database/record.js');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
+const bodyParser = require('body-parser');
 
 // *******************************************
-// setup
+// init server and database
 const _port = 4100;
 const _app_folder = '../../frontend/dist/valentijnscupapp';
 const app = express();
@@ -24,7 +25,7 @@ const lijnen = ['alijn', 'blijn', 'clijn', 'dlijn', 'elijn'];
 
 // *******************************************
 // Backend functions
-function getTeamByLijn(teamnummer, lijn) {
+function returnTeamByLijn(teamnummer, lijn) {
   let result = db
     .get(lijn)
     .find({teamnummer: teamnummer})
@@ -32,10 +33,10 @@ function getTeamByLijn(teamnummer, lijn) {
   return result;
 }
 
-function getTeamByTeamnummer(teamnummer) {
+function GETTeamByTeamnummer(teamnummer) {
   let result = undefined;
   lijnen.forEach(lijn => {
-    let team = getTeamByLijn(teamnummer, lijn);
+    let team = returnTeamByLijn(teamnummer, lijn);
     if (team) {
       result = team;
     }
@@ -77,27 +78,35 @@ function saveTeam(team, lijn) {
 // *******************************************
 // ************* setup routes ****************
 
-// middleware for compression
+// middleware
 app.use(compression());
-
-// *******************************************
-// Frontend route
-app.get('*.*', express.static(_app_folder, {maxAge: '1y'}));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // *******************************************
 // Backend routes
 app.all('/api/team', (req, res) => {
   if (req.method === 'GET') {
-    res.send(getTeamByTeamnummer('243'));
+    let teamnummer = req.query.teamnummer;
+    if (!teamnummer) {
+      res.status(400).send('Bad request');
+    } else {
+      let responseBody = GETTeamByTeamnummer(teamnummer);
+      if (responseBody) {
+        res.status(200).send(responseBody);
+      } else {
+        res.status(500).send('Not found');
+      }
+    }
   }
-  // if (req.method === 'PUT') {
-  //   console.log('PUT')
-  // }
-  // if (req.method === 'POST') {
-  //   console.log('POST')
-  // }
+  if (req.method === 'PUT') {
+    console.log('PUT')
+  }
 });
 
+// *******************************************
+// Frontend route
+app.get('*.*', express.static(_app_folder, {maxAge: '1y'}));
 
 // *******************************************
 // Angular rewrite rule

@@ -1,21 +1,32 @@
 const lineByLine = require('n-readlines');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
-const adapter = new FileSync('../../storage/db.json');
-const db = low(adapter);
+
 const Record = require('../database/record.js');
 const encoding = 'utf8';
 const fs = require('fs');
 const dbFile = '../../storage/db.json';
 
 console.log('\nStarting...\n');
+console.log('Checking if destination exists');
 
-try {
-  fs.unlinkSync(dbFile);
-  console.log('database deleted.')
-} catch(err) {
-  console.error(err)
+const dir = '../../storage';
+if (!fs.existsSync(dir)){
+  console.log('No, so creating destination directory');
+  fs.mkdirSync(dir);
+} else {
+  try {
+    fs.unlinkSync(dbFile);
+    console.log('Yes, so old database deleted.')
+  } catch(err) {
+    console.error(err)
+  }
 }
+
+const adapter = new FileSync('../../storage/db.json');
+const db = low(adapter);
+
+
 
 // init database
 db.defaults({alijn: [],blijn: [],clijn: [],dlijn: [],elijn: []})
@@ -276,5 +287,5 @@ while (wedstrijdnummer !== 'false') {
 }
 console.log('Elijn read.');
 
-console.log('Finished reading database in file ' + dbFile);
+console.log('Finished importing lowdb database in file: \'' + dbFile + '\'\n\n');
 
