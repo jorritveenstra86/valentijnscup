@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -19,5 +19,9 @@ export class TeamService {
   getTeamPerCategorie(niveau, categorie) {
     return this.http.get('/api/categorie?niveau=' + niveau + '&categorie=' + categorie);
 
+  }
+
+  getTeams() {
+    return this.http.get('/api/teams');
   }
 }
