@@ -1,8 +1,8 @@
 {
   "alijn": [
     {
-      "id": "FT8bivck",
-      "teamnummer": "226",
+      "id": "5FXjquED",
+      "teamnummer": 226,
       "naam1": "Yelin Bosma",
       "naam2": "Marissa Nijssen",
       "naam3": null,
@@ -26,8 +26,8 @@
       "score_combi": null
     },
     {
-      "id": "dso-tBMiY",
-      "teamnummer": "240",
+      "id": "8BzU_gVLq",
+      "teamnummer": 240,
       "naam1": "Gemma van der Werff",
       "naam2": "Merel Veenstra",
       "naam3": null,
@@ -51,8 +51,8 @@
       "score_combi": null
     },
     {
-      "id": "UNjgMpWe3",
-      "teamnummer": "242",
+      "id": "o_51huctT",
+      "teamnummer": 242,
       "naam1": "Kuna Vlasma",
       "naam2": "Elin Bergsma",
       "naam3": "Yinthe Smeijer",
@@ -76,8 +76,8 @@
       "score_combi": null
     },
     {
-      "id": "nmTN-Ug1P",
-      "teamnummer": "243",
+      "id": "u30eGkTDq",
+      "teamnummer": 243,
       "naam1": "Ilse van Dam",
       "naam2": "Ilse van Gelderen",
       "naam3": "Aiden Peens",
@@ -101,8 +101,8 @@
       "score_combi": null
     },
     {
-      "id": "-ISAaYb_X",
-      "teamnummer": "244",
+      "id": "BtP7pGrZ1",
+      "teamnummer": 244,
       "naam1": "Arjenne Steenbergen",
       "naam2": "Amerins Venema",
       "naam3": "Daqeautha Wiegersma",
@@ -126,8 +126,8 @@
       "score_combi": null
     },
     {
-      "id": "nDr1znhy6",
-      "teamnummer": "241",
+      "id": "Ixtl9jsCr",
+      "teamnummer": 241,
       "naam1": "Ties Oosterhof",
       "naam2": "Rebecca Groote",
       "naam3": null,
@@ -151,8 +151,8 @@
       "score_combi": null
     },
     {
-      "id": "lCn5ZiMYk",
-      "teamnummer": "248",
+      "id": "plG_Ekars",
+      "teamnummer": 248,
       "naam1": "Louise Hollander",
       "naam2": "Mirre van der Kolk",
       "naam3": null,
@@ -176,8 +176,8 @@
       "score_combi": null
     },
     {
-      "id": "RKkNRyLRi",
-      "teamnummer": "246",
+      "id": "H_n9wJS5e",
+      "teamnummer": 246,
       "naam1": "Carola van Dijk",
       "naam2": "Lieke Bakker",
       "naam3": null,
@@ -199,56 +199,12 @@
       "moeilijkheid_combi": null,
       "aftrekken_combi": null,
       "score_combi": null
-    },
-    {
-      "id": "2W0_7Pd6E",
-      "naam3": null,
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
-    },
-    {
-      "id": "Uvi-m5HMI",
-      "teamnummer": null,
-      "naam1": null,
-      "naam2": null,
-      "naam3": null,
-      "club": null,
-      "niveau": null,
-      "categorie": null,
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
     }
   ],
   "blijn": [
     {
-      "id": "B0t27reK4",
-      "teamnummer": "239",
+      "id": "z_5V-BmWz",
+      "teamnummer": 239,
       "naam1": "Ilse van Brenk",
       "naam2": "Zefanja Nieman",
       "naam3": "Nina van Roon",
@@ -272,8 +228,8 @@
       "score_combi": null
     },
     {
-      "id": "RtXoa0bIy",
-      "teamnummer": "235",
+      "id": "rwzycoHvp",
+      "teamnummer": 235,
       "naam1": "Elin Hoogstad",
       "naam2": "Kyara Stam",
       "naam3": null,
@@ -297,8 +253,8 @@
       "score_combi": null
     },
     {
-      "id": "V2bb0bV-Z",
-      "teamnummer": "236",
+      "id": "Xh-jmQdIn",
+      "teamnummer": 236,
       "naam1": "Daisy Jillings",
       "naam2": "Lieke Walta",
       "naam3": null,
@@ -322,8 +278,8 @@
       "score_combi": null
     },
     {
-      "id": "KaIL6hpvs",
-      "teamnummer": "237",
+      "id": "542wkGt_u",
+      "teamnummer": 237,
       "naam1": "Floor van Dongen",
       "naam2": "Maura de Boer",
       "naam3": null,
@@ -347,8 +303,8 @@
       "score_combi": null
     },
     {
-      "id": "ShHmKhAaE",
-      "teamnummer": "238",
+      "id": "kRYE0AFEh",
+      "teamnummer": 238,
       "naam1": "Amaia Fernand",
       "naam2": "Hay Yan Flier",
       "naam3": null,
@@ -372,8 +328,8 @@
       "score_combi": null
     },
     {
-      "id": "aAgrh_39C",
-      "teamnummer": "229",
+      "id": "eokeOQmCh",
+      "teamnummer": 229,
       "naam1": "Jannie Bos",
       "naam2": "Rosanna van Baardwijk",
       "naam3": null,
@@ -397,8 +353,8 @@
       "score_combi": null
     },
     {
-      "id": "F3JcKEDTD-",
-      "teamnummer": "230",
+      "id": "0uq_LkS9Qp",
+      "teamnummer": 230,
       "naam1": "Juan Scheper",
       "naam2": "Sarah Douma",
       "naam3": null,
@@ -422,8 +378,8 @@
       "score_combi": null
     },
     {
-      "id": "juY38dOKAr",
-      "teamnummer": "231",
+      "id": "oG2uRUGoHV",
+      "teamnummer": 231,
       "naam1": "Nynke Smits",
       "naam2": "Elles van der Weg",
       "naam3": "Kari Sietzema",
@@ -447,8 +403,8 @@
       "score_combi": null
     },
     {
-      "id": "br9dl1wxg_",
-      "teamnummer": "232",
+      "id": "JskL8G22c8",
+      "teamnummer": 232,
       "naam1": "Lisa van der Veen",
       "naam2": "Renee Fleurij",
       "naam3": "Wencke Sijbranda",
@@ -472,8 +428,8 @@
       "score_combi": null
     },
     {
-      "id": "ucd9cnkbO4",
-      "teamnummer": "233",
+      "id": "zr7Z1FTtWp",
+      "teamnummer": 233,
       "naam1": "Alina Albada",
       "naam2": "Elin Hasper",
       "naam3": "Lindsey Wassenaar",
@@ -495,55 +451,12 @@
       "moeilijkheid_combi": null,
       "aftrekken_combi": null,
       "score_combi": null
-    },
-    {
-      "id": "2SlNMECMRo",
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
-    },
-    {
-      "id": "uPaXaPmynF",
-      "teamnummer": null,
-      "naam1": null,
-      "naam2": null,
-      "naam3": null,
-      "club": null,
-      "niveau": null,
-      "categorie": null,
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
     }
   ],
   "clijn": [
     {
-      "id": "QeNEPnELRB",
-      "teamnummer": "203",
+      "id": "gQ7ok5Nq-f",
+      "teamnummer": 203,
       "naam1": "Kirsten Hoogstra",
       "naam2": "Floor van der Zwaag",
       "naam3": null,
@@ -566,8 +479,8 @@
       "score_combi": null
     },
     {
-      "id": "wgQIFRnl02",
-      "teamnummer": "205",
+      "id": "tiY81mCbtK",
+      "teamnummer": 205,
       "naam1": "Anna de Wit",
       "naam2": "Milou Drenth",
       "naam3": null,
@@ -590,8 +503,8 @@
       "score_combi": null
     },
     {
-      "id": "9X9jmo4Ubb",
-      "teamnummer": "215",
+      "id": "lYST7XkhnF",
+      "teamnummer": 215,
       "naam1": "Nienke Jonker",
       "naam2": "Charlotte de Jong",
       "naam3": "Bonney Hokke",
@@ -614,8 +527,8 @@
       "score_combi": null
     },
     {
-      "id": "xz-lSMdKY0",
-      "teamnummer": "216",
+      "id": "wiGmR3XIdr",
+      "teamnummer": 216,
       "naam1": "Mariska Onrust-Blok",
       "naam2": "Valerie Kesselaar",
       "naam3": "Lea Troostheijde",
@@ -638,8 +551,8 @@
       "score_combi": null
     },
     {
-      "id": "__CzqaTbY4",
-      "teamnummer": "217",
+      "id": "lWhjpv2e0E",
+      "teamnummer": 217,
       "naam1": "Marrit de Vries",
       "naam2": "Marijke Postma",
       "naam3": "Meike Fleurij",
@@ -662,8 +575,8 @@
       "score_combi": null
     },
     {
-      "id": "l-xeQg_3or",
-      "teamnummer": "218",
+      "id": "n2Nwcva1FM",
+      "teamnummer": 218,
       "naam1": "Eva van Sluijs",
       "naam2": "Elien Kluiter",
       "naam3": "Lynn Renkema",
@@ -686,8 +599,8 @@
       "score_combi": null
     },
     {
-      "id": "ULorllC8zG",
-      "teamnummer": "219",
+      "id": "8-ffnGP7uB",
+      "teamnummer": 219,
       "naam1": "Melissa Bakker",
       "naam2": "Femke Postma",
       "naam3": "Lynn Boonstra",
@@ -710,8 +623,8 @@
       "score_combi": null
     },
     {
-      "id": "gqKl1IZjEZ",
-      "teamnummer": "220",
+      "id": "6fbv9h5pgO",
+      "teamnummer": 220,
       "naam1": "Nynke de Jong",
       "naam2": "Anna Nuveld",
       "naam3": "Aukelies Ijbema",
@@ -734,8 +647,8 @@
       "score_combi": null
     },
     {
-      "id": "uxlRkTOEy2",
-      "teamnummer": "221",
+      "id": "yaAtthGXZ6",
+      "teamnummer": 221,
       "naam1": "Madelijn Tijhof",
       "naam2": "Luca Bults",
       "naam3": "Layre Dijkstra",
@@ -758,8 +671,8 @@
       "score_combi": null
     },
     {
-      "id": "qOye1ZNNEq",
-      "teamnummer": "222",
+      "id": "FHLWQwRYDy",
+      "teamnummer": 222,
       "naam1": "ilse Visscher",
       "naam2": "Danique Salomé",
       "naam3": "Kiki Houtman",
@@ -782,8 +695,8 @@
       "score_combi": null
     },
     {
-      "id": "z9fjUC4R5G",
-      "teamnummer": "223",
+      "id": "oX61K___kD",
+      "teamnummer": 223,
       "naam1": "Anna Wietske Elzinga",
       "naam2": "Jelly Frankes",
       "naam3": "Kim Zuur",
@@ -806,8 +719,8 @@
       "score_combi": null
     },
     {
-      "id": "0TZzsoJLZf",
-      "teamnummer": "224",
+      "id": "P7j9PfaTtx",
+      "teamnummer": 224,
       "naam1": "Isis vd Put",
       "naam2": "Claudia Borg",
       "naam3": "Vera Hamstra",
@@ -830,8 +743,8 @@
       "score_combi": null
     },
     {
-      "id": "7n5SsjZehs",
-      "teamnummer": "225",
+      "id": "LyBckNr9Xj",
+      "teamnummer": 225,
       "naam1": "Wanda Meinen",
       "naam2": "Fu fen Been",
       "naam3": "Chiara Pommer",
@@ -854,8 +767,8 @@
       "score_combi": null
     },
     {
-      "id": "vvrLXrBYnK",
-      "teamnummer": "227",
+      "id": "Ri3QtnpP4r",
+      "teamnummer": 227,
       "naam1": "Nessa van der Wal",
       "naam2": "Marieke de Beer",
       "naam3": "Jildou Kootstra",
@@ -878,8 +791,8 @@
       "score_combi": null
     },
     {
-      "id": "wg6itVcqbU",
-      "teamnummer": "228",
+      "id": "w6f-UOwDOr",
+      "teamnummer": 228,
       "naam1": "Paulien Rosema",
       "naam2": "Nikki Zijlema",
       "naam3": "Isa Dijkhuizen",
@@ -902,8 +815,8 @@
       "score_combi": null
     },
     {
-      "id": "BuwK7RrUPn",
-      "teamnummer": "197",
+      "id": "ybM1KibZ_k",
+      "teamnummer": 197,
       "naam1": "Afke Wijnstra",
       "naam2": "Else Brink",
       "naam3": null,
@@ -926,8 +839,8 @@
       "score_combi": null
     },
     {
-      "id": "5w1S_OTBN5",
-      "teamnummer": "198",
+      "id": "lmejw09O6F",
+      "teamnummer": 198,
       "naam1": "Rozemarijn van Dijk",
       "naam2": "Enna de Boer",
       "naam3": null,
@@ -950,8 +863,8 @@
       "score_combi": null
     },
     {
-      "id": "02abHG9XhH",
-      "teamnummer": "199",
+      "id": "NiApicmoDZ",
+      "teamnummer": 199,
       "naam1": "Demi Weggemans",
       "naam2": "Dyanne Veldman",
       "naam3": null,
@@ -974,8 +887,8 @@
       "score_combi": null
     },
     {
-      "id": "LzOIwF-UOo",
-      "teamnummer": "200",
+      "id": "KXjNa3Z3sO",
+      "teamnummer": 200,
       "naam1": "Amerins van der Steen",
       "naam2": "Fardau Feenstra",
       "naam3": null,
@@ -998,8 +911,8 @@
       "score_combi": null
     },
     {
-      "id": "_-tA7h_S6n",
-      "teamnummer": "201",
+      "id": "WeWPdYzmTS",
+      "teamnummer": 201,
       "naam1": "Floor Leffers",
       "naam2": "Esmee Hendrik",
       "naam3": null,
@@ -1022,8 +935,8 @@
       "score_combi": null
     },
     {
-      "id": "R_HKsrLyJR",
-      "teamnummer": "202",
+      "id": "JzQJpfOqgr",
+      "teamnummer": 202,
       "naam1": "Alyssa Zeilinga",
       "naam2": "Jacqueline Osinga",
       "naam3": null,
@@ -1046,8 +959,8 @@
       "score_combi": null
     },
     {
-      "id": "uXk1KEnje9",
-      "teamnummer": "204",
+      "id": "slcDVsXwit",
+      "teamnummer": 204,
       "naam1": "Lingdie Smit",
       "naam2": "Lotte Jonker",
       "naam3": null,
@@ -1070,8 +983,8 @@
       "score_combi": null
     },
     {
-      "id": "ArxQ0DHi0N",
-      "teamnummer": "206",
+      "id": "QAevjJW0n6",
+      "teamnummer": 206,
       "naam1": "Femke Postma",
       "naam2": "Jannah Eppinga",
       "naam3": null,
@@ -1094,8 +1007,8 @@
       "score_combi": null
     },
     {
-      "id": "xhPSF_g20C",
-      "teamnummer": "208",
+      "id": "N4ZGAx9Wcp",
+      "teamnummer": 208,
       "naam1": "Femke Kooistra",
       "naam2": "Lynn Kooistra",
       "naam3": null,
@@ -1118,8 +1031,8 @@
       "score_combi": null
     },
     {
-      "id": "WseWCP4BiP",
-      "teamnummer": "209",
+      "id": "xfmF7c7y-8",
+      "teamnummer": 209,
       "naam1": "Melissa Stuivenvold",
       "naam2": "Susanne de Beer",
       "naam3": null,
@@ -1142,8 +1055,8 @@
       "score_combi": null
     },
     {
-      "id": "H4_BTb9hz0",
-      "teamnummer": "210",
+      "id": "UVtMTvnjw0",
+      "teamnummer": 210,
       "naam1": "Simone von Huben",
       "naam2": "Mijke Knobbout",
       "naam3": null,
@@ -1166,8 +1079,8 @@
       "score_combi": null
     },
     {
-      "id": "lkaLWWF-sn",
-      "teamnummer": "211",
+      "id": "frYn0i8BY4",
+      "teamnummer": 211,
       "naam1": "Kirsten van den Berg",
       "naam2": "Fenna de Vries",
       "naam3": null,
@@ -1190,8 +1103,8 @@
       "score_combi": null
     },
     {
-      "id": "g1iPfPOogc",
-      "teamnummer": "212",
+      "id": "gVDGdJBxWV",
+      "teamnummer": 212,
       "naam1": "Renee Koetsier",
       "naam2": "Desie Giebels",
       "naam3": null,
@@ -1214,8 +1127,8 @@
       "score_combi": null
     },
     {
-      "id": "GDrYvgW2hq",
-      "teamnummer": "213",
+      "id": "GvlkkybR_u",
+      "teamnummer": 213,
       "naam1": "Stefano Stienstra",
       "naam2": "Melissa Kraak",
       "naam3": null,
@@ -1238,8 +1151,8 @@
       "score_combi": null
     },
     {
-      "id": "Pez0-cK6-V",
-      "teamnummer": "180",
+      "id": "kLEcvshTjs",
+      "teamnummer": 180,
       "naam1": "Riann Horrel",
       "naam2": "Kyra Nieuwhof",
       "naam3": null,
@@ -1262,8 +1175,8 @@
       "score_combi": null
     },
     {
-      "id": "RUuagQdfrY",
-      "teamnummer": "181",
+      "id": "URHcuBpUFt",
+      "teamnummer": 181,
       "naam1": "Irna van der Heide",
       "naam2": "Alida Lindeboom",
       "naam3": null,
@@ -1286,8 +1199,8 @@
       "score_combi": null
     },
     {
-      "id": "KqWPXAtfhN",
-      "teamnummer": "182",
+      "id": "87zpbCarve",
+      "teamnummer": 182,
       "naam1": "Christel Buter",
       "naam2": "Esmee Vlak",
       "naam3": null,
@@ -1310,8 +1223,8 @@
       "score_combi": null
     },
     {
-      "id": "nIsurEvGZB",
-      "teamnummer": "183",
+      "id": "HPrE04AA5Z",
+      "teamnummer": 183,
       "naam1": "Lotte Raangs",
       "naam2": "Amilyah Daal",
       "naam3": null,
@@ -1334,8 +1247,8 @@
       "score_combi": null
     },
     {
-      "id": "q1lEE4bUXV",
-      "teamnummer": "184",
+      "id": "fod1gJTuBI",
+      "teamnummer": 184,
       "naam1": "Dorinda Mertens",
       "naam2": "Mellanie Mertens",
       "naam3": null,
@@ -1358,8 +1271,8 @@
       "score_combi": null
     },
     {
-      "id": "r9w5A1-Tld",
-      "teamnummer": "186",
+      "id": "j6OVxUmMSm",
+      "teamnummer": 186,
       "naam1": "Naomi Verbij",
       "naam2": "Angelina Picciau",
       "naam3": null,
@@ -1382,8 +1295,8 @@
       "score_combi": null
     },
     {
-      "id": "RdDgOTfAbS",
-      "teamnummer": "187",
+      "id": "LcyiUEgzWX",
+      "teamnummer": 187,
       "naam1": "Kirsten Antonides",
       "naam2": "Malenthe Jansen",
       "naam3": null,
@@ -1406,8 +1319,8 @@
       "score_combi": null
     },
     {
-      "id": "ldo_vUkjxk",
-      "teamnummer": "188",
+      "id": "YdG-cgWOe8",
+      "teamnummer": 188,
       "naam1": "Finette Mussche",
       "naam2": "Emily Raat",
       "naam3": null,
@@ -1430,8 +1343,8 @@
       "score_combi": null
     },
     {
-      "id": "8YK2zz_xSC",
-      "teamnummer": "189",
+      "id": "va9FRC-b4h",
+      "teamnummer": 189,
       "naam1": "Zoey van Hoving",
       "naam2": "Gabriella Dijkstra",
       "naam3": null,
@@ -1454,8 +1367,8 @@
       "score_combi": null
     },
     {
-      "id": "HEGRz5FlTU",
-      "teamnummer": "190",
+      "id": "iLhCjp5QfM",
+      "teamnummer": 190,
       "naam1": "Janet van de Meulen",
       "naam2": "Arwen Bo de Jager",
       "naam3": null,
@@ -1478,8 +1391,8 @@
       "score_combi": null
     },
     {
-      "id": "coBCk73zbO",
-      "teamnummer": "191",
+      "id": "OeMQn6eQ_l",
+      "teamnummer": 191,
       "naam1": "Merinthe Buurlage",
       "naam2": "Meike Tognini",
       "naam3": "Eefke van der Maat",
@@ -1502,8 +1415,8 @@
       "score_combi": null
     },
     {
-      "id": "Mu65CWfdad",
-      "teamnummer": "192",
+      "id": "plLmFzqtH7",
+      "teamnummer": 192,
       "naam1": "Renee Kossen",
       "naam2": "Bo van den Bliek",
       "naam3": "Arielle van Munnigen",
@@ -1526,8 +1439,8 @@
       "score_combi": null
     },
     {
-      "id": "nJxg-BYRNN",
-      "teamnummer": "193",
+      "id": "f-Hj0pheWo",
+      "teamnummer": 193,
       "naam1": "Anna Baakman",
       "naam2": "Hilde Mecking",
       "naam3": "Jada van den Akker",
@@ -1550,8 +1463,8 @@
       "score_combi": null
     },
     {
-      "id": "iz3Au-2mYe",
-      "teamnummer": "194",
+      "id": "Ci01esMjsb",
+      "teamnummer": 194,
       "naam1": "Feliene Baron",
       "naam2": "Fleur Vegter",
       "naam3": "Babette van Hussel",
@@ -1574,8 +1487,8 @@
       "score_combi": null
     },
     {
-      "id": "rKqjwAVtev",
-      "teamnummer": "195",
+      "id": "UfXsjsuKPq",
+      "teamnummer": 195,
       "naam1": "Hanna Bol",
       "naam2": "Noortje Bijlsma",
       "naam3": "Lian Steenbergen",
@@ -1596,55 +1509,12 @@
       "moeilijkheid_combi": null,
       "aftrekken_combi": null,
       "score_combi": null
-    },
-    {
-      "id": "dyKuB2pFk-",
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
-    },
-    {
-      "id": "MIdEtUbsVu",
-      "teamnummer": null,
-      "naam1": null,
-      "naam2": null,
-      "naam3": null,
-      "club": null,
-      "niveau": null,
-      "categorie": null,
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
     }
   ],
   "dlijn": [
     {
-      "id": "M6yEyGHHrE",
-      "teamnummer": "146",
+      "id": "Uh3YEoDBLv",
+      "teamnummer": 146,
       "naam1": "Irene Rademaker",
       "naam2": "Sara Oulad Saddik",
       "naam3": null,
@@ -1668,8 +1538,8 @@
       "score_combi": null
     },
     {
-      "id": "BCFBwLRiuF",
-      "teamnummer": "147",
+      "id": "LKp5CMERSP",
+      "teamnummer": 147,
       "naam1": "Elise Schrikkema",
       "naam2": "Sanne Veld",
       "naam3": null,
@@ -1693,8 +1563,8 @@
       "score_combi": null
     },
     {
-      "id": "b6Fy4pobpu",
-      "teamnummer": "148",
+      "id": "g-9d59O6-V",
+      "teamnummer": 148,
       "naam1": "Diewerke Molema",
       "naam2": "Femke Mezach",
       "naam3": null,
@@ -1718,8 +1588,8 @@
       "score_combi": null
     },
     {
-      "id": "lybQyZjYMG",
-      "teamnummer": "149",
+      "id": "oHBspwpDYf",
+      "teamnummer": 149,
       "naam1": "Thalita van der Sluis",
       "naam2": "Angelina Sprik",
       "naam3": null,
@@ -1743,8 +1613,8 @@
       "score_combi": null
     },
     {
-      "id": "uGBTc4hE5M",
-      "teamnummer": "150",
+      "id": "4rmNpPG32o",
+      "teamnummer": 150,
       "naam1": "Thirza Schaap",
       "naam2": "Noor Schaap",
       "naam3": null,
@@ -1768,8 +1638,8 @@
       "score_combi": null
     },
     {
-      "id": "7oHBihNVwi",
-      "teamnummer": "151",
+      "id": "7Tjgr5n05W",
+      "teamnummer": 151,
       "naam1": "Iris Wassenaar",
       "naam2": "Karlien Eppinga",
       "naam3": null,
@@ -1793,8 +1663,8 @@
       "score_combi": null
     },
     {
-      "id": "pZrLMMfNbR",
-      "teamnummer": "153",
+      "id": "I1vBV9SQcO",
+      "teamnummer": 153,
       "naam1": "Tineke Luimstra",
       "naam2": "Ilse de Vries",
       "naam3": null,
@@ -1818,8 +1688,8 @@
       "score_combi": null
     },
     {
-      "id": "60qkzNNGGS",
-      "teamnummer": "154",
+      "id": "DzLV6yAYim",
+      "teamnummer": 154,
       "naam1": "Erin Bouwhuis",
       "naam2": "Pien Jenema",
       "naam3": null,
@@ -1843,8 +1713,8 @@
       "score_combi": null
     },
     {
-      "id": "JZAunp9qZi",
-      "teamnummer": "155",
+      "id": "Ti7OeV6fID",
+      "teamnummer": 155,
       "naam1": "Linda Salomons",
       "naam2": "Lisa Span",
       "naam3": null,
@@ -1868,8 +1738,8 @@
       "score_combi": null
     },
     {
-      "id": "a8dyo413EE",
-      "teamnummer": "156",
+      "id": "BFfjM9GCTV",
+      "teamnummer": 156,
       "naam1": "Suzanne Zuidema",
       "naam2": "Lianne Reitsma",
       "naam3": null,
@@ -1893,8 +1763,8 @@
       "score_combi": null
     },
     {
-      "id": "6jZpdYCnB-",
-      "teamnummer": "157",
+      "id": "9iMNO4b3OP",
+      "teamnummer": 157,
       "naam1": "Nikkita van Kammen",
       "naam2": "Jannah van der Velde",
       "naam3": null,
@@ -1918,8 +1788,8 @@
       "score_combi": null
     },
     {
-      "id": "lkpjhcM4uJ",
-      "teamnummer": "158",
+      "id": "bwkpREp47J",
+      "teamnummer": 158,
       "naam1": "Romee Luth",
       "naam2": "Alana Kruid",
       "naam3": null,
@@ -1943,8 +1813,8 @@
       "score_combi": null
     },
     {
-      "id": "ycaYtZAleQ",
-      "teamnummer": "159",
+      "id": "q8AVLWni3T",
+      "teamnummer": 159,
       "naam1": "Laura Coudron",
       "naam2": "Inga Coudron",
       "naam3": null,
@@ -1968,8 +1838,8 @@
       "score_combi": null
     },
     {
-      "id": "3g1zlOinS_",
-      "teamnummer": "160",
+      "id": "drkVKBKH_K",
+      "teamnummer": 160,
       "naam1": "Tineke Bosklopper",
       "naam2": "Mariska Veenstra",
       "naam3": null,
@@ -1993,8 +1863,8 @@
       "score_combi": null
     },
     {
-      "id": "E65ARFCFgJ",
-      "teamnummer": "161",
+      "id": "x-o544GVeV",
+      "teamnummer": 161,
       "naam1": "Carmen Visser",
       "naam2": "Lize Broekhart",
       "naam3": null,
@@ -2018,8 +1888,8 @@
       "score_combi": null
     },
     {
-      "id": "spG1A1woP9",
-      "teamnummer": "152",
+      "id": "HOq7v7ighY",
+      "teamnummer": 152,
       "naam1": "Mirjanna Damstra",
       "naam2": "Femke Wielstra",
       "naam3": null,
@@ -2043,8 +1913,8 @@
       "score_combi": null
     },
     {
-      "id": "LQhZP94TeG",
-      "teamnummer": "163",
+      "id": "wfUhAYo4oz",
+      "teamnummer": 163,
       "naam1": "Carine van Vaals",
       "naam2": "Marith Terpstra",
       "naam3": "Lobke Klos",
@@ -2068,8 +1938,8 @@
       "score_combi": null
     },
     {
-      "id": "d01N9RTMOE",
-      "teamnummer": "164",
+      "id": "ilMvXgp_2e",
+      "teamnummer": 164,
       "naam1": "Janice van Dam",
       "naam2": "Tessa Pieters",
       "naam3": "Noor Kaufman",
@@ -2093,8 +1963,8 @@
       "score_combi": null
     },
     {
-      "id": "vXL7eFE6Is",
-      "teamnummer": "165",
+      "id": "ORorx4xeYM",
+      "teamnummer": 165,
       "naam1": "Jildou Vellinga",
       "naam2": "Fenna Peterson",
       "naam3": "Mare van der Meulen",
@@ -2118,8 +1988,8 @@
       "score_combi": null
     },
     {
-      "id": "TZjEUZTxxJ",
-      "teamnummer": "166",
+      "id": "qjAdvHtHXp",
+      "teamnummer": 166,
       "naam1": "Dian Smit",
       "naam2": "Marianna Bosma",
       "naam3": "Amarins van Zwol",
@@ -2143,8 +2013,8 @@
       "score_combi": null
     },
     {
-      "id": "TAl65d2Mle",
-      "teamnummer": "167",
+      "id": "n2f_ptRLAV",
+      "teamnummer": 167,
       "naam1": "Jildou Jonker",
       "naam2": "Evelyn Witzenburg",
       "naam3": "Fenna Otter",
@@ -2168,8 +2038,8 @@
       "score_combi": null
     },
     {
-      "id": "Nx_bcGzqSo",
-      "teamnummer": "169",
+      "id": "5UJenAUgA7",
+      "teamnummer": 169,
       "naam1": "Meta van Dekken",
       "naam2": "Enola Kramer",
       "naam3": "Sanne Hiemstra",
@@ -2193,8 +2063,8 @@
       "score_combi": null
     },
     {
-      "id": "IGVnYeo8Z8",
-      "teamnummer": "170",
+      "id": "xvWqrh3N2d",
+      "teamnummer": 170,
       "naam1": "Christina Bruinsma",
       "naam2": "Siebrina van der Wal",
       "naam3": "Sanne van Til",
@@ -2218,8 +2088,8 @@
       "score_combi": null
     },
     {
-      "id": "U6oRjgJtee",
-      "teamnummer": "171",
+      "id": "x5wowZuTgw",
+      "teamnummer": 171,
       "naam1": "Selina Bruinsma",
       "naam2": "Kristine van der Woude",
       "naam3": "Eline van Breden",
@@ -2243,8 +2113,8 @@
       "score_combi": null
     },
     {
-      "id": "VJJdfc3HxF",
-      "teamnummer": "172",
+      "id": "1TcwVHpb_C",
+      "teamnummer": 172,
       "naam1": "Jingxi Westenberg",
       "naam2": "Esther Agterbosch",
       "naam3": "Dilara van Dijk",
@@ -2268,8 +2138,8 @@
       "score_combi": null
     },
     {
-      "id": "ht_lg81g3K",
-      "teamnummer": "173",
+      "id": "V0WjPj8z0s",
+      "teamnummer": 173,
       "naam1": "Julia Meester",
       "naam2": "Nina Boer",
       "naam3": "Sophie Touker",
@@ -2293,8 +2163,8 @@
       "score_combi": null
     },
     {
-      "id": "bPL1RWRYL5",
-      "teamnummer": "174",
+      "id": "89uyo7Wg83",
+      "teamnummer": 174,
       "naam1": "Kris Oskam",
       "naam2": "Merel Blaauw",
       "naam3": "Noah Leeflang",
@@ -2318,8 +2188,8 @@
       "score_combi": null
     },
     {
-      "id": "WbSNbuAYXr",
-      "teamnummer": "175",
+      "id": "XOY6w90B8d",
+      "teamnummer": 175,
       "naam1": "Kirsten Mussche",
       "naam2": "Tessa Smit",
       "naam3": "Sophie Compagner",
@@ -2343,8 +2213,8 @@
       "score_combi": null
     },
     {
-      "id": "sag9O96-Dr",
-      "teamnummer": "177",
+      "id": "QFZLnbStl_",
+      "teamnummer": 177,
       "naam1": "Linda van der Bijl",
       "naam2": "Sanne Stuivenvolt",
       "naam3": "Rianne Bakker",
@@ -2368,8 +2238,8 @@
       "score_combi": null
     },
     {
-      "id": "EY0b9wblXm",
-      "teamnummer": "179",
+      "id": "fGP1ZmYV1P",
+      "teamnummer": 179,
       "naam1": "Alette Machiela",
       "naam2": "Marieke Hoogsteen",
       "naam3": "Hannah Huizenga",
@@ -2393,8 +2263,8 @@
       "score_combi": null
     },
     {
-      "id": "zfSG2z-bo4",
-      "teamnummer": "162",
+      "id": "qmqHHlx3qr",
+      "teamnummer": 162,
       "naam1": "Joost Oost",
       "naam2": "Remon Walta",
       "naam3": null,
@@ -2418,8 +2288,8 @@
       "score_combi": null
     },
     {
-      "id": "onuS3u-Gsm",
-      "teamnummer": "214",
+      "id": "DwpXm1peNE",
+      "teamnummer": 214,
       "naam1": "Leon Riddersma",
       "naam2": "Else Mare Haisma",
       "naam3": null,
@@ -2443,8 +2313,8 @@
       "score_combi": null
     },
     {
-      "id": "kbzG5PPcZx",
-      "teamnummer": "134",
+      "id": "keHdpN67uD",
+      "teamnummer": 134,
       "naam1": "Anies van de Bree",
       "naam2": "Tyka van der Klein",
       "naam3": "Inge Grob",
@@ -2468,8 +2338,8 @@
       "score_combi": null
     },
     {
-      "id": "MkNcia-SqP",
-      "teamnummer": "135",
+      "id": "p3319-cnsV",
+      "teamnummer": 135,
       "naam1": "Natascha Post",
       "naam2": "Elyse Kammelar",
       "naam3": "Danique Wassenaar",
@@ -2493,8 +2363,8 @@
       "score_combi": null
     },
     {
-      "id": "aocpX5llQF",
-      "teamnummer": "136",
+      "id": "0CF4LnsSlw",
+      "teamnummer": 136,
       "naam1": "Sabine van Deursen",
       "naam2": "Esther de Jong",
       "naam3": "Eeke Hof",
@@ -2518,8 +2388,8 @@
       "score_combi": null
     },
     {
-      "id": "-I8udTP6KQ",
-      "teamnummer": "137",
+      "id": "hQT97jbf",
+      "teamnummer": 137,
       "naam1": "Anna Peters",
       "naam2": "Laura Schreiber",
       "naam3": "Elynn Venema",
@@ -2543,8 +2413,8 @@
       "score_combi": null
     },
     {
-      "id": "pBekqoIwhT",
-      "teamnummer": "138",
+      "id": "p06Dy9FCB",
+      "teamnummer": 138,
       "naam1": "Indy van der Meulen",
       "naam2": "Hilse van der Woude",
       "naam3": "Anniek Braam",
@@ -2568,8 +2438,8 @@
       "score_combi": null
     },
     {
-      "id": "yGXuPtxEom",
-      "teamnummer": "139",
+      "id": "ppFMPGnRw",
+      "teamnummer": 139,
       "naam1": "Anouk Alberts",
       "naam2": "Merel Vriend",
       "naam3": "Anna Ridderman",
@@ -2593,8 +2463,8 @@
       "score_combi": null
     },
     {
-      "id": "9X3wMpPZjd",
-      "teamnummer": "140",
+      "id": "_sv7xbu20",
+      "teamnummer": 140,
       "naam1": "Senna Oeben",
       "naam2": "Indy Palm",
       "naam3": "Feline Kamans",
@@ -2618,8 +2488,8 @@
       "score_combi": null
     },
     {
-      "id": "VbXgq-y-ql",
-      "teamnummer": "141",
+      "id": "5UdEp7Kly",
+      "teamnummer": 141,
       "naam1": "Jose Holtewes",
       "naam2": "Ytsje de Roos",
       "naam3": "Anouk Knoop",
@@ -2643,8 +2513,8 @@
       "score_combi": null
     },
     {
-      "id": "TcocLsb4k5",
-      "teamnummer": "142",
+      "id": "94ewwWD-l",
+      "teamnummer": 142,
       "naam1": "Lieke Minnema",
       "naam2": "Lieke de Bruin",
       "naam3": "Jenny Lynn Kootstra",
@@ -2668,8 +2538,8 @@
       "score_combi": null
     },
     {
-      "id": "5Iv5ngWUHO",
-      "teamnummer": "143",
+      "id": "WECqL7Etw",
+      "teamnummer": 143,
       "naam1": "Daniek Jonker",
       "naam2": "Melissa Karimi",
       "naam3": "Eline Jonker",
@@ -2693,8 +2563,8 @@
       "score_combi": null
     },
     {
-      "id": "vz5Riq35lN",
-      "teamnummer": "144",
+      "id": "ZRTEO3EbW",
+      "teamnummer": 144,
       "naam1": "Lieke Wonnink",
       "naam2": "Esmee Kwakman",
       "naam3": "Odelina Kross",
@@ -2718,8 +2588,8 @@
       "score_combi": null
     },
     {
-      "id": "IMTSQPLnls",
-      "teamnummer": "145",
+      "id": "ePtqPAeFX",
+      "teamnummer": 145,
       "naam1": "Xante Anbergen",
       "naam2": "Esmée Koster",
       "naam3": "Benthe van der Maat",
@@ -2743,8 +2613,8 @@
       "score_combi": null
     },
     {
-      "id": "yZd4drou47",
-      "teamnummer": "185",
+      "id": "uvyeYCD92",
+      "teamnummer": 185,
       "naam1": "Aniek Douma",
       "naam2": "Leire Werndly",
       "naam3": null,
@@ -2768,8 +2638,8 @@
       "score_combi": null
     },
     {
-      "id": "gcy2kz9wIb",
-      "teamnummer": "120",
+      "id": "m98Z0CWD8",
+      "teamnummer": 120,
       "naam1": "Daniëlle Bosgraaf",
       "naam2": "Sylvia van der Meulen",
       "naam3": null,
@@ -2793,8 +2663,8 @@
       "score_combi": null
     },
     {
-      "id": "Xfi3HSzicP",
-      "teamnummer": "121",
+      "id": "pwRykDVks",
+      "teamnummer": 121,
       "naam1": "Caitlyn Tienstra",
       "naam2": "Amarins de Bruin",
       "naam3": null,
@@ -2818,8 +2688,8 @@
       "score_combi": null
     },
     {
-      "id": "73rjz1yHFB",
-      "teamnummer": "122",
+      "id": "4CQqIzhPk",
+      "teamnummer": 122,
       "naam1": "Melanie van Zwieten",
       "naam2": "Iris Vlietstra",
       "naam3": null,
@@ -2843,8 +2713,8 @@
       "score_combi": null
     },
     {
-      "id": "3eHwWqsbXB",
-      "teamnummer": "123",
+      "id": "00w_WVVUq",
+      "teamnummer": 123,
       "naam1": "Julia Blanke",
       "naam2": "Madelon van Gemert",
       "naam3": null,
@@ -2868,8 +2738,8 @@
       "score_combi": null
     },
     {
-      "id": "5k1ip1E1Rk",
-      "teamnummer": "124",
+      "id": "-_AnJpK4v",
+      "teamnummer": 124,
       "naam1": "Maud Loode",
       "naam2": "Brit Snoeijink",
       "naam3": null,
@@ -2893,8 +2763,8 @@
       "score_combi": null
     },
     {
-      "id": "LHo8iscApE",
-      "teamnummer": "125",
+      "id": "GiWhRZHEn",
+      "teamnummer": 125,
       "naam1": "Amée Deddens",
       "naam2": "Dide Jonkman",
       "naam3": null,
@@ -2918,8 +2788,8 @@
       "score_combi": null
     },
     {
-      "id": "ScullVpT",
-      "teamnummer": "126",
+      "id": "vr2i81KQzl",
+      "teamnummer": 126,
       "naam1": "Isa Onrust",
       "naam2": "Amber van Looij",
       "naam3": null,
@@ -2943,8 +2813,8 @@
       "score_combi": null
     },
     {
-      "id": "Mmogt76Io",
-      "teamnummer": "127",
+      "id": "_V3Ittw53V",
+      "teamnummer": 127,
       "naam1": "Marnique Jansen",
       "naam2": "Wendelyn Kabassa",
       "naam3": null,
@@ -2968,8 +2838,8 @@
       "score_combi": null
     },
     {
-      "id": "n5mo_B60s",
-      "teamnummer": "128",
+      "id": "SNAdozLL4w",
+      "teamnummer": 128,
       "naam1": "Nadra Elbadaway",
       "naam2": "Leana Perri",
       "naam3": null,
@@ -2993,8 +2863,8 @@
       "score_combi": null
     },
     {
-      "id": "F-aRI0JUz",
-      "teamnummer": "129",
+      "id": "Z2yVSWMYfW",
+      "teamnummer": 129,
       "naam1": "Jeltje Elsenga",
       "naam2": "Yasmin Hilboessen",
       "naam3": null,
@@ -3018,8 +2888,8 @@
       "score_combi": null
     },
     {
-      "id": "4mL0g2CkP",
-      "teamnummer": "130",
+      "id": "WOXznI0a1m",
+      "teamnummer": 130,
       "naam1": "Jutta Haverkort",
       "naam2": "Xoey Vogelzang",
       "naam3": null,
@@ -3043,8 +2913,8 @@
       "score_combi": null
     },
     {
-      "id": "EYEuk0FOP",
-      "teamnummer": "131",
+      "id": "pHud3tpRPV",
+      "teamnummer": 131,
       "naam1": "Pien Rook",
       "naam2": "Ize Wolbert",
       "naam3": null,
@@ -3068,8 +2938,8 @@
       "score_combi": null
     },
     {
-      "id": "4I6y9h0kr",
-      "teamnummer": "132",
+      "id": "F1r-qB1B06",
+      "teamnummer": 132,
       "naam1": "Shenia Feenstra",
       "naam2": "Alisha van der Veen",
       "naam3": null,
@@ -3093,8 +2963,8 @@
       "score_combi": null
     },
     {
-      "id": "Fgs9rRtkG",
-      "teamnummer": "107",
+      "id": "N7J8nbkge5",
+      "teamnummer": 107,
       "naam1": "Kay Gebrandy",
       "naam2": "Lizz Stoker",
       "naam3": null,
@@ -3118,8 +2988,8 @@
       "score_combi": null
     },
     {
-      "id": "_ibaBSK5Y",
-      "teamnummer": "108",
+      "id": "MezK3I0U7p",
+      "teamnummer": 108,
       "naam1": "Anouk de Groot",
       "naam2": "Marrit Hoogenberg",
       "naam3": "Marleen van de Wolfshaar",
@@ -3143,8 +3013,8 @@
       "score_combi": null
     },
     {
-      "id": "SL3AqlkPf",
-      "teamnummer": "109",
+      "id": "QxULO1vw8j",
+      "teamnummer": 109,
       "naam1": "Emma Baakman",
       "naam2": "Sofie van der Leest",
       "naam3": "Lena Ramaekers",
@@ -3168,8 +3038,8 @@
       "score_combi": null
     },
     {
-      "id": "_goTyMWal",
-      "teamnummer": "110",
+      "id": "3gHKfTFMEq",
+      "teamnummer": 110,
       "naam1": "Lois Pontoh",
       "naam2": "Sara Kaufman",
       "naam3": "Femke van Wezel",
@@ -3193,8 +3063,8 @@
       "score_combi": null
     },
     {
-      "id": "-n3mP3zXL",
-      "teamnummer": "111",
+      "id": "HAZr3admnP",
+      "teamnummer": 111,
       "naam1": "Ilza Otter",
       "naam2": "Sinne van der Berg",
       "naam3": "Silke Berga",
@@ -3218,8 +3088,8 @@
       "score_combi": null
     },
     {
-      "id": "j2NxM-CPw",
-      "teamnummer": "112",
+      "id": "uCVmPkGE7C",
+      "teamnummer": 112,
       "naam1": "Marije Vlietstra",
       "naam2": "Lysanne Thalen",
       "naam3": "Sybrich Mulder",
@@ -3243,8 +3113,8 @@
       "score_combi": null
     },
     {
-      "id": "4QeWog4Nk",
-      "teamnummer": "113",
+      "id": "pfsgUE2vq8",
+      "teamnummer": 113,
       "naam1": "Nyncke Tent",
       "naam2": "Chloé Breider",
       "naam3": "Jodie Broese van Groenau",
@@ -3268,8 +3138,8 @@
       "score_combi": null
     },
     {
-      "id": "5ofarAGip",
-      "teamnummer": "114",
+      "id": "_R_-XmjQhs",
+      "teamnummer": 114,
       "naam1": "Yvonne Talstra",
       "naam2": "Lyanne Reurink",
       "naam3": "Annyk de Vries",
@@ -3293,8 +3163,8 @@
       "score_combi": null
     },
     {
-      "id": "ZNhv7jqmh",
-      "teamnummer": "115",
+      "id": "2OppPZTD19",
+      "teamnummer": 115,
       "naam1": "Vera de Boer",
       "naam2": "Mirte Stiekema",
       "naam3": "Tessa Wognum",
@@ -3318,8 +3188,8 @@
       "score_combi": null
     },
     {
-      "id": "YRadASJ9nv",
-      "teamnummer": "116",
+      "id": "SLs643MZbU",
+      "teamnummer": 116,
       "naam1": "Jasmijn Stuurwold",
       "naam2": "Lara Hieuw Kin Koen",
       "naam3": "Marleau Stortebaum",
@@ -3343,8 +3213,8 @@
       "score_combi": null
     },
     {
-      "id": "1Fdry0KVc_",
-      "teamnummer": "117",
+      "id": "Mr2fpRdliJ",
+      "teamnummer": 117,
       "naam1": "Esmee Bosma",
       "naam2": "Arlen van der Velden",
       "naam3": "Laura Woudstra",
@@ -3368,8 +3238,8 @@
       "score_combi": null
     },
     {
-      "id": "T9rS4CKceu",
-      "teamnummer": "118",
+      "id": "IfN0Tzttvo",
+      "teamnummer": 118,
       "naam1": "Rixte de Boer",
       "naam2": "Bonnie Kiers",
       "naam3": "Miriam Woudstra",
@@ -3393,8 +3263,8 @@
       "score_combi": null
     },
     {
-      "id": "csEsaCyWLW",
-      "teamnummer": "119",
+      "id": "gyMMnk06rL",
+      "teamnummer": 119,
       "naam1": "Madelonne Paalvast",
       "naam2": "Benthe van Maanen",
       "naam3": "Novalinde",
@@ -3418,8 +3288,8 @@
       "score_combi": null
     },
     {
-      "id": "7KzWEmcy_7",
-      "teamnummer": "100",
+      "id": "HQlLdznx4Y",
+      "teamnummer": 100,
       "naam1": "Noëlle Kooijker",
       "naam2": "Danine de Jong",
       "naam3": null,
@@ -3443,8 +3313,8 @@
       "score_combi": null
     },
     {
-      "id": "CoJ-ReebYW",
-      "teamnummer": "101",
+      "id": "jh3SVqLK3G",
+      "teamnummer": 101,
       "naam1": "Manouk Meijer",
       "naam2": "Rigt Ottens",
       "naam3": null,
@@ -3468,8 +3338,8 @@
       "score_combi": null
     },
     {
-      "id": "sDQIbWp-89",
-      "teamnummer": "102",
+      "id": "osIeQrJ4pT",
+      "teamnummer": 102,
       "naam1": "Noëlle Kisters",
       "naam2": "Amber Kisters",
       "naam3": null,
@@ -3493,8 +3363,8 @@
       "score_combi": null
     },
     {
-      "id": "gYTDSNsz53",
-      "teamnummer": "103",
+      "id": "l_cPeXncqT",
+      "teamnummer": 103,
       "naam1": "Sanne Hoogstra",
       "naam2": "Amy Mulder",
       "naam3": null,
@@ -3518,8 +3388,8 @@
       "score_combi": null
     },
     {
-      "id": "rh_GU-3_tn",
-      "teamnummer": "105",
+      "id": "QRXva0DTz6",
+      "teamnummer": 105,
       "naam1": "Ilva van Dijk",
       "naam2": "Femke den Hamer",
       "naam3": null,
@@ -3541,56 +3411,12 @@
       "moeilijkheid_combi": null,
       "aftrekken_combi": null,
       "score_combi": null
-    },
-    {
-      "id": "Ks8ks29QYL",
-      "naam3": null,
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
-    },
-    {
-      "id": "kHud3wAN9c",
-      "teamnummer": null,
-      "naam1": null,
-      "naam2": null,
-      "naam3": null,
-      "club": null,
-      "niveau": null,
-      "categorie": null,
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
     }
   ],
   "elijn": [
     {
-      "id": "L610tUJnHk",
-      "teamnummer": "94",
+      "id": "PM7cLgekfs",
+      "teamnummer": 94,
       "naam1": "Manuela Bras",
       "naam2": "Amber Knol",
       "naam3": "Ulijn Hopman",
@@ -3613,8 +3439,8 @@
       "score_combi": null
     },
     {
-      "id": "MTgRJp5jwQ",
-      "teamnummer": "95",
+      "id": "Dh7MUsf-j_",
+      "teamnummer": 95,
       "naam1": "Janouk van der Meulen",
       "naam2": "Tineke de Zwart",
       "naam3": "Rachelle Jaarsma",
@@ -3637,8 +3463,8 @@
       "score_combi": null
     },
     {
-      "id": "x2Yl9SZLxc",
-      "teamnummer": "96",
+      "id": "FYUKYEQDGF",
+      "teamnummer": 96,
       "naam1": "Ilse Cuperus",
       "naam2": "Nora Visser",
       "naam3": "Renske Nicolai",
@@ -3661,8 +3487,8 @@
       "score_combi": null
     },
     {
-      "id": "UeRrCeufXZ",
-      "teamnummer": "97",
+      "id": "V9loxhyrJv",
+      "teamnummer": 97,
       "naam1": "Mirtinthe Mullender",
       "naam2": "Angela Zevenhuizen",
       "naam3": "Nienke Eelkema",
@@ -3685,8 +3511,8 @@
       "score_combi": null
     },
     {
-      "id": "Eeb8X0YDqn",
-      "teamnummer": "98",
+      "id": "822nNNiBqP",
+      "teamnummer": 98,
       "naam1": "Shadia Coudron",
       "naam2": "Maureen Hoogendoorn",
       "naam3": "Selene Vlenterie",
@@ -3709,8 +3535,8 @@
       "score_combi": null
     },
     {
-      "id": "dbfy8mm5pD",
-      "teamnummer": "99",
+      "id": "dnaWD0bQgq",
+      "teamnummer": 99,
       "naam1": "Noura Ben Haj Fedj",
       "naam2": "Esther Vogelzang",
       "naam3": "Suus Lutterop",
@@ -3733,8 +3559,8 @@
       "score_combi": null
     },
     {
-      "id": "7Ps9l8BuUt",
-      "teamnummer": "168",
+      "id": "AlgS_Y_DWs",
+      "teamnummer": 168,
       "naam1": "Doreen Slot",
       "naam2": "Lotte van Sluijs",
       "naam3": "Evelien Gering",
@@ -3757,8 +3583,8 @@
       "score_combi": null
     },
     {
-      "id": "9MUFwqeWvi",
-      "teamnummer": "83",
+      "id": "35gWYM-20l",
+      "teamnummer": 83,
       "naam1": "Larissa de Wolff",
       "naam2": "Fleur Moorlag",
       "naam3": null,
@@ -3781,8 +3607,8 @@
       "score_combi": null
     },
     {
-      "id": "UZp_1CglnM",
-      "teamnummer": "84",
+      "id": "s4f4wJ3Vky",
+      "teamnummer": 84,
       "naam1": "Annejel Dijkstra",
       "naam2": "Lotte Hofstra",
       "naam3": null,
@@ -3805,8 +3631,8 @@
       "score_combi": null
     },
     {
-      "id": "6ZRLKTQvzu",
-      "teamnummer": "85",
+      "id": "MTCCF-NU8Y",
+      "teamnummer": 85,
       "naam1": "Kimberley Hoexem",
       "naam2": "Alicia Mozes",
       "naam3": null,
@@ -3829,8 +3655,8 @@
       "score_combi": null
     },
     {
-      "id": "6rhgYVQKXs",
-      "teamnummer": "86",
+      "id": "Dzgh9mHdbs",
+      "teamnummer": 86,
       "naam1": "Aileen Werkman",
       "naam2": "Dewi Snijder",
       "naam3": null,
@@ -3853,8 +3679,8 @@
       "score_combi": null
     },
     {
-      "id": "YdjiJWBGEQ",
-      "teamnummer": "87",
+      "id": "aeVZP-WtQU",
+      "teamnummer": 87,
       "naam1": "Anna Snijder",
       "naam2": "Feline Bandringa",
       "naam3": null,
@@ -3877,8 +3703,8 @@
       "score_combi": null
     },
     {
-      "id": "XSu5DaqYeY",
-      "teamnummer": "88",
+      "id": "tpnqZIEr1p",
+      "teamnummer": 88,
       "naam1": "Lucynda Zwama",
       "naam2": "Joelle Boonstra",
       "naam3": null,
@@ -3901,8 +3727,8 @@
       "score_combi": null
     },
     {
-      "id": "N6NM4AL7wa",
-      "teamnummer": "89",
+      "id": "jxn32oJeJZ",
+      "teamnummer": 89,
       "naam1": "Pytrich Adema",
       "naam2": "Jessica Dijkstra",
       "naam3": null,
@@ -3925,8 +3751,8 @@
       "score_combi": null
     },
     {
-      "id": "9d-DHEm8l5",
-      "teamnummer": "90",
+      "id": "fd5bHjncXN",
+      "teamnummer": 90,
       "naam1": "Charissa Terpstra",
       "naam2": "Yvonne Henstra",
       "naam3": null,
@@ -3949,8 +3775,8 @@
       "score_combi": null
     },
     {
-      "id": "5f-HcLHA4G",
-      "teamnummer": "91",
+      "id": "sqcirhYhMl",
+      "teamnummer": 91,
       "naam1": "Marlène Dijkstra",
       "naam2": "Kaylee van Dijk",
       "naam3": null,
@@ -3973,8 +3799,8 @@
       "score_combi": null
     },
     {
-      "id": "Q7GYipghSD",
-      "teamnummer": "92",
+      "id": "Uf0quY7cQh",
+      "teamnummer": 92,
       "naam1": "Jeltje de Wind",
       "naam2": "Mariska de Jong",
       "naam3": null,
@@ -3997,8 +3823,8 @@
       "score_combi": null
     },
     {
-      "id": "sKy4_j3LN5",
-      "teamnummer": "93",
+      "id": "k37qliXwd4",
+      "teamnummer": 93,
       "naam1": "Jasmijn Donkervoort",
       "naam2": "Kim Venema",
       "naam3": null,
@@ -4021,8 +3847,8 @@
       "score_combi": null
     },
     {
-      "id": "HVESZOu1wz",
-      "teamnummer": "100",
+      "id": "s843asDZM5",
+      "teamnummer": 100,
       "naam1": "Noëlle Kooijker",
       "naam2": "Danine de Jong",
       "naam3": null,
@@ -4045,8 +3871,8 @@
       "score_combi": null
     },
     {
-      "id": "LtpGRN5SCC",
-      "teamnummer": "72",
+      "id": "KSclfDpSYJ",
+      "teamnummer": 72,
       "naam1": "Micheila Visser",
       "naam2": "Nynke Plantinga",
       "naam3": "Karlijn Slob",
@@ -4069,8 +3895,8 @@
       "score_combi": null
     },
     {
-      "id": "jBMpUKweuC",
-      "teamnummer": "73",
+      "id": "imuv_bAjBZ",
+      "teamnummer": 73,
       "naam1": "Naomi Toonstra",
       "naam2": "Emma Riemersma",
       "naam3": "Soraya de Jong",
@@ -4093,8 +3919,8 @@
       "score_combi": null
     },
     {
-      "id": "o6AXIuQBbG",
-      "teamnummer": "74",
+      "id": "PEtvjdK2Vg",
+      "teamnummer": 74,
       "naam1": "Senna Deden",
       "naam2": "Anna Feenstra",
       "naam3": "Sigrid Bakker",
@@ -4117,8 +3943,8 @@
       "score_combi": null
     },
     {
-      "id": "zpaCSvD8_n",
-      "teamnummer": "75",
+      "id": "CYuO5_ByLh",
+      "teamnummer": 75,
       "naam1": "Imare Schuurman",
       "naam2": "Milina Lipinska",
       "naam3": "Jasmijn Guitoneau",
@@ -4141,8 +3967,8 @@
       "score_combi": null
     },
     {
-      "id": "0dDV65ufAf",
-      "teamnummer": "77",
+      "id": "J5kEsoZsXk",
+      "teamnummer": 77,
       "naam1": "Elsa de Vries",
       "naam2": "Grietje Beerda",
       "naam3": "Ninthe Landheer",
@@ -4165,8 +3991,8 @@
       "score_combi": null
     },
     {
-      "id": "TDpyQvfkNP",
-      "teamnummer": "78",
+      "id": "WxVublhEDt",
+      "teamnummer": 78,
       "naam1": "An An Peeks",
       "naam2": "Anouk Herweijer",
       "naam3": "Inge Bazijn",
@@ -4189,8 +4015,8 @@
       "score_combi": null
     },
     {
-      "id": "a-b57o3qjJ",
-      "teamnummer": "79",
+      "id": "kWD8reHAjp",
+      "teamnummer": 79,
       "naam1": "Fleur van Heerde",
       "naam2": "Jasmijn Gaal",
       "naam3": "Dani Bouma",
@@ -4213,8 +4039,8 @@
       "score_combi": null
     },
     {
-      "id": "JsuU7m-l49",
-      "teamnummer": "81",
+      "id": "b_mw6OGucY",
+      "teamnummer": 81,
       "naam1": "Afina Hiemstra",
       "naam2": "Yada Post",
       "naam3": "Manou Storm",
@@ -4237,8 +4063,8 @@
       "score_combi": null
     },
     {
-      "id": "z9P-G1hqY2",
-      "teamnummer": "82",
+      "id": "RI4hAkt-yZ",
+      "teamnummer": 82,
       "naam1": "Milena Eelkema",
       "naam2": "Jirte Ludema",
       "naam3": "Julia Ludema",
@@ -4261,8 +4087,8 @@
       "score_combi": null
     },
     {
-      "id": "NHFLzh0pTu",
-      "teamnummer": "58",
+      "id": "z7yC9duFNR",
+      "teamnummer": 58,
       "naam1": "Kristel Klooster",
       "naam2": "Bente Dam",
       "naam3": null,
@@ -4285,8 +4111,8 @@
       "score_combi": null
     },
     {
-      "id": "alx4bXWVMr",
-      "teamnummer": "59",
+      "id": "e1lRPqG6z-",
+      "teamnummer": 59,
       "naam1": "Laura Weening",
       "naam2": "Quinty de Jong",
       "naam3": null,
@@ -4309,8 +4135,8 @@
       "score_combi": null
     },
     {
-      "id": "MaakuoWh5u",
-      "teamnummer": "60",
+      "id": "HXGKNt0xvP",
+      "teamnummer": 60,
       "naam1": "Tessa Bakker",
       "naam2": "Sanne Groen",
       "naam3": null,
@@ -4333,8 +4159,8 @@
       "score_combi": null
     },
     {
-      "id": "NQuKuPkCgt",
-      "teamnummer": "61",
+      "id": "Dx1oo-ct1q",
+      "teamnummer": 61,
       "naam1": "Yvette Dusink",
       "naam2": "Sophie Hassefras",
       "naam3": null,
@@ -4357,8 +4183,8 @@
       "score_combi": null
     },
     {
-      "id": "a7ILsafWG3",
-      "teamnummer": "62",
+      "id": "araXqrURIJ",
+      "teamnummer": 62,
       "naam1": "Kim Zwiers",
       "naam2": "Noa Erkemeij",
       "naam3": null,
@@ -4381,8 +4207,8 @@
       "score_combi": null
     },
     {
-      "id": "JjTiPUIEn9",
-      "teamnummer": "63",
+      "id": "v1aoGTb7P3",
+      "teamnummer": 63,
       "naam1": "Fleur van Woensel",
       "naam2": "Maaike Mastebroek",
       "naam3": null,
@@ -4405,8 +4231,8 @@
       "score_combi": null
     },
     {
-      "id": "VoIflPltMX",
-      "teamnummer": "64",
+      "id": "OGx6zFzqII",
+      "teamnummer": 64,
       "naam1": "Sterre van Wijngaarden",
       "naam2": "Sofia Belytska",
       "naam3": null,
@@ -4429,8 +4255,8 @@
       "score_combi": null
     },
     {
-      "id": "GKAK7c1jVx",
-      "teamnummer": "65",
+      "id": "dpi6MR7z_-",
+      "teamnummer": 65,
       "naam1": "Sanne Hessels",
       "naam2": "Sterre Leijssenaar",
       "naam3": null,
@@ -4453,8 +4279,8 @@
       "score_combi": null
     },
     {
-      "id": "hPXtHCTEA2",
-      "teamnummer": "66",
+      "id": "vWBqG_fHUa",
+      "teamnummer": 66,
       "naam1": "Senna op 't Zand",
       "naam2": "Jinthe Hamming",
       "naam3": null,
@@ -4477,8 +4303,8 @@
       "score_combi": null
     },
     {
-      "id": "h9V_ItTK84",
-      "teamnummer": "67",
+      "id": "cOymusBmBZ",
+      "teamnummer": 67,
       "naam1": "Querijn Jansen",
       "naam2": "Pyke Keizer",
       "naam3": null,
@@ -4501,8 +4327,8 @@
       "score_combi": null
     },
     {
-      "id": "nOeY2gQ_nr",
-      "teamnummer": "68",
+      "id": "egyJ2-kEf_",
+      "teamnummer": 68,
       "naam1": "Lisanne Raap",
       "naam2": "Amelyn de Boer",
       "naam3": null,
@@ -4525,8 +4351,8 @@
       "score_combi": null
     },
     {
-      "id": "5KanFSh-3E",
-      "teamnummer": "69",
+      "id": "eu_ZHwN8ga",
+      "teamnummer": 69,
       "naam1": "Chantal Sijtsma",
       "naam2": "Caithlyn de Vries",
       "naam3": null,
@@ -4549,8 +4375,8 @@
       "score_combi": null
     },
     {
-      "id": "DbaWNq91S3",
-      "teamnummer": "70",
+      "id": "KNsQYxI-ai",
+      "teamnummer": 70,
       "naam1": "Linde Hendriksen",
       "naam2": "Xanthia Ster",
       "naam3": null,
@@ -4573,8 +4399,8 @@
       "score_combi": null
     },
     {
-      "id": "dB4rVrWmrc",
-      "teamnummer": "71",
+      "id": "jKTP_aFFP2",
+      "teamnummer": 71,
       "naam1": "Martina Stanowska",
       "naam2": "Adinda Heemstra",
       "naam3": null,
@@ -4597,8 +4423,8 @@
       "score_combi": null
     },
     {
-      "id": "6QGSf9u0Sx",
-      "teamnummer": "76",
+      "id": "1voDksdMsL",
+      "teamnummer": 76,
       "naam1": "Janine Alma",
       "naam2": "Lysanne Bethlehem",
       "naam3": null,
@@ -4621,8 +4447,8 @@
       "score_combi": null
     },
     {
-      "id": "1qyktkc4xb",
-      "teamnummer": "80",
+      "id": "6eX4F9rYBq",
+      "teamnummer": 80,
       "naam1": "Na-Chun Kamps",
       "naam2": "Djura Yavuz",
       "naam3": null,
@@ -4645,8 +4471,8 @@
       "score_combi": null
     },
     {
-      "id": "n2ZNckz6AD",
-      "teamnummer": "133",
+      "id": "KUVHqDgAAH",
+      "teamnummer": 133,
       "naam1": "Iris Visser",
       "naam2": "Ise Bosgraaf",
       "naam3": null,
@@ -4669,8 +4495,8 @@
       "score_combi": null
     },
     {
-      "id": "TRyhFnDlIF",
-      "teamnummer": "207",
+      "id": "ywHNHw6LEO",
+      "teamnummer": 207,
       "naam1": "Eline Mulder",
       "naam2": "Tessa Posma",
       "naam3": null,
@@ -4693,8 +4519,8 @@
       "score_combi": null
     },
     {
-      "id": "7ZOwa7Eng4",
-      "teamnummer": "19",
+      "id": "ML5ackdM9b",
+      "teamnummer": 19,
       "naam1": "Roselie ter Borg",
       "naam2": "Kim Vos",
       "naam3": null,
@@ -4717,8 +4543,8 @@
       "score_combi": null
     },
     {
-      "id": "3bR0jOc8Ud",
-      "teamnummer": "20",
+      "id": "hlS-tDn9it",
+      "teamnummer": 20,
       "naam1": "Rixt Schippers",
       "naam2": "Isa Dijkstra",
       "naam3": null,
@@ -4741,8 +4567,8 @@
       "score_combi": null
     },
     {
-      "id": "Nr5NgTGqPv",
-      "teamnummer": "21",
+      "id": "_z2J76VNbE",
+      "teamnummer": 21,
       "naam1": "Wietske Spits",
       "naam2": "Aaf de Jong",
       "naam3": null,
@@ -4765,8 +4591,8 @@
       "score_combi": null
     },
     {
-      "id": "jtoFYfHdoy",
-      "teamnummer": "22",
+      "id": "mUUrHyd8cH",
+      "teamnummer": 22,
       "naam1": "Janiek Timmermans",
       "naam2": "Afke de Jong",
       "naam3": null,
@@ -4789,8 +4615,8 @@
       "score_combi": null
     },
     {
-      "id": "KY_adkY_3_",
-      "teamnummer": "23",
+      "id": "R-SdV8B11f",
+      "teamnummer": 23,
       "naam1": "Elise Nicolai",
       "naam2": "Helena Veenstra",
       "naam3": null,
@@ -4813,8 +4639,8 @@
       "score_combi": null
     },
     {
-      "id": "KQmnRIb-dY",
-      "teamnummer": "24",
+      "id": "ILUo2O-TrU",
+      "teamnummer": 24,
       "naam1": "Martine Hofstra",
       "naam2": "Brecht van Vleeren",
       "naam3": null,
@@ -4837,8 +4663,8 @@
       "score_combi": null
     },
     {
-      "id": "OiKFOGJDs1",
-      "teamnummer": "25",
+      "id": "6fqyOWPZSR",
+      "teamnummer": 25,
       "naam1": "Aline Elling",
       "naam2": "Kimberley Dokter",
       "naam3": null,
@@ -4861,8 +4687,8 @@
       "score_combi": null
     },
     {
-      "id": "4jebOFC0UX",
-      "teamnummer": "26",
+      "id": "62CQszIHlM",
+      "teamnummer": 26,
       "naam1": "Carmen Nijboer",
       "naam2": "Elize Veenstra",
       "naam3": null,
@@ -4885,8 +4711,8 @@
       "score_combi": null
     },
     {
-      "id": "0yuPyjYZwJ",
-      "teamnummer": "27",
+      "id": "F6EZeMMuqo",
+      "teamnummer": 27,
       "naam1": "Yfke Ottens",
       "naam2": "Lief Diepstraten",
       "naam3": null,
@@ -4909,8 +4735,8 @@
       "score_combi": null
     },
     {
-      "id": "MGZKx1xynp",
-      "teamnummer": "28",
+      "id": "G9v-rK9zcB",
+      "teamnummer": 28,
       "naam1": "Tess Jonker",
       "naam2": "Anique Dorgelo",
       "naam3": null,
@@ -4933,8 +4759,8 @@
       "score_combi": null
     },
     {
-      "id": "SF1u--hgwC",
-      "teamnummer": "29",
+      "id": "Ijq0DQqJr3",
+      "teamnummer": 29,
       "naam1": "Esther Potman",
       "naam2": "Ilaysa Power",
       "naam3": null,
@@ -4957,8 +4783,8 @@
       "score_combi": null
     },
     {
-      "id": "_EjOAEvJ32",
-      "teamnummer": "30",
+      "id": "xK4NcEsOFB",
+      "teamnummer": 30,
       "naam1": "Mare Jonkers",
       "naam2": "Julia Hassefras",
       "naam3": null,
@@ -4981,8 +4807,8 @@
       "score_combi": null
     },
     {
-      "id": "fu_xpwFgDj",
-      "teamnummer": "31",
+      "id": "V5WGS62L3s",
+      "teamnummer": 31,
       "naam1": "Sidra Abdalla",
       "naam2": "Milou Besuijen",
       "naam3": null,
@@ -5005,8 +4831,8 @@
       "score_combi": null
     },
     {
-      "id": "TsG8cJNnAn",
-      "teamnummer": "32",
+      "id": "hjVAITc7MT",
+      "teamnummer": 32,
       "naam1": "Selina Richardson",
       "naam2": "Isa Rijkeboer",
       "naam3": null,
@@ -5029,8 +4855,8 @@
       "score_combi": null
     },
     {
-      "id": "j9p9xh0lTo",
-      "teamnummer": "33",
+      "id": "mRhCf41zZQ",
+      "teamnummer": 33,
       "naam1": "Marleen Langendijk",
       "naam2": "Nova Bakker",
       "naam3": null,
@@ -5053,8 +4879,8 @@
       "score_combi": null
     },
     {
-      "id": "bcbQ2EfvZk",
-      "teamnummer": "34",
+      "id": "u5h87aBZSF",
+      "teamnummer": 34,
       "naam1": "Nynke Veldhuizen",
       "naam2": "Merel Stuurwold",
       "naam3": null,
@@ -5077,8 +4903,8 @@
       "score_combi": null
     },
     {
-      "id": "VV2vRRVBWW",
-      "teamnummer": "35",
+      "id": "cGB4Sklo6f",
+      "teamnummer": 35,
       "naam1": "Saffira Nicolai",
       "naam2": "Noa Cuijpers",
       "naam3": null,
@@ -5101,8 +4927,8 @@
       "score_combi": null
     },
     {
-      "id": "4On9CwEQeI",
-      "teamnummer": "36",
+      "id": "5R7wYy_eeh",
+      "teamnummer": 36,
       "naam1": "Janna Douma",
       "naam2": "Marrit Nijboer",
       "naam3": null,
@@ -5125,8 +4951,8 @@
       "score_combi": null
     },
     {
-      "id": "148ZEnHFCj",
-      "teamnummer": "37",
+      "id": "Zf6M81gVvH",
+      "teamnummer": 37,
       "naam1": "Noa Stuivenuiter",
       "naam2": "Sara van Wijk",
       "naam3": null,
@@ -5149,8 +4975,8 @@
       "score_combi": null
     },
     {
-      "id": "H-K-RfxyyY",
-      "teamnummer": "40",
+      "id": "sHQZOF4DuS",
+      "teamnummer": 40,
       "naam1": "Daan Waar",
       "naam2": "Nynke Flapper",
       "naam3": null,
@@ -5173,8 +4999,8 @@
       "score_combi": null
     },
     {
-      "id": "KuXhweFxgB",
-      "teamnummer": "41",
+      "id": "88DTWTkayh",
+      "teamnummer": 41,
       "naam1": "Fabian van Dijk",
       "naam2": "Suze Wiersma",
       "naam3": null,
@@ -5197,8 +5023,8 @@
       "score_combi": null
     },
     {
-      "id": "VSTObyGSmK",
-      "teamnummer": "42",
+      "id": "wMkholmw-q",
+      "teamnummer": 42,
       "naam1": "Prihtika Ramgatie",
       "naam2": "Pien Oudshoorn",
       "naam3": "Morgana Lippi",
@@ -5221,8 +5047,8 @@
       "score_combi": null
     },
     {
-      "id": "YDVEndsTuL",
-      "teamnummer": "43",
+      "id": "NH6VVms6LR",
+      "teamnummer": 43,
       "naam1": "Shanaya Wijmenga",
       "naam2": "Doutzen Plantinga",
       "naam3": "Sirle Bosma",
@@ -5245,8 +5071,8 @@
       "score_combi": null
     },
     {
-      "id": "QFLr6QSZ99",
-      "teamnummer": "44",
+      "id": "VkxoYN5mAI",
+      "teamnummer": 44,
       "naam1": "Carice Bakker",
       "naam2": "Angelina Lourens",
       "naam3": "Rosa Dijkstra",
@@ -5269,8 +5095,8 @@
       "score_combi": null
     },
     {
-      "id": "BA_qHb_sTh",
-      "teamnummer": "45",
+      "id": "peOCNZifnf",
+      "teamnummer": 45,
       "naam1": "Lynn Blauw",
       "naam2": "Nienke Stuiver",
       "naam3": "Chayenne de Jong",
@@ -5293,8 +5119,8 @@
       "score_combi": null
     },
     {
-      "id": "lO5904aV6c",
-      "teamnummer": "46",
+      "id": "q1EvE6rrdo",
+      "teamnummer": 46,
       "naam1": "Nienke de Jong",
       "naam2": "Fardau Mulder",
       "naam3": "Minke Hof",
@@ -5317,8 +5143,8 @@
       "score_combi": null
     },
     {
-      "id": "Buu2ywdI5h",
-      "teamnummer": "47",
+      "id": "TWd6_xkPQy",
+      "teamnummer": 47,
       "naam1": "Mieneke de Vries",
       "naam2": "Janke Havinga",
       "naam3": "Elske Feenstra",
@@ -5341,8 +5167,8 @@
       "score_combi": null
     },
     {
-      "id": "k_uebjCrm6",
-      "teamnummer": "48",
+      "id": "RiXRrXxipP",
+      "teamnummer": 48,
       "naam1": "Esmee Reinink",
       "naam2": "Riana Spooner",
       "naam3": "Fauve Drees",
@@ -5365,8 +5191,8 @@
       "score_combi": null
     },
     {
-      "id": "hS23wLZfzw",
-      "teamnummer": "49",
+      "id": "ONZbVig0A7",
+      "teamnummer": 49,
       "naam1": "Meike Knol",
       "naam2": "Plien van Ballegoijen de Jong",
       "naam3": "Nine van Wijngaarden",
@@ -5389,8 +5215,8 @@
       "score_combi": null
     },
     {
-      "id": "8rKXCn4MvJ",
-      "teamnummer": "50",
+      "id": "dqiSisD9VJ",
+      "teamnummer": 50,
       "naam1": "Maris Sikkema",
       "naam2": "Lotte de Kleine",
       "naam3": "Jade Sikkema",
@@ -5413,8 +5239,8 @@
       "score_combi": null
     },
     {
-      "id": "au94NQosgu",
-      "teamnummer": "51",
+      "id": "jVD1YzAdtG",
+      "teamnummer": 51,
       "naam1": "Eden Timmerman",
       "naam2": "Yvette Delivacq",
       "naam3": "Cynthia Zwama",
@@ -5437,8 +5263,8 @@
       "score_combi": null
     },
     {
-      "id": "LhVu1r2qEV",
-      "teamnummer": "52",
+      "id": "5B_L1fzvpX",
+      "teamnummer": 52,
       "naam1": "Xanne Ottersberg",
       "naam2": "Chenise Storteboom",
       "naam3": "Rosalie de Vries",
@@ -5461,8 +5287,8 @@
       "score_combi": null
     },
     {
-      "id": "wnpgsREUMb",
-      "teamnummer": "53",
+      "id": "6oNubt4Dtf",
+      "teamnummer": 53,
       "naam1": "Esrah Ifrassen",
       "naam2": "Alessa Dekker",
       "naam3": "Luna van Groningen",
@@ -5485,8 +5311,8 @@
       "score_combi": null
     },
     {
-      "id": "aPnd9sEUzh",
-      "teamnummer": "54",
+      "id": "Jfk9bE9ZSk",
+      "teamnummer": 54,
       "naam1": "Bibi Reijenga",
       "naam2": "Noelle Luten",
       "naam3": "Riva Tholen",
@@ -5509,8 +5335,8 @@
       "score_combi": null
     },
     {
-      "id": "lYg1VqHV5I",
-      "teamnummer": "55",
+      "id": "sO4tPUN7tb",
+      "teamnummer": 55,
       "naam1": "Esther Hoogsteen",
       "naam2": "Eline Veen",
       "naam3": "Marrit Boetje",
@@ -5533,8 +5359,8 @@
       "score_combi": null
     },
     {
-      "id": "c6m2LoLmut",
-      "teamnummer": "56",
+      "id": "TJhe2A8rlq",
+      "teamnummer": 56,
       "naam1": "Guyonne Quatfass",
       "naam2": "Jolijn Neuteboom",
       "naam3": "Femke Hendriksen",
@@ -5557,8 +5383,8 @@
       "score_combi": null
     },
     {
-      "id": "YLZaxv_WrH",
-      "teamnummer": "57",
+      "id": "q9uz1LsRkL",
+      "teamnummer": 57,
       "naam1": "Dide Kasius",
       "naam2": "Lynn Weinans",
       "naam3": "Jilphana Rustveld",
@@ -5581,8 +5407,8 @@
       "score_combi": null
     },
     {
-      "id": "RFE87e0gRj",
-      "teamnummer": "38",
+      "id": "YAQFYV-yLb",
+      "teamnummer": 38,
       "naam1": "Minze Visser",
       "naam2": "Leo Meester",
       "naam3": null,
@@ -5605,8 +5431,8 @@
       "score_combi": null
     },
     {
-      "id": "DIKaetYwpK",
-      "teamnummer": "39",
+      "id": "v4N0QXRXzz",
+      "teamnummer": 39,
       "naam1": "Jelmar Feenstra",
       "naam2": "Danny Swart",
       "naam3": null,
@@ -5629,8 +5455,8 @@
       "score_combi": null
     },
     {
-      "id": "CEv969f6tv",
-      "teamnummer": "16",
+      "id": "by7_zAWwO8",
+      "teamnummer": 16,
       "naam1": "Eva de Vries",
       "naam2": "Annaruth Elzinga",
       "naam3": "Elena Meester",
@@ -5653,8 +5479,8 @@
       "score_combi": null
     },
     {
-      "id": "WuAaVS2GYR",
-      "teamnummer": "17",
+      "id": "QB7TwaZKdi",
+      "teamnummer": 17,
       "naam1": "Lisa vd Kamp",
       "naam2": "Mirthe vd Graaf",
       "naam3": "Amarissa Bisschop",
@@ -5677,8 +5503,8 @@
       "score_combi": null
     },
     {
-      "id": "3mfPZHPFjH",
-      "teamnummer": "18",
+      "id": "RIhdkO10p1",
+      "teamnummer": 18,
       "naam1": "Kim van der Weg",
       "naam2": "Fay de Jong",
       "naam3": "Marin Schoonhoven",
@@ -5701,8 +5527,8 @@
       "score_combi": null
     },
     {
-      "id": "x7Ygr6N8LU",
-      "teamnummer": "15",
+      "id": "Fqm8ddAOat",
+      "teamnummer": 15,
       "naam1": "Demi van Hallond",
       "naam2": "Sonja Raaijer",
       "naam3": "Fleur Onrust",
@@ -5725,8 +5551,8 @@
       "score_combi": null
     },
     {
-      "id": "CQFuVCAfe0",
-      "teamnummer": "1",
+      "id": "XsImmQYGnU",
+      "teamnummer": 1,
       "naam1": "Esrah Kusters",
       "naam2": "Tessa Posma",
       "naam3": null,
@@ -5749,8 +5575,8 @@
       "score_combi": null
     },
     {
-      "id": "j-hIQwPRdR",
-      "teamnummer": "2",
+      "id": "_pz4ub0aDB",
+      "teamnummer": 2,
       "naam1": "Benthe Kroezen",
       "naam2": "Lisa Mulder",
       "naam3": null,
@@ -5773,8 +5599,8 @@
       "score_combi": null
     },
     {
-      "id": "Pvm0ySCICa",
-      "teamnummer": "3",
+      "id": "SrFZLvPqFX",
+      "teamnummer": 3,
       "naam1": "Mette Ferwerda",
       "naam2": "Danique Banga",
       "naam3": null,
@@ -5797,8 +5623,8 @@
       "score_combi": null
     },
     {
-      "id": "dVe-FysjQ9",
-      "teamnummer": "4",
+      "id": "DeeneqOSVp",
+      "teamnummer": 4,
       "naam1": "Ylja de Klein",
       "naam2": "Noa Bosgraaf",
       "naam3": null,
@@ -5821,8 +5647,8 @@
       "score_combi": null
     },
     {
-      "id": "CPxchWg_QI",
-      "teamnummer": "5",
+      "id": "Y4pEohid7F",
+      "teamnummer": 5,
       "naam1": "Jaylinn Heidema",
       "naam2": "Romy Bolk",
       "naam3": null,
@@ -5845,8 +5671,8 @@
       "score_combi": null
     },
     {
-      "id": "bHMt3wOjp1",
-      "teamnummer": "6",
+      "id": "ZxYtpgeECW",
+      "teamnummer": 6,
       "naam1": "Sjuul Nieman",
       "naam2": "Naomi Heidema",
       "naam3": null,
@@ -5869,8 +5695,8 @@
       "score_combi": null
     },
     {
-      "id": "Q6Xm8wmMRC",
-      "teamnummer": "7",
+      "id": "1_1VMOKMpe",
+      "teamnummer": 7,
       "naam1": "Mayke Riemsma",
       "naam2": "Linsey Meijer",
       "naam3": null,
@@ -5893,8 +5719,8 @@
       "score_combi": null
     },
     {
-      "id": "d7X8qVaRgV",
-      "teamnummer": "8",
+      "id": "o1QjXdAzUu",
+      "teamnummer": 8,
       "naam1": "Hannah Mencke",
       "naam2": "Jasmijn Huizing",
       "naam3": null,
@@ -5917,8 +5743,8 @@
       "score_combi": null
     },
     {
-      "id": "MIsVPuDG_g",
-      "teamnummer": "9",
+      "id": "Ouwg0JVypd",
+      "teamnummer": 9,
       "naam1": "Eline Heller",
       "naam2": "Esmee Welling",
       "naam3": null,
@@ -5941,8 +5767,8 @@
       "score_combi": null
     },
     {
-      "id": "0WfiseU33s",
-      "teamnummer": "10",
+      "id": "a5kYcSTRY8",
+      "teamnummer": 10,
       "naam1": "Merle Wiersma",
       "naam2": "Silke Wind",
       "naam3": null,
@@ -5965,8 +5791,8 @@
       "score_combi": null
     },
     {
-      "id": "9yfAtQTEe9",
-      "teamnummer": "12",
+      "id": "uTdBW1fmmR",
+      "teamnummer": 12,
       "naam1": "Annemijke Ros",
       "naam2": "Mayke Holwerda",
       "naam3": null,
@@ -5989,57 +5815,13 @@
       "score_combi": null
     },
     {
-      "id": "ZPtWFl7beW",
-      "teamnummer": "13",
+      "id": "w7u8fDbijv",
+      "teamnummer": 13,
       "naam1": "Maren Oeben",
       "naam2": "Maybritt Nekeman",
       "naam3": null,
       "niveau": "E-instap",
       "categorie": "Damespaar",
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
-    },
-    {
-      "id": "l4jlA7oQAU",
-      "naam3": null,
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
-    },
-    {
-      "id": "jMxKlnkUwM",
-      "teamnummer": null,
-      "naam1": null,
-      "naam2": null,
-      "naam3": null,
-      "club": null,
-      "niveau": null,
-      "categorie": null,
       "technisch_balans": null,
       "artistiek_balans": null,
       "moeilijkheid_balans": null,

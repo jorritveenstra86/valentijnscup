@@ -98,7 +98,7 @@ while (wedstrijdnummer !== 'false') {
   const categorie = afileCategorie.next().toString(encoding);
 
   const newRecord = new Record(
-    trim(wedstrijdnummer),
+    Number(trim(wedstrijdnummer)),
     trim(naam1),
     trim(naam2),
     trim(naam3),
@@ -138,7 +138,7 @@ while (wedstrijdnummer !== 'false') {
   const categorie = bfileCategorie.next().toString(encoding);
 
   const newRecord = new Record(
-    trim(wedstrijdnummer),
+    Number(trim(wedstrijdnummer)),
     trim(naam1),
     trim(naam2),
     trim(naam3),
@@ -178,7 +178,7 @@ while (wedstrijdnummer !== 'false') {
   const categorie = cfileCategorie.next().toString(encoding);
 
   const newRecord = new Record(
-    trim(wedstrijdnummer),
+    Number(trim(wedstrijdnummer)),
     trim(naam1),
     trim(naam2),
     trim(naam3),
@@ -218,7 +218,7 @@ while (wedstrijdnummer !== 'false') {
   const categorie = dfileCategorie.next().toString(encoding);
 
   const newRecord = new Record(
-    trim(wedstrijdnummer),
+    Number(trim(wedstrijdnummer)),
     trim(naam1),
     trim(naam2),
     trim(naam3),
@@ -258,7 +258,7 @@ while (wedstrijdnummer !== 'false') {
   const categorie = efileCategorie.next().toString(encoding);
 
   const newRecord = new Record(
-    trim(wedstrijdnummer),
+    Number(trim(wedstrijdnummer)),
     trim(naam1),
     trim(naam2),
     trim(naam3),

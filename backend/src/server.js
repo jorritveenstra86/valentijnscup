@@ -10,6 +10,7 @@ const Record = require('./database/record.js');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 const bodyParser = require('body-parser');
+const _ = require('lodash');
 
 // *******************************************
 // init server and database
@@ -26,18 +27,28 @@ const lijnen = ['alijn', 'blijn', 'clijn', 'dlijn', 'elijn'];
 // *******************************************
 // Backend functions
 
+// ************
 // DB functions
+function retrieveAllTeams() {
+  let result = [];
+  lijnen.forEach(lijn => {
+    let records = db.get(lijn).value();
+    result = result.concat(records);
+  });
+  return _.orderBy(result, ['teamnummer'], ['asc']);
+}
+
 function retrieveTeamByLijn(teamnummer, lijn) {
   let result = db
     .get(lijn)
-    .find({teamnummer: teamnummer})
+    .find({teamnummer: Number(teamnummer)})
     .value();
   return result;
 }
 
 function saveTeam(team, lijn) {
   db.get(lijn)
-    .find({teamnummer: team.teamnummer})
+    .find({teamnummer: Number(team.teamnummer)})
     .assign({
       naam1: team.naam1,
       naam2: team.naam2,
@@ -64,6 +75,7 @@ function saveTeam(team, lijn) {
     .write()
 }
 
+// ************
 // Endpoint functions
 function GETTeamByTeamnummer(teamnummer) {
   let result = undefined;
@@ -93,6 +105,7 @@ function PUTTeam(team) {
   }
 }
 
+// ************
 // Validity checkers
 function isValidTeam(team) {
   //  TODO uitbreiden controle
@@ -105,7 +118,7 @@ function isValidTeam(team) {
 
 // middleware
 app.use(compression());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // *******************************************
@@ -138,6 +151,14 @@ app.all('/api/team', (req, res) => {
   }
 });
 
+app.all('/api/teams', (req, res) => {
+  if (req.method === 'GET') {
+    res.status(200).send(retrieveAllTeams());
+  } else {
+    res.status(405).send('Method not allowed');
+  }
+});
+
 // *******************************************
 // Frontend route
 app.get('*.*', express.static(_app_folder, {maxAge: '1y'}));
@@ -145,11 +166,11 @@ app.get('*.*', express.static(_app_folder, {maxAge: '1y'}));
 // *******************************************
 // Angular rewrite rule
 app.all('*', function (req, res) {
-	res.status(200).sendFile(`/`, {root: _app_folder});
+  res.status(200).sendFile(`/`, {root: _app_folder});
 });
 
 // *******************************************
 // Start server
 app.listen(_port, function () {
-	console.log("Node Express server listening on http://localhost:" + _port);
+  console.log("Node Express server listening on http://localhost:" + _port);
 });
