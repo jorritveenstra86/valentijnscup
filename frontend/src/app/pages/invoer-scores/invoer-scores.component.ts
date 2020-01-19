@@ -13,7 +13,7 @@ export class InvoerScoresComponent implements OnInit {
   closeResult: string;
   public oefeningen = Oefeningen;
   public model = {
-    teamnummer: 0,
+    teamnummer: '',
     oefening: '',
     technisch: '',
     artistiek: '',
@@ -31,7 +31,6 @@ export class InvoerScoresComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.model.oefening = Oefeningen[0];
     this.teamService.getTeams().subscribe((response: any) => {
       this.allTeams = response;
     });
@@ -88,7 +87,7 @@ export class InvoerScoresComponent implements OnInit {
 
   initModel() {
     this.model = {
-      teamnummer: 0,
+      teamnummer: '',
       oefening: '',
       technisch: '',
       artistiek: '',

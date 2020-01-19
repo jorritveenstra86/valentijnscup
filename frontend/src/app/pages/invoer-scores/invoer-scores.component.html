@@ -9,14 +9,16 @@
           <div class="col-sm">
             <div class="form-group">
               <label for="teamnummerSelect">Teamnummer</label>
-              <select class="form-control" id="teamnummerSelect" (change)="updateFields($event)" [(ngModel)]="model.teamnummer" name="teamnummer"
+              <select class="form-control" id="teamnummerSelect" (change)="updateFields()" [(ngModel)]="model.teamnummer" name="teamnummer"
                       required>
+                <option></option>
                 <option *ngFor="let team of allTeams" [value]="team.teamnummer">{{team.teamnummer}}</option>
               </select>
             </div>
             <div class="form-group">
               <label for="oefeningSelect">Oefening</label>
-              <select class="form-control" id="oefeningSelect" (change)="updateFields($event)" [(ngModel)]="model.oefening" name="oefening" required>
+              <select class="form-control" id="oefeningSelect" (change)="updateFields()" [(ngModel)]="model.oefening" name="oefening" required>
+                <option></option>
                 <option *ngFor="let oefening of oefeningen" [value]="oefening">{{oefening}}</option>
               </select>
             </div>
