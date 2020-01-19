@@ -25,22 +25,13 @@ const lijnen = ['alijn', 'blijn', 'clijn', 'dlijn', 'elijn'];
 
 // *******************************************
 // Backend functions
-function returnTeamByLijn(teamnummer, lijn) {
+
+// DB functions
+function retrieveTeamByLijn(teamnummer, lijn) {
   let result = db
     .get(lijn)
     .find({teamnummer: teamnummer})
     .value();
-  return result;
-}
-
-function GETTeamByTeamnummer(teamnummer) {
-  let result = undefined;
-  lijnen.forEach(lijn => {
-    let team = returnTeamByLijn(teamnummer, lijn);
-    if (team) {
-      result = team;
-    }
-  });
   return result;
 }
 
@@ -73,10 +64,44 @@ function saveTeam(team, lijn) {
     .write()
 }
 
+// Endpoint functions
+function GETTeamByTeamnummer(teamnummer) {
+  let result = undefined;
+  lijnen.forEach(lijn => {
+    let team = retrieveTeamByLijn(teamnummer, lijn);
+    if (team) {
+      result = team;
+    }
+  });
+  return result;
+}
 
+function PUTTeam(team) {
+  let foundLijn = undefined;
+  // First find the record in de DB and remember which lijn
+  lijnen.forEach(lijn => {
+    let result = retrieveTeamByLijn(team.teamnummer, lijn);
+    if (result) {
+      foundLijn = lijn;
+    }
+  });
+  if (foundLijn) {
+    saveTeam(team, foundLijn);
+    return true; // gelukt
+  } else {
+    return false; // niet gelukt
+  }
+}
+
+// Validity checkers
+function isValidTeam(team) {
+  //  TODO uitbreiden controle
+  //   nu checken we alleen of er een teamnummer bestaat
+  return team.hasOwnProperty('teamnummer');
+}
 
 // *******************************************
-// ************* setup routes ****************
+// ************* setup expressJS *************
 
 // middleware
 app.use(compression());
@@ -100,7 +125,16 @@ app.all('/api/team', (req, res) => {
     }
   }
   if (req.method === 'PUT') {
-    console.log('PUT')
+    let team = req.body;
+    if (isValidTeam(team)) {
+      if (PUTTeam(team)) {
+        res.status(200).send('');
+      } else {
+        res.status(500).send('Server error');
+      }
+    } else {
+      res.status(400).send('Bad request');
+    }
   }
 });
 
