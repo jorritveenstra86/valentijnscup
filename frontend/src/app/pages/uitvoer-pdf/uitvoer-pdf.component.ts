@@ -38,3 +38,7 @@ export class UitvoerPdfComponent implements OnInit {
     }
 
 }
+
+//TODO: alle gegevens ophalen waarbij de score niet nul is. Dus als balans.score = 0 en tempo.score = 23, dan alleen tempo score gegevens ophalen. Natuurlijk altijd de persoonsgegevens en niveau/cateogrie ophalen
+//TODO: alle gegevens opslaan in arrays, gesorteerd op niveau + categorie. Dus bijv 1 array voor alle damesparen E-junioren
+//TODO: Alle arrays naar de PDF sturen, waar ze los van elkaar getoond worden met als titel niveau + categorie.

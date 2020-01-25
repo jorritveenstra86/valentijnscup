@@ -18,7 +18,8 @@ export class InvoerScoresComponent implements OnInit {
     technisch: '',
     artistiek: '',
     moeilijkheidswaarde: '',
-    specialeAftrekken: ''
+    specialeAftrekken: '',
+    score: 0.0
   };
   public niveau;
   public categorie;
@@ -92,7 +93,8 @@ export class InvoerScoresComponent implements OnInit {
       technisch: '',
       artistiek: '',
       moeilijkheidswaarde: '',
-      specialeAftrekken: ''
+      specialeAftrekken: '',
+      score: 0.0
     };
   }
 
@@ -101,10 +103,12 @@ export class InvoerScoresComponent implements OnInit {
   }
 
   public getScore() {
-    return 0 + parseFloat(this.model.technisch) + parseFloat(this.model.technisch) + parseFloat(this.model.artistiek)
-      + parseFloat(this.model.moeilijkheidswaarde) - parseFloat(this.model.specialeAftrekken); // TODO Scores afronden
+    this.model.score = 0 + parseFloat(this.model.technisch) + parseFloat(this.model.technisch) + parseFloat(this.model.artistiek)
+      + parseFloat(this.model.moeilijkheidswaarde) - parseFloat(this.model.specialeAftrekken);
+     return this.model.score.toFixed(2);
   }
 
 }
-
-// TODO model.score toevoegen en in getScore laten vullen. Daarna alles putten als er op opslaan geklikt wordt.
+// TODO: put voor invoer scores (hoe controleren we de update van de DB?)
+// TODO: Niet alle oefeningen tonen bij elk niveau. E+D+A-pup = combi. B+C+Ajeugd = balans en tempo. Ajun+Asen = balans en tempo en combi.
+// TODO: invoeren van cijfers achter de komma geven problemen bij de weergave in de modal

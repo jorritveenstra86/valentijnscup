@@ -76,13 +76,28 @@
   <div class="modal-body">
     <div class="container">
       <h5>{{namen}}</h5>
-      <h5>{{model.teamnummer}} {{niveau}} {{categorie}}</h5>
-      <h5>Oefening = {{model.oefening}}</h5>
-      <h5>Technisch = {{model.technisch}}</h5>
-      <h5>Artistiek = {{model.artistiek}}</h5>
-      <h5>Moeilijkheidswaarde = {{model.moeilijkheidswaarde}}</h5>
-      <h5>Speciale aftrekken = {{model.specialeAftrekken}}</h5>
-      <h5>Score = {{getScore()}}</h5>
+      <div class="row">
+        <div class="col-sm"> <!-- Left column -->
+          <h5>Nr: </h5>
+          <h5>Niveau: </h5>
+          <h5>Oefening: </h5>
+          <h5>Technisch: </h5>
+          <h5>Artistiek: </h5>
+          <h5>Moeilijkheidswaarde: </h5>
+          <h5>Speciale aftrekken: </h5>
+          <h5>Score: </h5>
+        </div>
+        <div class="col-sm">  <!-- Right column -->
+          <h5>{{model.teamnummer}}</h5>
+          <h5>{{niveau}} {{categorie}}</h5>
+          <h5>{{model.oefening}}</h5>
+          <h5>{{model.technisch}}</h5>
+          <h5>{{model.artistiek}}</h5>
+          <h5>{{model.moeilijkheidswaarde}}</h5>
+          <h5>{{model.specialeAftrekken}}</h5>
+          <h5>{{getScore()}}</h5>
+        </div>
+      </div>
     </div>
   </div>
   <div class="modal-footer">
