@@ -51,9 +51,6 @@
           <button type="button" class="btn btn-secondary btn-lg ml-2" (click)="initModel()">Cancel</button>
         </div>
         <div class="row">
-          {{spyOn(model)}}
-        </div>
-        <div class="row">
           <ul>
             <li *ngFor="let score of savedScores | async">
               {{ score | json }}

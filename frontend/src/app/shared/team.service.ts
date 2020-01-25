@@ -24,5 +24,3 @@ export class TeamService {
    return this.http.put('/api/team', teamgegevens);
  }
 }
-
-//TODO: put controleren
