@@ -26,6 +26,11 @@ export class InvoerScoresComponent implements OnInit {
   public namen;
   public allTeams = [];
 
+  private oefeningenPerNiveau = {
+    'E-instap': [Oefeningen[2]], // combi
+    'E-jeugd': [Oefeningen[2]], // combi
+  }
+
   savedScores: Observable<any[]>;
 
   constructor(private modalService: NgbModal, private teamService: TeamService) {
