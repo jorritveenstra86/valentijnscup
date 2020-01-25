@@ -11,7 +11,6 @@ import {TeamService} from '../../shared/team.service';
 })
 export class InvoerScoresComponent implements OnInit {
   closeResult: string;
-  public oefeningen = Oefeningen;
   public model = {
     teamnummer: '',
     oefening: '',
@@ -26,6 +25,7 @@ export class InvoerScoresComponent implements OnInit {
   public namen;
   public allTeams = [];
   private geselecteerdTeam;
+  public oefeningen;
 
   private oefeningenPerNiveau = {
     'E-instap': [Oefeningen[2]], // Combinatie
@@ -64,6 +64,7 @@ export class InvoerScoresComponent implements OnInit {
       this.niveau = response.niveau;
       this.categorie = response.categorie;
       this.namen = response.naam1 + '\n' + response.naam2 + '\n' + (response.naam3 || '');
+      this.oefeningen = this.oefeningenPerNiveau[this.niveau];
       this.doUpdateFields(response);
     });
   }
@@ -149,6 +150,7 @@ export class InvoerScoresComponent implements OnInit {
     this.teamService.putTeam(payload).subscribe((response: any) => {
       // op dit punt is de PUT succesvol verlopen. Het enige wat we moeten doen is de modal sluiten
       this.modalService.dismissAll();
+      this.initModel();
     }, (error) => console.error(error));
   }
 
@@ -163,5 +165,3 @@ export class InvoerScoresComponent implements OnInit {
   }
 
 }
-
-// TODO: Niet alle oefeningen tonen bij elk niveau. E+D+A-pup = combi. B+C+Ajeugd = balans en tempo. Ajun+Asen = balans en tempo en combi.
