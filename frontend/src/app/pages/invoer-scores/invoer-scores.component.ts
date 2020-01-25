@@ -30,8 +30,8 @@ export class InvoerScoresComponent implements OnInit {
   private oefeningenPerNiveau = {
     'E-instap': [Oefeningen[2]], // Combinatie
     'E-jeugd': [Oefeningen[2]], // Combinatie
-    'E-junioren': [Oefeningen[2]], // Combinatie
-    'E-senioren': [Oefeningen[2]], // Combinatie
+    'E-junior': [Oefeningen[2]], // Combinatie
+    'E-senior': [Oefeningen[2]], // Combinatie
     'D-jeugd': [Oefeningen[2]], // Combinatie
     'D-junior': [Oefeningen[2]], // Combinatie
     'D-senior': [Oefeningen[2]], // Combinatie
