@@ -13,10 +13,9 @@ import {Oefeningen} from '../../model/entiteiten/oefening';
 
 export class UitvoerPdfComponent implements OnInit {
   @Input() selectie;
-  private uitslag = [];
   private doc = new jsPDF({});
-  filename = 'uitslagen.pdf'; // TODO invoerveld maken voor filename
-  eerstePagina;
+  private eerstePagina;
+  public filename = 'uitslagen.pdf';
 
   constructor(private teamService: TeamService) {
   }

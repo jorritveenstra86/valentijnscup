@@ -4,10 +4,23 @@
 <main role="main" class="container">
   <div class="jumbotron">
     <div class="container">
-      <h1>Genereer uitvoer</h1>
-      <p>Kies één van onderstaande acties:</p>
+      <h1>Uitvoer naar PDF</h1>
+      <!--      <p>Kies één van onderstaande acties:</p>-->
+      <p>&nbsp;</p>
       <!--    <app-categorieen (click)="genereerPDF()"></app-categorieen>-->
-      <div class="btn btn-primary btn-lg btn-block" (click)="start()" role="button">Genereer PDF</div>
+      <div class="form-group row">
+        <div class="col-md-5">
+          <label for="bestandsnaam">Bestandsnaam</label>
+          <input type="text" class="form-control" id="bestandsnaam" [(ngModel)]="filename"
+                 name="bestandsnaam" required>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <div class="form-group row">
+        <div class="col-md-3">
+          <div class="btn btn-primary btn-lg btn-block" (click)="start()" role="button">Genereer PDF</div>
+        </div>
+      </div>
     </div>
   </div>
 </main>

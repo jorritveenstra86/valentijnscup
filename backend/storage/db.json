@@ -5616,11 +5616,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "1",
+      "artistiek_combi": "5",
+      "moeilijkheid_combi": "4",
+      "aftrekken_combi": "2",
+      "score_combi": 9
     },
     {
       "id": "HKINeSSxSY",
