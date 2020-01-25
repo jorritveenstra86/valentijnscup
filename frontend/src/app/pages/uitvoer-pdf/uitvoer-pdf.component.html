@@ -2,9 +2,12 @@
 <div class="vertical-spacer"></div>
 
 <main role="main" class="container">
-<div class="jumbotron">
-  <div class="container">
-    <app-categorieen (click)="genereerPDF()"></app-categorieen>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Genereer uitvoer</h1>
+      <p>Kies één van onderstaande acties:</p>
+      <!--    <app-categorieen (click)="genereerPDF()"></app-categorieen>-->
+      <div class="btn btn-primary btn-lg btn-block" (click)="start()" role="button">Genereer PDF</div>
+    </div>
   </div>
-</div>
 </main>
