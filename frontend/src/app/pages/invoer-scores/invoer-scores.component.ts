@@ -25,6 +25,7 @@ export class InvoerScoresComponent implements OnInit {
   public categorie;
   public namen;
   public allTeams = [];
+  private payload;
 
   private oefeningenPerNiveau = {
     'E-instap': [Oefeningen[2]], // Combinatie
@@ -87,6 +88,31 @@ export class InvoerScoresComponent implements OnInit {
     }
   }
 
+  doUpdateRecord() {
+    //update record to give to the PUT
+    if (this.model.oefening === Oefeningen[0]) { // Balans
+      this.payload.technisch_balans = this.model.technisch;
+      this.payload.artistiek_balans = this.model.artistiek;
+      this.payload.moeilijkheid_balans = this.model.moeilijkheidswaarde;
+      this.payload.aftrekken_balans = this.model.specialeAftrekken;
+      this.payload.score_balans = this.model.score;
+    }
+    if (this.model.oefening === Oefeningen[1]) { // Tempo
+      this.payload.technisch_tempo = this.model.technisch;
+      this.payload.artistiek_tempo = this.model.artistiek;
+      this.payload.moeilijkheid_tempo = this.model.moeilijkheidswaarde;
+      this.payload.aftrekken_tempo = this.model.specialeAftrekken;
+      this.payload.score_tempo = this.model.score;
+    }
+    if (this.model.oefening === Oefeningen[2]) { // Combinatie
+      this.payload.technisch_combi = this.model.technisch;
+      this.payload.artistiek_combi = this.model.artistiek;
+      this.payload.moeilijkheid_combi = this.model.moeilijkheidswaarde;
+      this.payload.aftrekken_combi = this.model.specialeAftrekken;
+      this.payload.score_combi = this.model.score;
+    }
+  }
+
   onSubmit(content) {
     this.modalService.open(content, {ariaLabelledBy: 'myModal'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
@@ -118,7 +144,8 @@ export class InvoerScoresComponent implements OnInit {
   }
 
   opslaanTeams() {
-    this.teamService.putTeam(this.model).subscribe((response: any) => {
+    this.teamService.putTeam(this.payload).subscribe((response: any) => {
+      this.doUpdateRecord();
       this.modalService.dismissAll();
     });
   }
@@ -134,5 +161,4 @@ export class InvoerScoresComponent implements OnInit {
   }
 
 }
-// TODO: methode vanuit HTML: put voor invoer scores (hoe controleren we de update van de DB?) subscribe, velden leegmaken
 // TODO: Niet alle oefeningen tonen bij elk niveau. E+D+A-pup = combi. B+C+Ajeugd = balans en tempo. Ajun+Asen = balans en tempo en combi.
