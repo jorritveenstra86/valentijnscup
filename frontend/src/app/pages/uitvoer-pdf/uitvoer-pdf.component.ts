@@ -45,7 +45,7 @@ export class UitvoerPdfComponent implements OnInit {
           entries = entries.concat(this.createEntriesForTeam(team));
         });
       const titel = niveau + ' / ' + categorie;
-      this.genereerPDF(titel, niveau, categorie, entries);
+      this.genereerPDF(titel, entries);
       this.eerstePagina = false;
     });
   }
@@ -113,7 +113,7 @@ export class UitvoerPdfComponent implements OnInit {
     }
   }
 
-  genereerPDF(titel, niveau, categorie, entries) {
+  genereerPDF(titel, entries) {
     if (!this.eerstePagina) {
       this.doc.addPage();
     }
