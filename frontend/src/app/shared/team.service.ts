@@ -14,7 +14,6 @@ export class TeamService {
 
   getTeamPerCategorie(niveau, categorie) {
     return this.http.get('/api/categorie?niveau=' + niveau + '&categorie=' + categorie);
-
   }
 
   getTeams() {

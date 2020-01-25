@@ -5552,27 +5552,7 @@
     },
     {
       "id": "XsImmQYGnU",
-      "teamnummer": 1,
-      "naam1": "Esrah Kusters",
-      "naam2": "Tessa Posma",
-      "naam3": null,
-      "niveau": "E-instap",
-      "categorie": "Damespaar",
-      "technisch_balans": 10,
-      "artistiek_balans": 9,
-      "moeilijkheid_balans": 8,
-      "aftrekken_balans": 7,
-      "score_balans": 6,
-      "technisch_tempo": 5,
-      "artistiek_tempo": 4,
-      "moeilijkheid_tempo": 3,
-      "aftrekken_tempo": 2,
-      "score_tempo": 1,
-      "technisch_combi": 100,
-      "artistiek_combi": 110,
-      "moeilijkheid_combi": 120,
-      "aftrekken_combi": 130,
-      "score_combi": 140
+      "teamnummer": 1
     },
     {
       "id": "_pz4ub0aDB",

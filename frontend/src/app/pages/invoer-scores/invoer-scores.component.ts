@@ -27,8 +27,22 @@ export class InvoerScoresComponent implements OnInit {
   public allTeams = [];
 
   private oefeningenPerNiveau = {
-    'E-instap': [Oefeningen[2]], // combi
-    'E-jeugd': [Oefeningen[2]], // combi
+    'E-instap': [Oefeningen[2]], // Combinatie
+    'E-jeugd': [Oefeningen[2]], // Combinatie
+    'E-junioren': [Oefeningen[2]], // Combinatie
+    'E-senioren': [Oefeningen[2]], // Combinatie
+    'D-jeugd': [Oefeningen[2]], // Combinatie
+    'D-junior': [Oefeningen[2]], // Combinatie
+    'D-senior': [Oefeningen[2]], // Combinatie
+    'C-junior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
+    'C-senior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
+    'B-junior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
+    'B-senior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
+    'A-pupil': [Oefeningen[2]], // Combinatie
+    'A-jeugd': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
+    'A-junior 1': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
+    'A-junior 2': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
+    'A-senioren': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
   }
 
   savedScores: Observable<any[]>;
@@ -103,6 +117,12 @@ export class InvoerScoresComponent implements OnInit {
     };
   }
 
+  opslaanTeams() {
+    this.teamService.putTeam(this.model).subscribe((response: any) => {
+      this.modalService.dismissAll();
+    });
+  }
+
   spyOn(obj) {
     return JSON.stringify(obj);
   }
@@ -114,6 +134,5 @@ export class InvoerScoresComponent implements OnInit {
   }
 
 }
-// TODO: put voor invoer scores (hoe controleren we de update van de DB?)
+// TODO: methode vanuit HTML: put voor invoer scores (hoe controleren we de update van de DB?) subscribe, velden leegmaken
 // TODO: Niet alle oefeningen tonen bij elk niveau. E+D+A-pup = combi. B+C+Ajeugd = balans en tempo. Ajun+Asen = balans en tempo en combi.
-// TODO: invoeren van cijfers achter de komma geven problemen bij de weergave in de modal
