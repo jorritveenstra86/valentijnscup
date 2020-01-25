@@ -16,7 +16,6 @@ export class UitvoerPdfComponent implements OnInit {
   private uitslag = [];
   private doc = new jsPDF({});
   filename = 'uitslagen.pdf'; // TODO invoerveld maken voor filename
-  finalY = 0;
   eerstePagina;
 
   constructor(private teamService: TeamService) {
@@ -69,18 +68,19 @@ export class UitvoerPdfComponent implements OnInit {
   }
 
   createAutotableEntry(team, oefening) {
+    const score = this.getScoreByOefening(team, oefening);
     return [
-      null, // Plaats gaan we nog berekenen
+      null, // TODO Plaats moeten we nog berekenen
       null, // TODO: Wat is dit voor veld??? Nummer?
       team.teamnummer,
       team.niveau,
       team.categorie,
       oefening,
-      this.getScoreByOefening(team, oefening).technisch,
-      this.getScoreByOefening(team, oefening).artistiek,
-      this.getScoreByOefening(team, oefening).moeilijkheid,
-      this.getScoreByOefening(team, oefening).aftrekken,
-      this.getScoreByOefening(team, oefening).score
+      score.technisch,
+      score.artistiek,
+      score.moeilijkheid,
+      score.aftrekken,
+      score.score
     ];
   }
 
@@ -115,22 +115,20 @@ export class UitvoerPdfComponent implements OnInit {
   }
 
   genereerPDF(titel, niveau, categorie, entries) {
+    console.log(this.doc);
     if (!this.eerstePagina) {
       this.doc.addPage();
     }
-    this.finalY = this.doc.previousAutoTable.finalY;
-    // TODO zet titel op pagina
-    // this.doc.text(titel, 14, this.finalY + 15);
+    this.doc.text(titel, 14, 15);
     const head = [['Plaats', 'Nummer', 'Team', 'Niveau', 'Categorie', 'Oefening', 'T', 'A', 'MW', 'Aftr', 'Score']];
     this.doc.autoTable({
-      // startY: this.finalY + 20,
+      startY: 20,
       head,
       body: entries,
       theme: 'grid',
       headStyles: {fillColor: [252, 15, 192]},
       bodyStyles: {fillColor: [255, 255, 255], lineColor: [252, 15, 192]}
     });
-    this.finalY = this.doc.previousAutoTable.finalY;
   }
 
   saveDoc() {
