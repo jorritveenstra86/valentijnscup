@@ -25,14 +25,14 @@ export class CategorieenComponent implements OnInit {
         damesgroep: false,
         herengroep: false,
       },
-      junioren: {
+      junior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
         damesgroep: false,
         herengroep: false,
       },
-      senioren: {
+      senior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
@@ -48,14 +48,14 @@ export class CategorieenComponent implements OnInit {
         damesgroep: false,
         herengroep: false,
       },
-      junioren: {
+      junior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
         damesgroep: false,
         herengroep: false,
       },
-      senioren: {
+      senior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
@@ -64,14 +64,14 @@ export class CategorieenComponent implements OnInit {
       }
     },
     clijn: {
-      junioren: {
+      junior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
         damesgroep: false,
         herengroep: false,
       },
-      senioren: {
+      senior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
@@ -80,14 +80,14 @@ export class CategorieenComponent implements OnInit {
       }
     },
     blijn: {
-      junioren: {
+      junior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
         damesgroep: false,
         herengroep: false,
       },
-      senioren: {
+      senior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
@@ -110,21 +110,21 @@ export class CategorieenComponent implements OnInit {
         damesgroep: false,
         herengroep: false,
       },
-      junioren1: {
+      junior1: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
         damesgroep: false,
         herengroep: false,
       },
-      junioren2: {
+      junior2: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
         damesgroep: false,
         herengroep: false,
       },
-      senioren: {
+      senior: {
         damespaar: false,
         herenpaar: false,
         mixpaar: false,
@@ -133,8 +133,20 @@ export class CategorieenComponent implements OnInit {
       }
     }
   };
-  public groups = {
-  Elijninstap: false
+
+  public Niveaus = {
+    Elijn: false,
+    Dlijn: false,
+    Clijn: false,
+    Blijn: false,
+    Alijn: false
+  };
+
+  public Elijngroups = {
+    instap: false,
+    jeugd: false,
+    junior: false,
+    senior: false
 };
 
   ngOnInit() {
@@ -144,12 +156,18 @@ export class CategorieenComponent implements OnInit {
     this.selectie.emit(this.categorieen);
   }
 
+  ElijnClick(value) {
+    for (let i in this.Elijngroups) {
+      this.lijnClick(this.categorieen.elijn[i], value);
+      this.Elijngroups[i] = !value;
+    }
+  }
+
   lijnClick(obj, value) {
     this.setProps(obj, !value);
   }
 
   setProps(prop, value) {
     Object.keys(prop).forEach(v => prop[v] = value);
-
   }
 }

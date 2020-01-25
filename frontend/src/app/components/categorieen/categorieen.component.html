@@ -3,13 +3,13 @@
   <div class="row">
         <div class="col" >
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Elijn" name="Elijn">
+                <input class="form-check-input" type="checkbox" value="" id="Elijn" name="Elijn" [(ngModel)]="Niveaus.Elijn" (click)="ElijnClick(Niveaus.Elijn)">
                 <label class="form-check-label" for="Elijn">
                     <H1>E-lijn</H1>
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Elijninstap" name="Elijninstap" [(ngModel)]="groups.Elijninstap" (click)="lijnClick(categorieen.elijn.instap, groups.Elijninstap)">
+                <input class="form-check-input" type="checkbox" value="" id="Elijninstap" name="Elijninstap" [(ngModel)]="Elijngroups.instap" (click)="lijnClick(categorieen.elijn.instap, Elijngroups.instap)">
                 <label class="form-check-label" for="Elijninstap">
                     <H3>Instap</H3>
                 </label>
@@ -46,7 +46,7 @@
             </div>
             <p>&nbsp;</p>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Elijnjeugd" name="Elijnjeugd">
+                <input class="form-check-input" type="checkbox" value="" id="Elijnjeugd" name="Elijnjeugd" [(ngModel)]="Elijngroups.jeugd" (click)="lijnClick(categorieen.elijn.jeugd, Elijngroups.jeugd)">
                 <label class="form-check-label" for="Elijnjeugd">
                     <H3>Jeugd</H3>
                 </label>
@@ -83,84 +83,80 @@
             </div>
             <p>&nbsp;</p>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Elijnjunioren" name="Elijnjunioren">
+                <input class="form-check-input" type="checkbox" value="" id="Elijnjunioren" name="Elijnjunioren" [(ngModel)]="Elijngroups.junior" (click)="lijnClick(categorieen.elijn.junior, Elijngroups.junior)">
                 <label class="form-check-label" for="Elijnjunioren">
-                    <H3>Junioren</H3>
+                    <H3>Junior</H3>
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenDP" name="ElijnjuniorenDP" [(ngModel)]="categorieen.elijn.junioren.damespaar">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenDP" name="ElijnjuniorenDP" [(ngModel)]="categorieen.elijn.junior.damespaar">
                 <label class="form-check-label" for="ElijnjuniorenDP">
                     Damespaar
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenHP" name="ElijnjuniorenHP" [(ngModel)]="categorieen.elijn.junioren.herenpaar">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenHP" name="ElijnjuniorenHP" [(ngModel)]="categorieen.elijn.junior.herenpaar">
                 <label class="form-check-label" for="ElijnjuniorenHP">
                     Herenpaar
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenMP" name="ElijnjuniorenMP" [(ngModel)]="categorieen.elijn.junioren.mixpaar">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenMP" name="ElijnjuniorenMP" [(ngModel)]="categorieen.elijn.junior.mixpaar">
                 <label class="form-check-label" for="ElijnjuniorenMP">
                     Mixpaar
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenDG" name="ElijnjuniorenDG" [(ngModel)]="categorieen.elijn.junioren.damesgroep">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenDG" name="ElijnjuniorenDG" [(ngModel)]="categorieen.elijn.junior.damesgroep">
                 <label class="form-check-label" for="ElijnjuniorenDG">
                     Damesgroep
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenHG" name="ElijnjuniorenHG" [(ngModel)]="categorieen.elijn.junioren.herengroep">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnjuniorenHG" name="ElijnjuniorenHG" [(ngModel)]="categorieen.elijn.junior.herengroep">
                 <label class="form-check-label" for="ElijnjuniorenHG">
                     Herengroep
                 </label>
             </div>
             <p>&nbsp;</p>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Elijnsenioren" name="Elijnsenioren">
+                <input class="form-check-input" type="checkbox" value="" id="Elijnsenioren" name="Elijnsenioren" [(ngModel)]="Elijngroups.senior" (click)="lijnClick(categorieen.elijn.senior, Elijngroups.senior)">
                 <label class="form-check-label" for="Elijnsenioren">
-                    <H3>Senioren</H3>
+                    <H3>Senior</H3>
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenDP" name="ElijnseniorenDP" [(ngModel)]="categorieen.elijn.senioren.damespaar">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenDP" name="ElijnseniorenDP" [(ngModel)]="categorieen.elijn.senior.damespaar">
                 <label class="form-check-label" for="ElijnseniorenDP">
                     Damespaar
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenHP" name="ElijnseniorenHP" [(ngModel)]="categorieen.elijn.senioren.herenpaar">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenHP" name="ElijnseniorenHP" [(ngModel)]="categorieen.elijn.senior.herenpaar">
                 <label class="form-check-label" for="ElijnseniorenHP">
                     Herenpaar
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenMP" name="ElijnseniorenMP" [(ngModel)]="categorieen.elijn.senioren.mixpaar">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenMP" name="ElijnseniorenMP" [(ngModel)]="categorieen.elijn.senior.mixpaar">
                 <label class="form-check-label" for="ElijnseniorenMP">
                     Mixpaar
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenDG" name="ElijnseniorenDG" [(ngModel)]="categorieen.elijn.senioren.damesgroep">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenDG" name="ElijnseniorenDG" [(ngModel)]="categorieen.elijn.senior.damesgroep">
                 <label class="form-check-label" for="ElijnseniorenDG">
                     Damesgroep
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenHG" name="ElijnseniorenHG" [(ngModel)]="categorieen.elijn.senioren.herengroep">
+                <input class="form-check-input" type="checkbox" value="" id="ElijnseniorenHG" name="ElijnseniorenHG" [(ngModel)]="categorieen.elijn.senior.herengroep">
                 <label class="form-check-label" for="ElijnseniorenHG">
                     Herengroep
                 </label>
             </div>
             <p>&nbsp;</p>
         </div>
-
-    </div>
-    <div class="row float-sm-right">
-      <button type="submit" class="btn btn-success btn-lg">&nbsp;&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;&nbsp;</button>
     </div>
   </form>
 </div>
