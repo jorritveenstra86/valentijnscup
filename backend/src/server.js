@@ -105,6 +105,17 @@ function PUTTeam(team) {
   }
 }
 
+function GETTeamsByCategorieNiveau(niveau, categorie) {
+  let result = [];
+  let allTeams = retrieveAllTeams();
+  allTeams.forEach(team => {
+    if (team.niveau === niveau && team.categorie === categorie) {
+      result.push(team);
+    }
+  });
+  return result;
+}
+
 // ************
 // Validity checkers
 function isValidTeam(team) {
@@ -154,6 +165,16 @@ app.all('/api/team', (req, res) => {
 app.all('/api/teams', (req, res) => {
   if (req.method === 'GET') {
     res.status(200).send(retrieveAllTeams());
+  } else {
+    res.status(405).send('Method not allowed');
+  }
+});
+
+app.all('/api/categorie', (req, res) => {
+  if (req.method === 'GET') {
+    let niveau = req.query.niveau;
+    let categorie = req.query.categorie;
+    res.status(200).send(GETTeamsByCategorieNiveau(niveau, categorie))
   } else {
     res.status(405).send('Method not allowed');
   }
