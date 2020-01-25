@@ -8,7 +8,8 @@
     "import-db": "cd backend/src/tools && node readDB",
     "build": "cd frontend && npm run build-prod",
     "start": "cd backend/src && node server",
-    "all-scripts": "npm run install-all && npm run import-db && npm run build && npm start"
+    "all-scripts": "npm run install-all && npm run import-db && npm run build && npm start",
+    "update": "npm run build && npm start"
   },
   "repository": {
     "type": "git",
