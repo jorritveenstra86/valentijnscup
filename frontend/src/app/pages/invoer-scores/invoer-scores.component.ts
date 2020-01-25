@@ -25,7 +25,7 @@ export class InvoerScoresComponent implements OnInit {
   public categorie;
   public namen;
   public allTeams = [];
-  private payload;
+  private geselecteerdTeam;
 
   private oefeningenPerNiveau = {
     'E-instap': [Oefeningen[2]], // Combinatie
@@ -44,7 +44,7 @@ export class InvoerScoresComponent implements OnInit {
     'A-junior 1': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
     'A-junior 2': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
     'A-senioren': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
-  }
+  };
 
   savedScores: Observable<any[]>;
 
@@ -60,6 +60,7 @@ export class InvoerScoresComponent implements OnInit {
   updateFields() {
     // Getting selected team from database
     this.teamService.getTeam(this.model.teamnummer).subscribe((response: any) => {
+      this.geselecteerdTeam = response; // Op dit punt bewaren we het origineel geselecteerde teamrecord
       this.niveau = response.niveau;
       this.categorie = response.categorie;
       this.namen = response.naam1 + '\n' + response.naam2 + '\n' + (response.naam3 || '');
@@ -85,31 +86,6 @@ export class InvoerScoresComponent implements OnInit {
       this.model.artistiek = response.artistiek_combi;
       this.model.moeilijkheidswaarde = response.moeilijkheid_combi;
       this.model.specialeAftrekken = response.aftrekken_combi;
-    }
-  }
-
-  doUpdateRecord() {
-    //update record to give to the PUT
-    if (this.model.oefening === Oefeningen[0]) { // Balans
-      this.payload.technisch_balans = this.model.technisch;
-      this.payload.artistiek_balans = this.model.artistiek;
-      this.payload.moeilijkheid_balans = this.model.moeilijkheidswaarde;
-      this.payload.aftrekken_balans = this.model.specialeAftrekken;
-      this.payload.score_balans = this.model.score;
-    }
-    if (this.model.oefening === Oefeningen[1]) { // Tempo
-      this.payload.technisch_tempo = this.model.technisch;
-      this.payload.artistiek_tempo = this.model.artistiek;
-      this.payload.moeilijkheid_tempo = this.model.moeilijkheidswaarde;
-      this.payload.aftrekken_tempo = this.model.specialeAftrekken;
-      this.payload.score_tempo = this.model.score;
-    }
-    if (this.model.oefening === Oefeningen[2]) { // Combinatie
-      this.payload.technisch_combi = this.model.technisch;
-      this.payload.artistiek_combi = this.model.artistiek;
-      this.payload.moeilijkheid_combi = this.model.moeilijkheidswaarde;
-      this.payload.aftrekken_combi = this.model.specialeAftrekken;
-      this.payload.score_combi = this.model.score;
     }
   }
 
@@ -144,10 +120,36 @@ export class InvoerScoresComponent implements OnInit {
   }
 
   opslaanTeams() {
-    this.teamService.putTeam(this.payload).subscribe((response: any) => {
-      this.doUpdateRecord();
+    const payload = this.geselecteerdTeam; // het origineel geselecteerde team. Hieronder gaan we de velden uit het formulier doorvoeren
+
+    // de gewijzigde velden vullen obv gekozen oefening
+    if (this.model.oefening === Oefeningen[0]) { // Balans
+      payload.technisch_balans = this.model.technisch;
+      payload.artistiek_balans = this.model.artistiek;
+      payload.moeilijkheid_balans = this.model.moeilijkheidswaarde;
+      payload.aftrekken_balans = this.model.specialeAftrekken;
+      payload.score_balans = this.model.score;
+    }
+    if (this.model.oefening === Oefeningen[1]) { // Tempo
+      payload.technisch_tempo = this.model.technisch;
+      payload.artistiek_tempo = this.model.artistiek;
+      payload.moeilijkheid_tempo = this.model.moeilijkheidswaarde;
+      payload.aftrekken_tempo = this.model.specialeAftrekken;
+      payload.score_tempo = this.model.score;
+    }
+    if (this.model.oefening === Oefeningen[2]) { // Combinatie
+      payload.technisch_combi = this.model.technisch;
+      payload.artistiek_combi = this.model.artistiek;
+      payload.moeilijkheid_combi = this.model.moeilijkheidswaarde;
+      payload.aftrekken_combi = this.model.specialeAftrekken;
+      payload.score_combi = this.model.score;
+    }
+
+    // pas nu de payload klaar is mogen we putTeam aanroepen
+    this.teamService.putTeam(payload).subscribe((response: any) => {
+      // op dit punt is de PUT succesvol verlopen. Het enige wat we moeten doen is de modal sluiten
       this.modalService.dismissAll();
-    });
+    }, (error) => console.error(error));
   }
 
   spyOn(obj) {
@@ -157,8 +159,9 @@ export class InvoerScoresComponent implements OnInit {
   public getScore() {
     this.model.score = 0 + parseFloat(this.model.technisch) + parseFloat(this.model.technisch) + parseFloat(this.model.artistiek)
       + parseFloat(this.model.moeilijkheidswaarde) - parseFloat(this.model.specialeAftrekken);
-     return this.model.score.toFixed(2);
+    return this.model.score.toFixed(2);
   }
 
 }
+
 // TODO: Niet alle oefeningen tonen bij elk niveau. E+D+A-pup = combi. B+C+Ajeugd = balans en tempo. Ajun+Asen = balans en tempo en combi.

@@ -23,6 +23,10 @@ export class UitvoerPdfComponent implements OnInit {
     });
   }
 
+  doElijn() {
+
+  }
+
   genereerPDF() {
     const doc = new jsPDF({});
     const head = [['Plaats', 'Nummer', 'Team', 'Niveau', 'Categorie', 'Oefening', 'T', 'A', 'MW', 'Aftr', 'Score']];
@@ -34,7 +38,6 @@ export class UitvoerPdfComponent implements OnInit {
       bodyStyles: {fillColor: [255, 255, 255], lineColor: [252, 15, 192]}
     });
     doc.save('uitslagen.pdf');
-    console.log(this.selectie);
 
   }
 
