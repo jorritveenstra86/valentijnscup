@@ -5569,10 +5569,10 @@
       "aftrekken_tempo": null,
       "score_tempo": null,
       "technisch_combi": "1",
-      "artistiek_combi": "2",
+      "artistiek_combi": "3",
       "moeilijkheid_combi": "3",
       "aftrekken_combi": "4",
-      "score_combi": 3
+      "score_combi": 4
     },
     {
       "id": "ix0EUVhcX7",
@@ -5784,11 +5784,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "1",
+      "artistiek_combi": "2",
+      "moeilijkheid_combi": "3",
+      "aftrekken_combi": "4",
+      "score_combi": 3
     },
     {
       "id": "Aj6E-HWhiU",

@@ -118,6 +118,7 @@ export class InvoerScoresComponent implements OnInit {
       specialeAftrekken: '',
       score: 0.0
     };
+    this.geselecteerdTeam = undefined;
   }
 
   opslaanTeams() {
@@ -162,6 +163,23 @@ export class InvoerScoresComponent implements OnInit {
     this.model.score = 0 + parseFloat(this.model.technisch) + parseFloat(this.model.technisch) + parseFloat(this.model.artistiek)
       + parseFloat(this.model.moeilijkheidswaarde) - parseFloat(this.model.specialeAftrekken);
     return this.model.score.toFixed(2);
+  }
+
+  getNamen() {
+    let namen = '';
+    if (this.geselecteerdTeam) {
+      namen = this.geselecteerdTeam.naam1 + ' / ' + this.geselecteerdTeam.naam2 + (this.geselecteerdTeam.naam3 ? ' / '
+        + this.geselecteerdTeam.naam3 : '');
+    }
+    return namen;
+  }
+
+  getNivCat() {
+    let nivCat = '';
+    if (this.geselecteerdTeam) {
+      nivCat = this.geselecteerdTeam.niveau + ' / ' + this.geselecteerdTeam.categorie;
+    }
+    return nivCat;
   }
 
 }

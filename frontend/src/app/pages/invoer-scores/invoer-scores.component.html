@@ -22,6 +22,16 @@
                 <option *ngFor="let oefening of oefeningen" [value]="oefening">{{oefening}}</option>
               </select>
             </div>
+            <div class="form-group">
+              <label for="deelnemers">Deelnemers</label>
+              <input type="text" class="form-control" id="deelnemers" [value]="getNamen()"
+                     name="deelnemers" disabled>
+            </div>
+            <div class="form-group">
+              <label for="nivcat">Niveau & categorie</label>
+              <input type="text" class="form-control" id="nivcat" [value]="getNivCat()"
+                     name="nivcat" disabled>
+            </div>
           </div>
           <div class="col-sm">
             <div class="form-group">
