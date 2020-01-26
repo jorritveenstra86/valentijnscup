@@ -65,6 +65,9 @@ export class InvoerScoresComponent implements OnInit {
       this.categorie = response.categorie;
       this.namen = response.naam1 + '\n' + response.naam2 + '\n' + (response.naam3 || '');
       this.oefeningen = this.oefeningenPerNiveau[this.niveau];
+      if (this.oefeningen.length === 1) {
+        this.model.oefening = this.oefeningen[0];
+      }
       this.doUpdateFields(response);
     });
   }
@@ -151,6 +154,7 @@ export class InvoerScoresComponent implements OnInit {
     this.teamService.putTeam(payload).subscribe((response: any) => {
       // op dit punt is de PUT succesvol verlopen. Het enige wat we moeten doen is de modal sluiten
       this.modalService.dismissAll();
+      // oja en het scherm leegmaken.
       this.initModel();
     }, (error) => console.error(error));
   }
