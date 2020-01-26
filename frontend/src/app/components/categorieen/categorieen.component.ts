@@ -149,6 +149,30 @@ export class CategorieenComponent implements OnInit {
     senior: false
 };
 
+  public Dlijngroups = {
+    jeugd: false,
+    junior: false,
+    senior: false
+  };
+
+  public Clijngroups = {
+    junior: false,
+    senior: false
+  };
+
+  public Blijngroups = {
+    junior: false,
+    senior: false
+  };
+
+  public Alijngroups = {
+    pupillen: false,
+    jeugd: false,
+    junior1: false,
+    junior2: false,
+    senior: false
+  };
+
   ngOnInit() {
   }
 
@@ -160,6 +184,34 @@ export class CategorieenComponent implements OnInit {
     for (let i in this.Elijngroups) {
       this.lijnClick(this.categorieen.elijn[i], value);
       this.Elijngroups[i] = !value;
+    }
+  }
+
+  DlijnClick(value) {
+    for (let i in this.Dlijngroups) {
+      this.lijnClick(this.categorieen.dlijn[i], value);
+      this.Dlijngroups[i] = !value;
+    }
+  }
+
+  ClijnClick(value) {
+    for (let i in this.Clijngroups) {
+      this.lijnClick(this.categorieen.clijn[i], value);
+      this.Clijngroups[i] = !value;
+    }
+  }
+
+  BlijnClick(value) {
+    for (let i in this.Blijngroups) {
+      this.lijnClick(this.categorieen.blijn[i], value);
+      this.Blijngroups[i] = !value;
+    }
+  }
+
+  AlijnClick(value) {
+    for (let i in this.Alijngroups) {
+      this.lijnClick(this.categorieen.alijn[i], value);
+      this.Alijngroups[i] = !value;
     }
   }
 

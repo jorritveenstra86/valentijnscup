@@ -1,13 +1,14 @@
 <div class="container">
   <form #selectieForm="ngForm" (ngSubmit)="onSubmit()">
   <div class="row">
-        <div class="col" >
+        <div class="col-sm" >
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="Elijn" name="Elijn" [(ngModel)]="Niveaus.Elijn" (click)="ElijnClick(Niveaus.Elijn)">
                 <label class="form-check-label" for="Elijn">
                     <H1>E-lijn</H1>
                 </label>
             </div>
+            <p>&nbsp;</p>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="Elijninstap" name="Elijninstap" [(ngModel)]="Elijngroups.instap" (click)="lijnClick(categorieen.elijn.instap, Elijngroups.instap)">
                 <label class="form-check-label" for="Elijninstap">
@@ -157,6 +158,486 @@
             </div>
             <p>&nbsp;</p>
         </div>
+      <div class="col-sm" >
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Dlijn" name="Dlijn" [(ngModel)]="Niveaus.Dlijn" (click)="DlijnClick(Niveaus.Dlijn)">
+              <label class="form-check-label" for="Dlijn">
+                  <H1>D-lijn</H1>
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Dlijnjeugd" name="Dlijnjeugd" [(ngModel)]="Dlijngroups.jeugd" (click)="lijnClick(categorieen.dlijn.jeugd, Dlijngroups.jeugd)">
+              <label class="form-check-label" for="Dlijnjeugd">
+                  <H3>Jeugd</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjeugdDP" name="DlijnjeugdDP" [(ngModel)]="categorieen.dlijn.jeugd.damespaar">
+              <label class="form-check-label" for="DlijnjeugdDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjeugdHP" name="DlijnjeugdHP" [(ngModel)]="categorieen.dlijn.jeugd.herenpaar">
+              <label class="form-check-label" for="DlijnjeugdHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjeugdMP" name="DlijnjeugdMP" [(ngModel)]="categorieen.dlijn.jeugd.mixpaar">
+              <label class="form-check-label" for="DlijnjeugdMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjeugdDG" name="DlijnjeugdDG" [(ngModel)]="categorieen.dlijn.jeugd.damesgroep">
+              <label class="form-check-label" for="DlijnjeugdDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjeugdHG" name="DlijnjeugdHG" [(ngModel)]="categorieen.dlijn.jeugd.herengroep">
+              <label class="form-check-label" for="DlijnjeugdHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Dlijnjunioren" name="Dlijnjunioren" [(ngModel)]="Dlijngroups.junior" (click)="lijnClick(categorieen.dlijn.junior, Dlijngroups.junior)">
+              <label class="form-check-label" for="Dlijnjunioren">
+                  <H3>Junior</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjuniorenDP" name="DlijnjuniorenDP" [(ngModel)]="categorieen.dlijn.junior.damespaar">
+              <label class="form-check-label" for="DlijnjuniorenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjuniorenHP" name="DlijnjuniorenHP" [(ngModel)]="categorieen.dlijn.junior.herenpaar">
+              <label class="form-check-label" for="DlijnjuniorenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjuniorenMP" name="DlijnjuniorenMP" [(ngModel)]="categorieen.dlijn.junior.mixpaar">
+              <label class="form-check-label" for="DlijnjuniorenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjuniorenDG" name="DlijnjuniorenDG" [(ngModel)]="categorieen.dlijn.junior.damesgroep">
+              <label class="form-check-label" for="DlijnjuniorenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnjuniorenHG" name="DlijnjuniorenHG" [(ngModel)]="categorieen.dlijn.junior.herengroep">
+              <label class="form-check-label" for="DlijnjuniorenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Dlijnsenioren" name="Dlijnsenioren" [(ngModel)]="Dlijngroups.senior" (click)="lijnClick(categorieen.dlijn.senior, Dlijngroups.senior)">
+              <label class="form-check-label" for="Dlijnsenioren">
+                  <H3>Senior</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnseniorenDP" name="DlijnseniorenDP" [(ngModel)]="categorieen.dlijn.senior.damespaar">
+              <label class="form-check-label" for="DlijnseniorenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnseniorenHP" name="DlijnseniorenHP" [(ngModel)]="categorieen.dlijn.senior.herenpaar">
+              <label class="form-check-label" for="DlijnseniorenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnseniorenMP" name="DlijnseniorenMP" [(ngModel)]="categorieen.dlijn.senior.mixpaar">
+              <label class="form-check-label" for="DlijnseniorenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnseniorenDG" name="DlijnseniorenDG" [(ngModel)]="categorieen.dlijn.senior.damesgroep">
+              <label class="form-check-label" for="DlijnseniorenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="DlijnseniorenHG" name="DlijnseniorenHG" [(ngModel)]="categorieen.dlijn.senior.herengroep">
+              <label class="form-check-label" for="DlijnseniorenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+      </div>
+      <div class="col-sm" >
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Clijn" name="Clijn" [(ngModel)]="Niveaus.Clijn" (click)="ClijnClick(Niveaus.Clijn)">
+              <label class="form-check-label" for="Clijn">
+                  <H1>C-lijn</H1>
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Clijnjunioren" name="Clijnjunioren" [(ngModel)]="Clijngroups.junior" (click)="lijnClick(categorieen.clijn.junior, Clijngroups.junior)">
+              <label class="form-check-label" for="Clijnjunioren">
+                  <H3>Junior</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnjuniorenDP" name="ClijnjuniorenDP" [(ngModel)]="categorieen.clijn.junior.damespaar">
+              <label class="form-check-label" for="ClijnjuniorenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnjuniorenHP" name="ClijnjuniorenHP" [(ngModel)]="categorieen.clijn.junior.herenpaar">
+              <label class="form-check-label" for="ClijnjuniorenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnjuniorenMP" name="ClijnjuniorenMP" [(ngModel)]="categorieen.clijn.junior.mixpaar">
+              <label class="form-check-label" for="ClijnjuniorenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnjuniorenDG" name="ClijnjuniorenDG" [(ngModel)]="categorieen.clijn.junior.damesgroep">
+              <label class="form-check-label" for="ClijnjuniorenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnjuniorenHG" name="ClijnjuniorenHG" [(ngModel)]="categorieen.clijn.junior.herengroep">
+              <label class="form-check-label" for="ClijnjuniorenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Clijnsenioren" name="Clijnsenioren" [(ngModel)]="Clijngroups.senior" (click)="lijnClick(categorieen.clijn.senior, Clijngroups.senior)">
+              <label class="form-check-label" for="Clijnsenioren">
+                  <H3>Senior</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnseniorenDP" name="ClijnseniorenDP" [(ngModel)]="categorieen.clijn.senior.damespaar">
+              <label class="form-check-label" for="ClijnseniorenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnseniorenHP" name="ClijnseniorenHP" [(ngModel)]="categorieen.clijn.senior.herenpaar">
+              <label class="form-check-label" for="ClijnseniorenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnseniorenMP" name="ClijnseniorenMP" [(ngModel)]="categorieen.clijn.senior.mixpaar">
+              <label class="form-check-label" for="ClijnseniorenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnseniorenDG" name="ClijnseniorenDG" [(ngModel)]="categorieen.clijn.senior.damesgroep">
+              <label class="form-check-label" for="ClijnseniorenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ClijnseniorenHG" name="ClijnseniorenHG" [(ngModel)]="categorieen.clijn.senior.herengroep">
+              <label class="form-check-label" for="ClijnseniorenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+      </div>
+      <div class="col-sm" >
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Blijn" name="Blijn" [(ngModel)]="Niveaus.Blijn" (click)="BlijnClick(Niveaus.Blijn)">
+              <label class="form-check-label" for="Blijn">
+                  <H1>B-lijn</H1>
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Blijnjunioren" name="Blijnjunioren" [(ngModel)]="Blijngroups.junior" (click)="lijnClick(categorieen.blijn.junior, Blijngroups.junior)">
+              <label class="form-check-label" for="Blijnjunioren">
+                  <H3>Junior</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnjuniorenDP" name="BlijnjuniorenDP" [(ngModel)]="categorieen.blijn.junior.damespaar">
+              <label class="form-check-label" for="BlijnjuniorenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnjuniorenHP" name="BlijnjuniorenHP" [(ngModel)]="categorieen.blijn.junior.herenpaar">
+              <label class="form-check-label" for="BlijnjuniorenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnjuniorenMP" name="BlijnjuniorenMP" [(ngModel)]="categorieen.blijn.junior.mixpaar">
+              <label class="form-check-label" for="ElijnjuniorenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnjuniorenDG" name="BlijnjuniorenDG" [(ngModel)]="categorieen.blijn.junior.damesgroep">
+              <label class="form-check-label" for="BlijnjuniorenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnjuniorenHG" name="BlijnjuniorenHG" [(ngModel)]="categorieen.blijn.junior.herengroep">
+              <label class="form-check-label" for="BlijnjuniorenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Blijnsenioren" name="Blijnsenioren" [(ngModel)]="Blijngroups.senior" (click)="lijnClick(categorieen.blijn.senior, Blijngroups.senior)">
+              <label class="form-check-label" for="Blijnsenioren">
+                  <H3>Senior</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnseniorenDP" name="BlijnseniorenDP" [(ngModel)]="categorieen.blijn.senior.damespaar">
+              <label class="form-check-label" for="BlijnseniorenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnseniorenHP" name="BlijnseniorenHP" [(ngModel)]="categorieen.blijn.senior.herenpaar">
+              <label class="form-check-label" for="BlijnseniorenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnseniorenMP" name="BlijnseniorenMP" [(ngModel)]="categorieen.blijn.senior.mixpaar">
+              <label class="form-check-label" for="BlijnseniorenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnseniorenDG" name="BlijnseniorenDG" [(ngModel)]="categorieen.blijn.senior.damesgroep">
+              <label class="form-check-label" for="BlijnseniorenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="BlijnseniorenHG" name="BlijnseniorenHG" [(ngModel)]="categorieen.blijn.senior.herengroep">
+              <label class="form-check-label" for="BlijnseniorenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+      </div>
+      <div class="col-sm" >
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijn" name="Alijn" [(ngModel)]="Niveaus.Alijn" (click)="AlijnClick(Niveaus.Alijn)">
+              <label class="form-check-label" for="Alijn">
+                  <H1>A-lijn</H1>
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnpupillen" name="Alijnpupillen" [(ngModel)]="Alijngroups.pupillen" (click)="lijnClick(categorieen.alijn.pupillen, Alijngroups.pupillen)">
+              <label class="form-check-label" for="Alijnpupillen">
+                  <H3>Pupillen</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnpupillenDP" name="AlijnpupillenDP" [(ngModel)]="categorieen.alijn.pupillen.damespaar">
+              <label class="form-check-label" for="AlijnpupillenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnpupillenHP" name="AlijnpupillenHP" [(ngModel)]="categorieen.alijn.pupillen.herenpaar">
+              <label class="form-check-label" for="AlijnpupillenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnpupillenMP" name="AlijnpupillenMP" [(ngModel)]="categorieen.alijn.pupillen.mixpaar">
+              <label class="form-check-label" for="AlijnpupillenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnpupillenDG" name="AlijnpupillenDG" [(ngModel)]="categorieen.alijn.pupillen.damesgroep">
+              <label class="form-check-label" for="AlijnpupillenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnpupillenHG" name="AlijnpupillenHG" [(ngModel)]="categorieen.alijn.pupillen.herengroep">
+              <label class="form-check-label" for="AlijnpupillenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjeugd" name="Alijnjeugd" [(ngModel)]="Alijngroups.jeugd" (click)="lijnClick(categorieen.alijn.jeugd, Alijngroups.jeugd)">
+              <label class="form-check-label" for="Alijnjeugd">
+                  <H3>Jeugd</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnjeugdDP" name="AlijnjeugdDP" [(ngModel)]="categorieen.alijn.jeugd.damespaar">
+              <label class="form-check-label" for="AlijnjeugdDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnjeugdHP" name="AlijnjeugdHP" [(ngModel)]="categorieen.alijn.jeugd.herenpaar">
+              <label class="form-check-label" for="AlijnjeugdHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnjeugdMP" name="AlijnjeugdMP" [(ngModel)]="categorieen.alijn.jeugd.mixpaar">
+              <label class="form-check-label" for="AlijnjeugdMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnjeugdDG" name="AlijnjeugdDG" [(ngModel)]="categorieen.alijn.jeugd.damesgroep">
+              <label class="form-check-label" for="AlijnjeugdDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnjeugdHG" name="AlijnjeugdHG" [(ngModel)]="categorieen.alijn.jeugd.herengroep">
+              <label class="form-check-label" for="AlijnjeugdHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren1" name="Alijnjunioren1" [(ngModel)]="Alijngroups.junior1" (click)="lijnClick(categorieen.alijn.junior1, Alijngroups.junior1)">
+              <label class="form-check-label" for="Alijnjunioren1">
+                  <H3>Junior1</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren1DP" name="Alijnjunioren1DP" [(ngModel)]="categorieen.alijn.junior1.damespaar">
+              <label class="form-check-label" for="Alijnjunioren1DP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren1HP" name="Alijnjunioren1HP" [(ngModel)]="categorieen.alijn.junior1.herenpaar">
+              <label class="form-check-label" for="Alijnjunioren1HP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren1MP" name="Alijnjunioren1MP" [(ngModel)]="categorieen.alijn.junior1.mixpaar">
+              <label class="form-check-label" for="Alijnjunioren1MP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren1DG" name="Alijnjunioren1DG" [(ngModel)]="categorieen.alijn.junior1.damesgroep">
+              <label class="form-check-label" for="Alijnjunioren1DG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren1HG" name="Alijnjunioren1HG" [(ngModel)]="categorieen.alijn.junior1.herengroep">
+              <label class="form-check-label" for="Alijnjunioren1HG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren2" name="Alijnjunioren2" [(ngModel)]="Alijngroups.junior2" (click)="lijnClick(categorieen.alijn.junior2, Alijngroups.junior2)">
+              <label class="form-check-label" for="Alijnjunioren2">
+                  <H3>Junior2</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren2DP" name="Alijnjunioren2DP" [(ngModel)]="categorieen.alijn.junior2.damespaar">
+              <label class="form-check-label" for="Alijnjunioren2DP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren2HP" name="Alijnjunioren2HP" [(ngModel)]="categorieen.alijn.junior2.herenpaar">
+              <label class="form-check-label" for="Alijnjunioren2HP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren2MP" name="Alijnjunioren2MP" [(ngModel)]="categorieen.alijn.junior2.mixpaar">
+              <label class="form-check-label" for="Alijnjunioren2MP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren2DG" name="Alijnjunioren2DG" [(ngModel)]="categorieen.alijn.junior2.damesgroep">
+              <label class="form-check-label" for="Alijnjunioren2DG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnjunioren2HG" name="Alijnjunioren2HG" [(ngModel)]="categorieen.alijn.junior2.herengroep">
+              <label class="form-check-label" for="Alijnjunioren2HG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Alijnsenioren" name="Alijnsenioren" [(ngModel)]="Alijngroups.senior" (click)="lijnClick(categorieen.alijn.senior, Alijngroups.senior)">
+              <label class="form-check-label" for="Alijnsenioren">
+                  <H3>Senior</H3>
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnseniorenDP" name="AlijnseniorenDP" [(ngModel)]="categorieen.alijn.senior.damespaar">
+              <label class="form-check-label" for="AlijnseniorenDP">
+                  Damespaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnseniorenHP" name="AlijnseniorenHP" [(ngModel)]="categorieen.alijn.senior.herenpaar">
+              <label class="form-check-label" for="AlijnseniorenHP">
+                  Herenpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnseniorenMP" name="AlijnseniorenMP" [(ngModel)]="categorieen.alijn.senior.mixpaar">
+              <label class="form-check-label" for="AlijnseniorenMP">
+                  Mixpaar
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnseniorenDG" name="AlijnseniorenDG" [(ngModel)]="categorieen.alijn.senior.damesgroep">
+              <label class="form-check-label" for="AlijnseniorenDG">
+                  Damesgroep
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="AlijnseniorenHG" name="AlijnseniorenHG" [(ngModel)]="categorieen.alijn.senior.herengroep">
+              <label class="form-check-label" for="AlijnseniorenHG">
+                  Herengroep
+              </label>
+          </div>
+          <p>&nbsp;</p>
+      </div>
     </div>
   </form>
 </div>
