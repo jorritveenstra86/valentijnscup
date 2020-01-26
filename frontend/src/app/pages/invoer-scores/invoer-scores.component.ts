@@ -129,25 +129,25 @@ export class InvoerScoresComponent implements OnInit {
 
     // de gewijzigde velden vullen obv gekozen oefening
     if (this.model.oefening === Oefeningen[0]) { // Balans
-      payload.technisch_balans = this.model.technisch;
-      payload.artistiek_balans = this.model.artistiek;
-      payload.moeilijkheid_balans = this.model.moeilijkheidswaarde;
-      payload.aftrekken_balans = this.model.specialeAftrekken;
-      payload.score_balans = this.model.score;
+      payload.technisch_balans = (Math.round(parseFloat(this.model.technisch)*100)/100).toFixed(2);
+      payload.artistiek_balans = (Math.round(parseFloat(this.model.artistiek)*100)/100).toFixed(2);
+      payload.moeilijkheid_balans = (Math.round(parseFloat(this.model.moeilijkheidswaarde)*100)/100).toFixed(2);
+      payload.aftrekken_balans = (Math.round(parseFloat(this.model.specialeAftrekken)*100)/100).toFixed(2);
+      payload.score_balans = (Math.round(this.model.score*100)/100).toFixed(2);
     }
     if (this.model.oefening === Oefeningen[1]) { // Tempo
-      payload.technisch_tempo = this.model.technisch;
-      payload.artistiek_tempo = this.model.artistiek;
-      payload.moeilijkheid_tempo = this.model.moeilijkheidswaarde;
-      payload.aftrekken_tempo = this.model.specialeAftrekken;
-      payload.score_tempo = this.model.score;
+      payload.technisch_tempo = (Math.round(parseFloat(this.model.technisch)*100)/100).toFixed(2);
+      payload.artistiek_tempo = (Math.round(parseFloat(this.model.artistiek)*100)/100).toFixed(2);
+      payload.moeilijkheid_tempo = (Math.round(parseFloat(this.model.moeilijkheidswaarde)*100)/100).toFixed(2);
+      payload.aftrekken_tempo = (Math.round(parseFloat(this.model.specialeAftrekken)*100)/100).toFixed(2);
+      payload.score_tempo = (Math.round(this.model.score*100)/100).toFixed(2);
     }
     if (this.model.oefening === Oefeningen[2]) { // Combinatie
-      payload.technisch_combi = this.model.technisch;
-      payload.artistiek_combi = this.model.artistiek;
-      payload.moeilijkheid_combi = this.model.moeilijkheidswaarde;
-      payload.aftrekken_combi = this.model.specialeAftrekken;
-      payload.score_combi = this.model.score;
+      payload.technisch_combi = (Math.round(parseFloat(this.model.technisch)*100)/100).toFixed(2);
+      payload.artistiek_combi = (Math.round(parseFloat(this.model.artistiek)*100)/100).toFixed(2);
+      payload.moeilijkheid_combi = (Math.round(parseFloat(this.model.moeilijkheidswaarde)*100)/100).toFixed(2);
+      payload.aftrekken_combi = (Math.round(parseFloat(this.model.specialeAftrekken)*100)/100).toFixed(2);
+      payload.score_combi = (Math.round(this.model.score*100)/100).toFixed(2);
     }
 
     // pas nu de payload klaar is mogen we putTeam aanroepen
