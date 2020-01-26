@@ -13,9 +13,24 @@ import {Oefeningen} from '../../model/entiteiten/oefening';
 
 export class UitvoerPdfComponent implements OnInit {
   @Input() selectie;
+  public filename = 'uitslagen.pdf';
   private doc = new jsPDF({});
   private eerstePagina;
-  public filename = 'uitslagen.pdf';
+  private paginas = [
+    ['A-pupil', 'Damespaar'],
+    ['A-pupil', 'Damesgroep'],
+    ['A-pupil', 'Mixpaar'],
+    ['A-junior 1', 'Damespaar'],
+    ['A-junior 1', 'Damesgroep'], // ?
+    ['A-junior 1', 'Mixpaar'], // ?
+    ['A-jeugd', 'Damespaar'],
+    ['B-senior', 'Damespaar'],
+    ['B-senior', 'Damesgroep'],
+    ['B-junior', 'Damespaar'],
+    ['B-junior', 'Damesgroep'],
+    ['B-junior', 'Mixpaar']
+    // TODO Aanvullen en controleren op volledigheid door Jorrit
+  ];
 
   constructor(private teamService: TeamService) {
   }
@@ -25,11 +40,10 @@ export class UitvoerPdfComponent implements OnInit {
 
   start() {
     this.eerstePagina = true;
-    this.maakTabel('A-pupil', 'Damespaar');
-    this.maakTabel('A-junior 1', 'Damespaar');
-    // TODO hier komen alle combinaties van niveau en categorie
-    // ...
-    // ...
+    this.paginas.forEach((combi) => {
+      this.maakTabel(combi[0], combi[1]);
+    });
+
     setTimeout(() => {
       // We gaan opslaan. Voor de zekerheid een setTimeout...
       this.saveDoc();
@@ -38,39 +52,41 @@ export class UitvoerPdfComponent implements OnInit {
 
   maakTabel(niveau, categorie) {
     this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
-      let entries = [];
-      response.forEach(
-        (team) => {
-          entries = entries.concat(this.createEntriesForTeam(team));
-        });
-      const titel = niveau + ' / ' + categorie;
-      this.genereerPDF(titel, entries);
-      this.eerstePagina = false;
+      Oefeningen.forEach((oefening) => {
+        let entries = [];
+        response.forEach(
+          (team) => {
+            entries = entries.concat(this.createEntriesForTeam(team, oefening));
+          });
+        const titel = niveau + ' / ' + categorie + ' - ' + oefening;
+        if (entries.length) { // alleen iets afdrukken wanneer er iets is om af te drukken
+          this.genereerPDF(titel, this.addIndex(this.sortByScore(entries)));
+          this.eerstePagina = false;
+        }
+      });
     });
   }
 
-  createEntriesForTeam(team) {
-    // Omdat een team meerdere oefeningen kan doen. Daarom zo ingewikkeld... :(
+  createEntriesForTeam(team, oefening) {
     const result = [];
-    if (team.score_balans) {
+    if (team.score_balans && oefening === Oefeningen[0]) { // Balans
       result.push(this.createAutotableEntry(team, Oefeningen[0]));
     }
-    if (team.score_tempo) {
+    if (team.score_tempo && oefening === Oefeningen[1]) { // Tempo
       result.push(this.createAutotableEntry(team, Oefeningen[1]));
     }
-    if (team.score_combi) {
+    if (team.score_combi && oefening === Oefeningen[2]) { // Combinatie
       result.push(this.createAutotableEntry(team, Oefeningen[2]));
     }
-    // we returnen een array met alle tabelEntries voor dit team
     return result;
   }
 
   createAutotableEntry(team, oefening) {
     const score = this.getScoreByOefening(team, oefening);
     return [
-      null, // TODO Plaats moeten we nog berekenen
-      null, // TODO: Wat is dit voor veld??? Nummer?
+      // null, // De plaats wordt later toegevoegd (index na sortering op score)
       team.teamnummer,
+      this.getNamen(team),
       team.niveau,
       team.categorie,
       oefening,
@@ -80,6 +96,26 @@ export class UitvoerPdfComponent implements OnInit {
       score.aftrekken,
       score.score
     ];
+  }
+
+  getNamen(team) {
+    return team.naam1 + '\n' + team.naam2 + (team.naam3 ? ('\n' + team.naam3) : '');
+  }
+
+  sortByScore(teams) {
+    return teams.sort((a, b) => {
+      return  b[b.length - 1] - a[a.length - 1];
+    });
+  }
+
+  addIndex(teams) {
+    const result = [];
+    for (let index = 0; index < teams.length; index++) {
+      const indexedTeam = teams[index];
+      indexedTeam.unshift('' + (index + 1));
+      result.push(indexedTeam);
+    }
+    return result;
   }
 
   getScoreByOefening(team, oefening) {
@@ -131,10 +167,4 @@ export class UitvoerPdfComponent implements OnInit {
   saveDoc() {
     this.doc.save(this.filename);
   }
-
 }
-
-// TODO: alle gegevens ophalen waarbij de score niet nul is. Dus als balans.score = 0 en tempo.score = 23, dan alleen tempo
-//  score gegevens ophalen. Natuurlijk altijd de persoonsgegevens en niveau/cateogrie ophalen
-// TODO: alle gegevens opslaan in arrays, gesorteerd op niveau + categorie. Dus bijv 1 array voor alle damesparen E-junioren
-// TODO: Alle arrays naar de PDF sturen, waar ze los van elkaar getoond worden met als titel niveau + categorie.
