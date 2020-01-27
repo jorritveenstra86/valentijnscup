@@ -72,7 +72,7 @@ export class InvoerScoresComponent implements OnInit {
     });
   }
 
-  doUpdateFields(response) {
+   doUpdateFields(response) {
     if (this.model.oefening === Oefeningen[0]) { // Balans
       this.model.technisch = response.technisch_balans;
       this.model.artistiek = response.artistiek_balans;

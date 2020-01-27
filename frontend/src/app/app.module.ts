@@ -12,6 +12,7 @@ import { PresentatieComponent } from './pages/presentatie/presentatie.component'
 import {FormsModule} from '@angular/forms';
 import { CategorieenComponent } from './components/categorieen/categorieen.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SlideComponent } from './pages/presentatie/slide/slide.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     InvoerScoresComponent,
     UitvoerPdfComponent,
     PresentatieComponent,
-    CategorieenComponent
+    CategorieenComponent,
+    SlideComponent
   ],
   imports: [
     BrowserModule,

@@ -125,7 +125,7 @@ export class UitvoerPdfComponent implements OnInit {
           (team) => {
             entries = entries.concat(this.createEntriesForTeam(team, oefening));
           });
-        const titel = niveau + ' / ' + categorie + ' - ' + oefening;
+        const titel = niveau + categorie + ' - ' + oefening;
         if (entries.length) { // alleen iets afdrukken wanneer er iets is om af te drukken
           this.genereerPDF(titel, this.addIndex(this.sortByScore(entries)));
           this.eerstePagina = false;

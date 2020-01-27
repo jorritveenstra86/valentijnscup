@@ -5,12 +5,14 @@ import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.compo
 import {InvoerScoresComponent} from './pages/invoer-scores/invoer-scores.component';
 import {PresentatieComponent} from './pages/presentatie/presentatie.component';
 import {UitvoerPdfComponent} from './pages/uitvoer-pdf/uitvoer-pdf.component';
+import { SlideComponent } from './pages/presentatie/slide/slide.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'invoer', component: InvoerScoresComponent },
   { path: 'presentatie', component: PresentatieComponent },
   { path: 'uitvoer', component: UitvoerPdfComponent },
+  { path: 'slide', component: SlideComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
