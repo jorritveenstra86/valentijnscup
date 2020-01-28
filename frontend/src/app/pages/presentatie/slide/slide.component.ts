@@ -32,9 +32,10 @@ export class SlideComponent implements OnInit {
             this.team.teamnummer = response.teamnummer;
             this.team.namen = response.naam1 + '\n' + response.naam2 + '\n' + (response.naam3 || '');
             Oefeningen.forEach((oefening) => {
-                const technisch = 'response.technisch_' + (oefening).toString();
+                const technisch = 'technisch_' + (oefening).toLowerCase().toString();
                 this.titel = niveau + ' ' + categorie + ' ' + oefening;
-                this.team.technisch = JSON.parse(technisch);
+                this.team.technisch = response[technisch];
+                console.log(response[technisch]);
                 this.team.artistiek = response.artistiek_balans;
                 this.team.moeilijkheidswaarde = response.moeilijkheid_balans;
                 this.team.specialeAftrekken = response.aftrekken_balans;
