@@ -61,6 +61,7 @@ export class SlideComponent implements OnInit {
     }
 
     // TODO: getteampercategorie ipv getteam
+    // TODO: scores per categorie ipv alles bij elkaar
 
     sortByScore(teams) {
         return teams.sort((a, b) => {
