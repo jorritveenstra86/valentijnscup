@@ -1,11 +1,12 @@
 <div class="container">
+    <meta http-equiv="refresh" content="10">
     <p>&nbsp;</p>
     <div class="row">
         <H1>{{titel}}</H1>
     </div>
     <p>&nbsp;</p>
-    <table class="table">
-        <thead>
+    <table class="table table-striped">
+        <thead class="thead-dark">
         <tr>
             <th scope="col">
                 <H4>Plaats</H4>
@@ -34,15 +35,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">plaats</th>
-            <td>{{teamArray[0][0]}}</td>
-            <td>{{teamArray[0][1]}}</td>
-            <td>{{teamArray[0][2]}}</td>
-            <td>{{teamArray[0][3]}}</td>
-            <td>{{teamArray[0][4]}}</td>
-            <td>{{teamArray[0][5]}}</td>
-            <td>{{teamArray[0][6]}}</td>
+        <tr *ngFor="let team of teamArray">
+            <th scope="row"><h4>plaats</h4></th>
+            <td> <h4>{{team[0]}}</h4></td>
+            <td> <h4>{{team[1]}}</h4></td>
+            <td> <h4>{{team[2]}}</h4></td>
+            <td> <h4>{{team[3]}}</h4></td>
+            <td> <h4>{{team[4]}}</h4></td>
+            <td> <h4>{{team[5]}}</h4></td>
+            <td> <h4>{{team[6]}}</h4></td>
         </tr>
         </tbody>
     </table>
