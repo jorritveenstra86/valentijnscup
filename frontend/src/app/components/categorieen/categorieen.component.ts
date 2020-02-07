@@ -1,4 +1,6 @@
 import {Component, EventEmitter, Injectable, OnInit, Output, ViewChild} from '@angular/core';
+import {StateService} from '../../shared/state.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-categorieen',
@@ -11,7 +13,6 @@ import {Component, EventEmitter, Injectable, OnInit, Output, ViewChild} from '@a
 })
 
 export class CategorieenComponent implements OnInit {
-  @Output() selectie = new EventEmitter();
   @ViewChild('selectieForm', {static: false}) selectieForm;
 
 public categorieen = {
@@ -178,13 +179,17 @@ public categorieen = {
     senior: false
   };
 
+  constructor(private state: StateService, private router: Router) {
+
+  }
+
   ngOnInit() {
 
   }
 
   onSubmit() {
-    this.selectie.emit(this.categorieen);
-    console.log("test");
+    this.state.geselecteerdeCategorieen = this.categorieen;
+    this.router.navigate(['/slide']);
   }
 
   ElijnClick(value) {
