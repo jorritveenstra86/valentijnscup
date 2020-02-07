@@ -22,7 +22,7 @@ export class SlideComponent implements OnInit {
         for (let i = 0; i < this.categorieen.length; i++) {
             //   task(i);
             // var maakScoreLijst =
-                this.maakScoreLijst(this.categorieen[i][0], this.categorieen[i][1], this.categorieen[i][2]);
+                this.maakScoreLijst(this.categorieen[i][0], this.categorieen[i][1]);
             // console.log(this.categorieen[i][0]);
         }
         // function task(i) {
@@ -32,10 +32,11 @@ export class SlideComponent implements OnInit {
         // }
     }
 
-    maakScoreLijst(niveau, categorie, oefening) {
+    maakScoreLijst(niveau, categorie) {
         this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
             let count = 0;
             response.forEach((team) => {
+                var oefening = 'combi'; //nog aanpassen in een for loop voor elke oefening
                 const technisch = 'technisch_' + (oefening).toLowerCase().toString();
                 const artistiek = 'artistiek_' + (oefening).toLowerCase().toString();
                 const moeilijkheidswaarde = 'moeilijkheid_' + (oefening).toLowerCase().toString();
@@ -55,35 +56,35 @@ export class SlideComponent implements OnInit {
         for (const cat in this.cat.elijn) {
             for (const team in this.cat.elijn[cat]) {
                 if (this.cat.elijn[cat][team]) {
-                    this.categorieen.push(['E-' + cat, team, 'combi']);
+                    this.categorieen.push(['E-' + cat, team]);
                 }
             }
         }
         for (const cat in this.cat.dlijn) {
             for (const team in this.cat.dlijn[cat]) {
                 if (this.cat.dlijn[cat][team]) {
-                    this.categorieen.push(['D-' + cat, team, 'combi']);
+                    this.categorieen.push(['D-' + cat, team]);
                 }
             }
         }
         for (const cat in this.cat.clijn) {
             for (const team in this.cat.clijn[cat]) {
                 if (this.cat.clijn[cat][team]) {
-                    this.categorieen.push(['C-' + cat, team, 'combi']);
+                    this.categorieen.push(['C-' + cat, team]);
                 }
             }
         }
         for (const cat in this.cat.blijn) {
             for (const team in this.cat.blijn[cat]) {
                 if (this.cat.blijn[cat][team]) {
-                    this.categorieen.push(['B-' + cat, team, 'combi']);
+                    this.categorieen.push(['B-' + cat, team]);
                 }
             }
         }
         for (const cat in this.cat.alijn) {
             for (const team in this.cat.alijn[cat]) {
                 if (this.cat.alijn[cat][team]) {
-                    this.categorieen.push(['A-' + cat, team, 'combi']);
+                    this.categorieen.push(['A-' + cat, team]);
                 }
             }
         }

@@ -184,6 +184,7 @@ public categorieen = {
 
   onSubmit() {
     this.selectie.emit(this.categorieen);
+    console.log("test");
   }
 
   ElijnClick(value) {

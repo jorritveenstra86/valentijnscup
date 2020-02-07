@@ -3504,11 +3504,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "1.00",
+      "artistiek_combi": "2.00",
+      "moeilijkheid_combi": "3.00",
+      "aftrekken_combi": "4.00",
+      "score_combi": "3.00"
     },
     {
       "id": "W4d-X0HKpA",
@@ -3528,11 +3528,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "3.00",
+      "artistiek_combi": "4.00",
+      "moeilijkheid_combi": "5.00",
+      "aftrekken_combi": "6.00",
+      "score_combi": "9.00"
     },
     {
       "id": "PGjW3EQcIB",
@@ -3552,11 +3552,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "8.00",
+      "artistiek_combi": "7.00",
+      "moeilijkheid_combi": "6.00",
+      "aftrekken_combi": "5.00",
+      "score_combi": "24.00"
     },
     {
       "id": "qcS6X8fQ6x",
