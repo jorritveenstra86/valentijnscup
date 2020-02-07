@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Injectable, OnInit, Output, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-categorieen',
@@ -6,130 +6,135 @@ import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@a
   styleUrls: ['./categorieen.component.css']
 })
 
+@Injectable({
+  providedIn: 'root'
+})
+
 export class CategorieenComponent implements OnInit {
   @Output() selectie = new EventEmitter();
   @ViewChild('selectieForm', {static: false}) selectieForm;
-  public categorieen = {
+
+public categorieen = {
     elijn: {
       instap: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       jeugd: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       junior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       senior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       }
     },
     dlijn: {
       jeugd: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       junior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       senior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       }
     },
     clijn: {
       junior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       senior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       }
     },
     blijn: {
       junior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       senior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       }
     },
     alijn: {
       pupillen: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       jeugd: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       junior1: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       junior2: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       },
       senior: {
-        damespaar: false,
-        herenpaar: false,
-        mixpaar: false,
-        damesgroep: false,
-        herengroep: false,
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
       }
     }
   };
@@ -174,6 +179,7 @@ export class CategorieenComponent implements OnInit {
   };
 
   ngOnInit() {
+
   }
 
   onSubmit() {
@@ -181,35 +187,35 @@ export class CategorieenComponent implements OnInit {
   }
 
   ElijnClick(value) {
-    for (let i in this.Elijngroups) {
+    for (const i in this.Elijngroups) {
       this.lijnClick(this.categorieen.elijn[i], value);
       this.Elijngroups[i] = !value;
     }
   }
 
   DlijnClick(value) {
-    for (let i in this.Dlijngroups) {
+    for (const i in this.Dlijngroups) {
       this.lijnClick(this.categorieen.dlijn[i], value);
       this.Dlijngroups[i] = !value;
     }
   }
 
   ClijnClick(value) {
-    for (let i in this.Clijngroups) {
+    for (const i in this.Clijngroups) {
       this.lijnClick(this.categorieen.clijn[i], value);
       this.Clijngroups[i] = !value;
     }
   }
 
   BlijnClick(value) {
-    for (let i in this.Blijngroups) {
+    for (const i in this.Blijngroups) {
       this.lijnClick(this.categorieen.blijn[i], value);
       this.Blijngroups[i] = !value;
     }
   }
 
   AlijnClick(value) {
-    for (let i in this.Alijngroups) {
+    for (const i in this.Alijngroups) {
       this.lijnClick(this.categorieen.alijn[i], value);
       this.Alijngroups[i] = !value;
     }
@@ -222,4 +228,6 @@ export class CategorieenComponent implements OnInit {
   setProps(prop, value) {
     Object.keys(prop).forEach(v => prop[v] = value);
   }
+
 }
+

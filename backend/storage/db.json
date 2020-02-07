@@ -5472,11 +5472,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "5.00",
+      "artistiek_combi": "6.00",
+      "moeilijkheid_combi": "8.00",
+      "aftrekken_combi": "9.00",
+      "score_combi": "15.00"
     },
     {
       "id": "950f8j1NGO",
@@ -5544,11 +5544,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "1.00",
+      "artistiek_combi": "2.00",
+      "moeilijkheid_combi": "3.00",
+      "aftrekken_combi": "4.00",
+      "score_combi": "3.00"
     },
     {
       "id": "rvuPkESluS",

@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {TeamService} from '../../../shared/team.service';
+import {CategorieenComponent} from '../../../components/categorieen/categorieen.component';
 
 @Component({
     selector: 'app-slide',
@@ -9,48 +10,84 @@ import {TeamService} from '../../../shared/team.service';
 
 export class SlideComponent implements OnInit {
     public titel = '';
-    public categorieen: any[][] = [
-        ['A-junior 1', 'Damespaar', 'balans'],
-        ['E-instap', 'Damespaar', 'combi']
-    ];
-    public niveau = 'E-instap';
-    public categorie = 'Damespaar';
-    public oefening = 'combi';
+    public cat = this.categorieenComponent.categorieen;
+    public categorieen: any[][] = [];
     public teamArray: any [][] = [];
-
-    constructor(private teamService: TeamService) {
+    constructor(private teamService: TeamService, private categorieenComponent: CategorieenComponent) {
     }
 
     ngOnInit() {
+
+        this.maakCategorieen();
         for (let i = 0; i < this.categorieen.length; i++) {
-            task(i);
-            var maakScoreLijst = this.maakScoreLijst(this.categorieen[i][0], this.categorieen[i][1]);
-            console.log(this.categorieen[i][0]);
+            //   task(i);
+            // var maakScoreLijst =
+                this.maakScoreLijst(this.categorieen[i][0], this.categorieen[i][1], this.categorieen[i][2]);
+            // console.log(this.categorieen[i][0]);
         }
-        function task(i) {
-            setTimeout(function () {
-                maakScoreLijst
-            }, 9000 * i);
-        }
+        // function task(i) {
+        //     setTimeout(function () {
+        //         maakScoreLijst
+        //     }, 9000 * i);
+        // }
     }
 
-    maakScoreLijst(niveau, categorie) {
+    maakScoreLijst(niveau, categorie, oefening) {
         this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
             let count = 0;
             response.forEach((team) => {
-                const technisch = 'technisch_' + (this.oefening).toLowerCase().toString();
-                const artistiek = 'artistiek_' + (this.oefening).toLowerCase().toString();
-                const moeilijkheidswaarde = 'moeilijkheid_' + (this.oefening).toLowerCase().toString();
-                const specialeAftrekken = 'aftrekken_' + (this.oefening).toLowerCase().toString();
-                const score = 'score_' + (this.oefening).toLowerCase().toString();
+                const technisch = 'technisch_' + (oefening).toLowerCase().toString();
+                const artistiek = 'artistiek_' + (oefening).toLowerCase().toString();
+                const moeilijkheidswaarde = 'moeilijkheid_' + (oefening).toLowerCase().toString();
+                const specialeAftrekken = 'aftrekken_' + (oefening).toLowerCase().toString();
+                const score = 'score_' + (oefening).toLowerCase().toString();
                 if (team[score] != null) {
-                    this.titel = niveau + ' ' + categorie + ' ' + this.oefening;
+                    this.titel = niveau + ' ' + categorie + ' ' + oefening;
                     this.teamArray[count] = [team.teamnummer, team.naam1 + '\n' + team.naam2 + '\n' + (team.naam3 || ''), team[technisch], team[artistiek], team[moeilijkheidswaarde], team[specialeAftrekken], team[score]];
                     count++;
-                    console.log(this.teamArray);
+             //       console.log(this.teamArray);
                 }
             });
         });
+    }
+
+    public maakCategorieen() { // vult een array met alle aangevinkte categorieen
+        for (const cat in this.cat.elijn) {
+            for (const team in this.cat.elijn[cat]) {
+                if (this.cat.elijn[cat][team]) {
+                    this.categorieen.push(['E-' + cat, team, 'combi']);
+                }
+            }
+        }
+        for (const cat in this.cat.dlijn) {
+            for (const team in this.cat.dlijn[cat]) {
+                if (this.cat.dlijn[cat][team]) {
+                    this.categorieen.push(['D-' + cat, team, 'combi']);
+                }
+            }
+        }
+        for (const cat in this.cat.clijn) {
+            for (const team in this.cat.clijn[cat]) {
+                if (this.cat.clijn[cat][team]) {
+                    this.categorieen.push(['C-' + cat, team, 'combi']);
+                }
+            }
+        }
+        for (const cat in this.cat.blijn) {
+            for (const team in this.cat.blijn[cat]) {
+                if (this.cat.blijn[cat][team]) {
+                    this.categorieen.push(['B-' + cat, team, 'combi']);
+                }
+            }
+        }
+        for (const cat in this.cat.alijn) {
+            for (const team in this.cat.alijn[cat]) {
+                if (this.cat.alijn[cat][team]) {
+                    this.categorieen.push(['A-' + cat, team, 'combi']);
+                }
+            }
+        }
+   //     console.log(this.categorieen);
     }
 
     sortByScore(teams) {
@@ -59,3 +96,4 @@ export class SlideComponent implements OnInit {
         });
     }
 }
+
