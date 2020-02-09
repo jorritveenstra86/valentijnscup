@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {TeamService} from '../../../shared/team.service';
 import {StateService} from '../../../shared/state.service';
+import {Oefeningen} from '../../../model/entiteiten/oefening';
 
 @Component({
   selector: 'app-slide',
@@ -13,46 +14,62 @@ export class SlideComponent implements OnInit {
   public cat;
   public categorieen: any[][] = [];
   public teamArray: any [][] = [];
+  public allArray: any [][] = [];
+  public slideArray: any = [];
+  public aantalCat = 0;
+  public aantalTeams = 0;
+  public oefeningen = Oefeningen;
 
   constructor(private teamService: TeamService, private state: StateService) {
   }
 
   ngOnInit() {
     this.cat = this.state.geselecteerdeCategorieen;
-    console.log(this.cat);
-
     this.maakCategorieen();
-    for (let i = 0; i < this.categorieen.length; i++) {
-      //   task(i);
-      // var maakScoreLijst =
-      this.maakScoreLijst(this.categorieen[i][0], this.categorieen[i][1]);
-      // console.log(this.categorieen[i][0]);
-    }
-    // function task(i) {
-    //     setTimeout(function () {
-    //         maakScoreLijst
-    //     }, 9000 * i);
-    // }
+    this.maakAllArray();
+    this.vulSlides();
   }
 
-  maakScoreLijst(niveau, categorie) {
-    this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
-      let count = 0;
-      response.forEach((team) => {
-        var oefening = 'combi'; //nog aanpassen in een for loop voor elke oefening
-        const technisch = 'technisch_' + (oefening).toLowerCase().toString();
-        const artistiek = 'artistiek_' + (oefening).toLowerCase().toString();
-        const moeilijkheidswaarde = 'moeilijkheid_' + (oefening).toLowerCase().toString();
-        const specialeAftrekken = 'aftrekken_' + (oefening).toLowerCase().toString();
-        const score = 'score_' + (oefening).toLowerCase().toString();
-        if (team[score] != null) {
-          this.titel = niveau + ' ' + categorie + ' ' + oefening;
-          this.teamArray[count] = [team.teamnummer, team.naam1 + '\n' + team.naam2 + '\n' + (team.naam3 || ''), team[technisch], team[artistiek], team[moeilijkheidswaarde], team[specialeAftrekken], team[score]];
-          count++;
-          //       console.log(this.teamArray);
+    vulSlides() {
+    let index = 0;
+    setInterval(() => {
+        this.slideArray = this.allArray[index];
+        this.titel = this.slideArray[0][0];
+      if (index < this.allArray.length-1) {
+          index++;
+        } else {
+          index = 0;
+        }
+      }, 2000)
+    }
+
+  maakAllArray() { //vult de allArray met alle categorieen die getoond moeten worden
+    for (let i = 0; i < this.categorieen.length; i++) {
+      let niveau = this.categorieen[i][0];
+      let categorie = this.categorieen[i][1];
+      this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
+        for(let j = 0; j < this.oefeningen.length; j++) {
+          this.teamArray = [];
+          response.forEach((team) => {
+            var oefening = this.oefeningen[j].toLowerCase().toString();
+            const technisch = 'technisch_' + (oefening);
+            const artistiek = 'artistiek_' + (oefening);
+            const moeilijkheidswaarde = 'moeilijkheid_' + (oefening);
+            const specialeAftrekken = 'aftrekken_' + (oefening);
+            const score = 'score_' + (oefening);
+            if (team[score]) {
+              this.teamArray[this.aantalTeams] = [niveau + ' ' + categorie + ' ' + oefening, team.teamnummer, team.naam1 + '\n' + team.naam2 + '\n' + (team.naam3 || ''), team[technisch], team[artistiek], team[moeilijkheidswaarde], team[specialeAftrekken], team[score]];
+              this.aantalTeams++;
+            }
+          });
+          if(this.teamArray.length) {
+          this.allArray[this.aantalCat] = this.teamArray;
+          this.aantalCat++;
+          this.aantalTeams = 0;
+        }
         }
       });
-    });
+    }
   }
 
   public maakCategorieen() { // vult een array met alle aangevinkte categorieen
@@ -91,7 +108,6 @@ export class SlideComponent implements OnInit {
         }
       }
     }
-    //     console.log(this.categorieen);
   }
 
   sortByScore(teams) {
