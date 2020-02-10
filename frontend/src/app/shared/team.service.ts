@@ -23,4 +23,12 @@ export class TeamService {
  putTeam(teamgegevens) {
    return this.http.put('/api/team', teamgegevens);
  }
+
+  putSlides(teamgegevens) {
+    return this.http.put('/api/slides', teamgegevens);
+  }
+
+  getSlides(teamgegevens) {
+    return this.http.get('/api/slides', teamgegevens);
+  }
 }

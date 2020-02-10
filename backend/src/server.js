@@ -116,6 +116,16 @@ function GETTeamsByCategorieNiveau(niveau, categorie) {
   return result;
 }
 
+let test;
+
+function GETSlides() {
+    return test;
+}
+
+function PUTSlides(body) {
+    test = body;
+}
+
 // ************
 // Validity checkers
 function isValidTeam(team) {
@@ -168,6 +178,16 @@ app.all('/api/teams', (req, res) => {
   } else {
     res.status(405).send('Method not allowed');
   }
+});
+
+app.all('/api/slides', (req, res) => {
+    if (req.method === 'PUT') {
+        PUTSlides(req.body);
+        res.status(200).send('');
+    }
+    if (req.method === 'GET') {
+        res.status(200).send(GETSlides);
+    }
 });
 
 app.all('/api/categorie', (req, res) => {
