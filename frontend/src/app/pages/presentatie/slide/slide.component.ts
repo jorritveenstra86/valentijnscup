@@ -34,7 +34,6 @@ export class SlideComponent implements OnInit {
         let index = 0;
         setInterval(() => {
             this.teamService.getSlides().subscribe((response: any) => {
-                console.log(response);
                 this.allArray = response;
             });
             this.slideArray = this.allArray[index];
@@ -86,14 +85,13 @@ export class SlideComponent implements OnInit {
                             this.allArray[this.aantalCat] = teams;
                             this.aantalCat++;
                         }
+                        this.teamService.putSlides(this.allArray).subscribe((response: any) => {
+                        }, (error) => console.error(error));
                     }
                     this.aantalTeams = 0;
                 }
             });
         }
-        console.log(this.allArray);
-        this.teamService.putSlides(this.allArray).subscribe((response: any) => {
-        }, (error) => console.error(error));
     }
 
     public maakCategorieen() { // vult een array met alle aangevinkte categorieen

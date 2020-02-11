@@ -184,6 +184,7 @@ app.all('/api/teams', (req, res) => {
 app.all('/api/slides', (req, res) => {
     if (req.method === 'PUT') {
         let teams = req.body;
+        console.log(teams);
         if (PUTSlides(teams)) {
             res.status(200).send('');
         } else {

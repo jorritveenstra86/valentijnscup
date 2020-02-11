@@ -187,10 +187,10 @@ public categorieen = {
 
   }
 
-  onSubmit() {
-    this.state.geselecteerdeCategorieen = this.categorieen;
-    this.router.navigate(['/slide']);
-  }
+   onSubmit() {
+     this.state.geselecteerdeCategorieen = this.categorieen;
+     this.router.navigate([]).then(result => {  window.open('/slide', '_blank'); });
+   }
 
   ElijnClick(value) {
     for (const i in this.Elijngroups) {
