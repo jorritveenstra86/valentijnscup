@@ -33,7 +33,11 @@ export class SlideComponent implements OnInit {
     vulSlides() {
         let index = 0;
         setInterval(() => {
-          this.slideArray = this.allArray[index];
+            this.teamService.getSlides().subscribe((response: any) => {
+                console.log(response);
+                this.allArray = response;
+            });
+            this.slideArray = this.allArray[index];
             this.titel = this.slideArray[0][1];
             if (index < this.allArray.length - 1) {
                 index++;
@@ -44,7 +48,7 @@ export class SlideComponent implements OnInit {
     }
 
     maakAllArray() { // vult de allArray met alle categorieen die getoond moeten worden
-      for (let i = 0; i < this.categorieen.length; i++) {
+        for (let i = 0; i < this.categorieen.length; i++) {
             let niveau = this.categorieen[i][0];
             let categorie = this.categorieen[i][1];
             this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
@@ -87,6 +91,8 @@ export class SlideComponent implements OnInit {
                 }
             });
         }
+        this.teamService.putSlides(this.allArray).subscribe((response: any) => {
+        }, (error) => console.error(error));
     }
 
     public maakCategorieen() { // vult een array met alle aangevinkte categorieen

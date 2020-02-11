@@ -124,6 +124,7 @@ function GETSlides() {
 
 function PUTSlides(body) {
     slides = body;
+    return true;
 }
 
 // ************
@@ -182,11 +183,15 @@ app.all('/api/teams', (req, res) => {
 
 app.all('/api/slides', (req, res) => {
     if (req.method === 'PUT') {
-        PUTSlides(req.body);
-        res.status(200).send('');
+        let teams = req.body;
+        if (PUTSlides(teams)) {
+            res.status(200).send('');
+        } else {
+            res.status(500).send('Server error');
+        }
     }
     if (req.method === 'GET') {
-        res.status(200).send(GETSlides);
+        res.status(200).send(GETSlides());
     }
 });
 
