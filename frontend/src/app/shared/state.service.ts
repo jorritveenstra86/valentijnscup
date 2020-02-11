@@ -1,21 +1,19 @@
 import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class StateService {
+    constructor(private http: HttpClient) {
+    }
 
-  // tslint:disable-next-line:variable-name
-  private _geselecteerdeCategorieen;
+    GETgeselecteerdeCategorieen() {
+        console.log(this.http.get('api/slides'));
+        return this.http.get('/api/slides');
+    }
 
-  constructor() {
-  }
-
-  get geselecteerdeCategorieen() {
-    return this._geselecteerdeCategorieen;
-  }
-
-  set geselecteerdeCategorieen(value) {
-    this._geselecteerdeCategorieen = value;
-  }
+    PUTgeselecteerdeCategorieen(value) {
+        return this.http.put('/api/slides', value);
+    }
 }

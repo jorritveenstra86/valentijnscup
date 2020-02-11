@@ -24,8 +24,8 @@ export class SlideComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.cat = this.state.geselecteerdeCategorieen;
         this.maakCategorieen();
+        console.log(this.categorieen);
         this.maakAllArray();
         this.vulSlides();
     }
@@ -33,9 +33,6 @@ export class SlideComponent implements OnInit {
     vulSlides() {
         let index = 0;
         setInterval(() => {
-            this.teamService.getSlides().subscribe((response: any) => {
-                this.allArray = response;
-            });
             this.slideArray = this.allArray[index];
             this.titel = this.slideArray[0][1];
             if (index < this.allArray.length - 1) {
@@ -85,8 +82,6 @@ export class SlideComponent implements OnInit {
                             this.allArray[this.aantalCat] = teams;
                             this.aantalCat++;
                         }
-                        this.teamService.putSlides(this.allArray).subscribe((response: any) => {
-                        }, (error) => console.error(error));
                     }
                     this.aantalTeams = 0;
                 }
@@ -95,6 +90,10 @@ export class SlideComponent implements OnInit {
     }
 
     public maakCategorieen() { // vult een array met alle aangevinkte categorieen
+        this.state.GETgeselecteerdeCategorieen().subscribe((response: any) => {
+            this.cat = response;
+            console.log(this.cat.elijn);
+        });
         for (const cat in this.cat.elijn) {
             for (const team in this.cat.elijn[cat]) {
                 if (this.cat.elijn[cat][team]) {

@@ -188,7 +188,9 @@ public categorieen = {
   }
 
    onSubmit() {
-     this.state.geselecteerdeCategorieen = this.categorieen;
+    console.log(this.categorieen);
+     this.state.PUTgeselecteerdeCategorieen(this.categorieen).subscribe((response: any) => {
+     }, (error) => console.error(error));
      this.router.navigate([]).then(result => {  window.open('/slide', '_blank'); });
    }
 
