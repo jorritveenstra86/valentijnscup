@@ -116,14 +116,14 @@ function GETTeamsByCategorieNiveau(niveau, categorie) {
   return result;
 }
 
-let test;
+let slides = [];
 
 function GETSlides() {
-    return test;
+    return slides;
 }
 
 function PUTSlides(body) {
-    test = body;
+    slides = body;
 }
 
 // ************

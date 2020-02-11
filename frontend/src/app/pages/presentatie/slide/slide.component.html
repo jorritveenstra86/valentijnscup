@@ -12,7 +12,7 @@
                 <H4>Plaats</H4>
             </th>
             <th scope="col">
-                <H4>Nummer</H4>
+                <H4>Nr</H4>
             </th>
             <th scope="col">
                 <H4>Team</H4>
@@ -36,14 +36,14 @@
         </thead>
         <tbody>
         <tr *ngFor="let cat of slideArray">
-            <th scope="row"><h4>plaats</h4></th>
-            <td> <h4>{{cat[1]}}</h4></td>
+            <th scope="row"><h4>{{cat[0]}}</h4></th>
             <td> <h4>{{cat[2]}}</h4></td>
-            <td> <h4>{{cat[3]}}</h4></td>
-            <td> <h4>{{cat[4]}}</h4></td>
-            <td> <h4>{{cat[5]}}</h4></td>
+            <td> <h4>{{cat[3]}}<br/>{{cat[4]}}<br/>{{cat[5]}}</h4></td>
             <td> <h4>{{cat[6]}}</h4></td>
             <td> <h4>{{cat[7]}}</h4></td>
+            <td> <h4>{{cat[8]}}</h4></td>
+            <td> <h4>{{cat[9]}} </h4></td>
+            <td> <h4>{{cat[10]}}</h4></td>
         </tr>
         </tbody>
     </table>

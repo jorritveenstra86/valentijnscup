@@ -587,11 +587,11 @@
       "moeilijkheid_balans": null,
       "aftrekken_balans": null,
       "score_balans": null,
-      "technisch_tempo": null,
-      "artistiek_tempo": null,
-      "moeilijkheid_tempo": null,
-      "aftrekken_tempo": null,
-      "score_tempo": null,
+      "technisch_tempo": "1.00",
+      "artistiek_tempo": "2.00",
+      "moeilijkheid_tempo": "3.00",
+      "aftrekken_tempo": "4.00",
+      "score_tempo": "3.00",
       "technisch_combi": null,
       "artistiek_combi": null,
       "moeilijkheid_combi": null,
@@ -606,11 +606,11 @@
       "naam3": "Lynn Boonstra",
       "niveau": "C-senior",
       "categorie": "Damesgroep",
-      "technisch_balans": null,
-      "artistiek_balans": null,
-      "moeilijkheid_balans": null,
-      "aftrekken_balans": null,
-      "score_balans": null,
+      "technisch_balans": "8.00",
+      "artistiek_balans": "7.00",
+      "moeilijkheid_balans": "6.00",
+      "aftrekken_balans": "5.00",
+      "score_balans": "24.00",
       "technisch_tempo": null,
       "artistiek_tempo": null,
       "moeilijkheid_tempo": null,
@@ -3433,10 +3433,10 @@
       "aftrekken_tempo": null,
       "score_tempo": null,
       "technisch_combi": "8.26",
-      "artistiek_combi": "7.1534444",
+      "artistiek_combi": "7.15",
       "moeilijkheid_combi": "0.35",
       "aftrekken_combi": "0.60",
-      "score_combi": 23.4234444
+      "score_combi": "23.42"
     },
     {
       "id": "GLmuQ8hBkS",
@@ -4392,11 +4392,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "1.00",
+      "artistiek_combi": "1.00",
+      "moeilijkheid_combi": "1.00",
+      "aftrekken_combi": "1.00",
+      "score_combi": "3.00"
     },
     {
       "id": "16C0AOmGt9",
@@ -5568,11 +5568,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": "10",
-      "artistiek_combi": "2",
-      "moeilijkheid_combi": "3",
-      "aftrekken_combi": "4",
-      "score_combi": 21
+      "technisch_combi": "5.00",
+      "artistiek_combi": "2.00",
+      "moeilijkheid_combi": "3.00",
+      "aftrekken_combi": "4.00",
+      "score_combi": "11.00"
     },
     {
       "id": "ix0EUVhcX7",
@@ -5739,8 +5739,8 @@
       "technisch_combi": "9.00",
       "artistiek_combi": "8.00",
       "moeilijkheid_combi": "7.00",
-      "aftrekken_combi": "6.00",
-      "score_combi": "27.00"
+      "aftrekken_combi": "0.00",
+      "score_combi": "33.00"
     },
     {
       "id": "eRcgaAdLBb",
@@ -5808,11 +5808,11 @@
       "moeilijkheid_tempo": null,
       "aftrekken_tempo": null,
       "score_tempo": null,
-      "technisch_combi": null,
-      "artistiek_combi": null,
-      "moeilijkheid_combi": null,
-      "aftrekken_combi": null,
-      "score_combi": null
+      "technisch_combi": "10.00",
+      "artistiek_combi": "5.00",
+      "moeilijkheid_combi": "0.50",
+      "aftrekken_combi": "0.00",
+      "score_combi": "25.50"
     },
     {
       "id": "fTSyIheRG2",
