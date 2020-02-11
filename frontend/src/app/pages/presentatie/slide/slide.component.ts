@@ -91,6 +91,7 @@ export class SlideComponent implements OnInit {
                 }
             });
         }
+        console.log(this.allArray);
         this.teamService.putSlides(this.allArray).subscribe((response: any) => {
         }, (error) => console.error(error));
     }

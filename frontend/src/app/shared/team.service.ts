@@ -2,33 +2,33 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class TeamService {
-  constructor(private http: HttpClient) {
-  }
+    constructor(private http: HttpClient) {
+    }
 
-  getTeam(teamnummer) {
-    return this.http.get('/api/team?teamnummer=' + teamnummer);
-  }
+    getTeam(teamnummer) {
+        return this.http.get('/api/team?teamnummer=' + teamnummer);
+    }
 
-  getTeamPerCategorie(niveau, categorie) {
-    return this.http.get('/api/categorie?niveau=' + niveau + '&categorie=' + categorie);
-  }
+    getTeamPerCategorie(niveau, categorie) {
+        return this.http.get('/api/categorie?niveau=' + niveau + '&categorie=' + categorie);
+    }
 
-  getTeams() {
-    return this.http.get('/api/teams');
-  }
+    getTeams() {
+        return this.http.get('/api/teams');
+    }
 
- putTeam(teamgegevens) {
-   return this.http.put('/api/team', teamgegevens);
- }
+    putTeam(teamgegevens) {
+        return this.http.put('/api/team', teamgegevens);
+    }
 
-  putSlides(teamgegevens) {
-    return this.http.put('/api/slides', teamgegevens);
-  }
+    putSlides(teamgegevens) {
+        return this.http.put('/api/slides', teamgegevens);
+    }
 
-  getSlides() {
-    return this.http.get('/api/slides');
-  }
+    getSlides() {
+        return this.http.get('/api/slides');
+    }
 }
