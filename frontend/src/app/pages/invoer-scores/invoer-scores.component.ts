@@ -94,11 +94,13 @@ export class InvoerScoresComponent implements OnInit {
   }
 
   onSubmit(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'myModal'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
+    if (parseFloat(this.model.technisch) <= 10 && parseFloat(this.model.artistiek) <= 10) {
+      this.modalService.open(content, {ariaLabelledBy: 'myModal'}).result.then((result) => {
+        this.closeResult = `Closed with: ${result}`;
+      }, (reason) => {
+        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+      });
+    }
   }
 
   private getDismissReason(reason: any): string {
