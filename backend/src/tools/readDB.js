@@ -73,7 +73,7 @@ const efileClub = new lineByLine('../../../frontend/docs/deelnemerslijsten/Elijn
 const efileCategorie = new lineByLine('../../../frontend/docs/deelnemerslijsten/Elijn/Categorie.txt');
 
 function trim(str) {
-  let result;
+  let result = str;
 
   if (str === 'false') {
     return null;
