@@ -24,23 +24,17 @@ export class SlideComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.updateCat();
-        this.maakCategorieen();
-   //     console.log(this.categorieen);
-        this.maakAllArray();
-        this.vulSlides();
-    }
-
-    updateCat() {
-        this.teamService.getTeams().subscribe((response: any) => {
+        this.state.GETgeselecteerdeCategorieen().subscribe((response: any) => {
             this.cat = response;
+            this.maakCategorieen();
+            this.vulSlides();
         });
-  //      console.log(this.cat);
     }
 
     vulSlides() {
         let index = 0;
         setInterval(() => {
+            this.maakAllArray();
             this.slideArray = this.allArray[index];
             this.titel = this.slideArray[0][1];
             if (index < this.allArray.length - 1) {
@@ -48,7 +42,7 @@ export class SlideComponent implements OnInit {
             } else {
                 index = 0;
             }
-        }, 4000)
+        }, 4000);
     }
 
     maakAllArray() { // vult de allArray met alle categorieen die getoond moeten worden
@@ -59,7 +53,7 @@ export class SlideComponent implements OnInit {
                 for (let j = 0; j < this.oefeningen.length; j++) {
                     this.teamArray = [];
                     response.forEach((team) => {
-                        var oefening = this.oefeningen[j].toLowerCase().toString();
+                        const oefening = this.oefeningen[j].toLowerCase().toString();
                         const technisch = 'technisch_' + (oefening);
                         const artistiek = 'artistiek_' + (oefening);
                         const moeilijkheidswaarde = 'moeilijkheid_' + (oefening);
