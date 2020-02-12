@@ -154,6 +154,7 @@ export class UitvoerPdfComponent implements OnInit {
       // null, // De plaats wordt later toegevoegd (index na sortering op score)
       team.teamnummer,
       this.getNamen(team),
+      team.club,
       score.technisch,
       score.artistiek,
       score.moeilijkheid,
@@ -163,7 +164,7 @@ export class UitvoerPdfComponent implements OnInit {
   }
 
   getNamen(team) {
-    return team.naam1 + '\n' + team.naam2 + (team.naam3 ? ('\n' + team.naam3) : '') + '\r(' + team.club + ')';
+    return team.naam1 + '\n' + team.naam2 + (team.naam3 ? ('\n' + team.naam3) : '');
   }
 
   sortByScore(teams) {
@@ -217,7 +218,7 @@ export class UitvoerPdfComponent implements OnInit {
       this.doc.addPage();
     }
     this.doc.text(titel, 14, 15);
-    const head = [['Plaats', 'Nummer', 'Team', 'T', 'A', 'MW', 'Aftr', 'Score']];
+    const head = [['Plaats', 'Nr', 'Team', 'Club', 'T', 'A', 'MW', 'Aftr', 'Score']];
     this.doc.autoTable({
       startY: 20,
       head,

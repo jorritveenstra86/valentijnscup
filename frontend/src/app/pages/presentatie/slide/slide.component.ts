@@ -42,10 +42,11 @@ export class SlideComponent implements OnInit {
             } else {
                 index = 0;
             }
-        }, 4000);
+        }, 10000);
     }
 
     maakAllArray() { // vult de allArray met alle categorieen die getoond moeten worden
+        this.aantalCat = 0;
         for (let i = 0; i < this.categorieen.length; i++) {
             let niveau = this.categorieen[i][0];
             let categorie = this.categorieen[i][1];
@@ -60,7 +61,7 @@ export class SlideComponent implements OnInit {
                         const specialeAftrekken = 'aftrekken_' + (oefening);
                         const score = 'score_' + (oefening);
                         if (team[score]) {
-                            this.teamArray[this.aantalTeams] = [niveau + ' ' + categorie + ' ' + oefening, team.teamnummer, team.naam1, team.naam2, (team.naam3 || ''), team[technisch], team[artistiek], team[moeilijkheidswaarde], team[specialeAftrekken], team[score]];
+                            this.teamArray[this.aantalTeams] = [niveau + ' ' + categorie + ' ' + oefening, team.teamnummer, team.naam1, team.naam2, (team.naam3 || ''), team.club, team[technisch], team[artistiek], team[moeilijkheidswaarde], team[specialeAftrekken], team[score]];
                             this.aantalTeams++;
                         }
                     });
