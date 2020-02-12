@@ -92,37 +92,37 @@ export class SlideComponent implements OnInit {
     }
 
     public maakCategorieen() { // vult een array met alle aangevinkte categorieen
-        for (const cat in this.cat.elijn) {
-            for (const team in this.cat.elijn[cat]) {
-                if (this.cat.elijn[cat][team]) {
+        for (const cat in this.cat['elijn']) {
+            for (const team in this.cat['elijn'][cat]) {
+                if (this.cat['elijn'][cat][team]) {
                     this.categorieen.push(['E-' + cat, team]);
                 }
             }
         }
-        for (const cat in this.cat.dlijn) {
-            for (const team in this.cat.dlijn[cat]) {
-                if (this.cat.dlijn[cat][team]) {
+        for (const cat in this.cat['dlijn']) {
+            for (const team in this.cat['dlijn'][cat]) {
+                if (this.cat['dlijn'][cat][team]) {
                     this.categorieen.push(['D-' + cat, team]);
                 }
             }
         }
-        for (const cat in this.cat.clijn) {
-            for (const team in this.cat.clijn[cat]) {
-                if (this.cat.clijn[cat][team]) {
+        for (const cat in this.cat['clijn']) {
+            for (const team in this.cat['clijn'][cat]) {
+                if (this.cat['clijn'][cat][team]) {
                     this.categorieen.push(['C-' + cat, team]);
                 }
             }
         }
-        for (const cat in this.cat.blijn) {
-            for (const team in this.cat.blijn[cat]) {
-                if (this.cat.blijn[cat][team]) {
+        for (const cat in this.cat['blijn']) {
+            for (const team in this.cat['blijn'][cat]) {
+                if (this.cat['blijn'][cat][team]) {
                     this.categorieen.push(['B-' + cat, team]);
                 }
             }
         }
-        for (const cat in this.cat.alijn) {
-            for (const team in this.cat.alijn[cat]) {
-                if (this.cat.alijn[cat][team]) {
+        for (const cat in this.cat['alijn']) {
+            for (const team in this.cat['alijn'][cat]) {
+                if (this.cat['alijn'][cat][team]) {
                     this.categorieen.push(['A-' + cat, team]);
                 }
             }
