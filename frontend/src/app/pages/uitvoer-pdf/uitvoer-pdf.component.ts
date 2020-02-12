@@ -163,7 +163,7 @@ export class UitvoerPdfComponent implements OnInit {
   }
 
   getNamen(team) {
-    return team.naam1 + '\n' + team.naam2 + (team.naam3 ? ('\n' + team.naam3) : '');
+    return team.naam1 + '\n' + team.naam2 + (team.naam3 ? ('\n' + team.naam3) : '') + '\r(' + team.club + ')';
   }
 
   sortByScore(teams) {
