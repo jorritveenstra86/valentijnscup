@@ -9,7 +9,6 @@ export class StateService {
     }
 
     GETgeselecteerdeCategorieen() {
-        console.log(this.http.get('api/slides'));
         return this.http.get('/api/slides');
     }
 

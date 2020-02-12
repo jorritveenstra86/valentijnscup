@@ -11,7 +11,7 @@ import {Oefeningen} from '../../../model/entiteiten/oefening';
 
 export class SlideComponent implements OnInit {
     public titel = '';
-    public cat;
+    public cat: any[][] = [];
     public categorieen: any[][] = [];
     public teamArray: any [][] = [];
     public allArray: any [][] = [];
@@ -24,10 +24,18 @@ export class SlideComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.updateCat();
         this.maakCategorieen();
-        console.log(this.categorieen);
+   //     console.log(this.categorieen);
         this.maakAllArray();
         this.vulSlides();
+    }
+
+    updateCat() {
+        this.teamService.getTeams().subscribe((response: any) => {
+            this.cat = response;
+        });
+  //      console.log(this.cat);
     }
 
     vulSlides() {
@@ -90,10 +98,6 @@ export class SlideComponent implements OnInit {
     }
 
     public maakCategorieen() { // vult een array met alle aangevinkte categorieen
-        this.state.GETgeselecteerdeCategorieen().subscribe((response: any) => {
-            this.cat = response;
-            console.log(this.cat.elijn);
-        });
         for (const cat in this.cat.elijn) {
             for (const team in this.cat.elijn[cat]) {
                 if (this.cat.elijn[cat][team]) {
