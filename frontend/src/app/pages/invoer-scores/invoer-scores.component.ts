@@ -114,7 +114,8 @@ export class InvoerScoresComponent implements OnInit {
   checkFieldsValidity() {
     let validity = true;
     // technisch
-    if (parseFloat(this.model.technisch) <= 10 && parseFloat(this.model.technisch) >= 0) {
+    if (!isNaN(Number(this.model.technisch)) && parseFloat(this.model.technisch) <= 10
+      && parseFloat(this.model.technisch) >= 0) {
       this.technischClass = 'is-valid';
     } else {
       validity = false;
@@ -122,7 +123,8 @@ export class InvoerScoresComponent implements OnInit {
     }
 
     // artistiek
-    if (parseFloat(this.model.artistiek) <= 10 && parseFloat(this.model.artistiek) >= 0) {
+    if (!isNaN(Number(this.model.artistiek)) && parseFloat(this.model.artistiek) <= 10
+      && parseFloat(this.model.artistiek) >= 0) {
       this.artistiekClass = 'is-valid';
     } else {
       validity = false;
@@ -130,7 +132,8 @@ export class InvoerScoresComponent implements OnInit {
     }
 
     // moeilijkheidswaarde
-    if (parseFloat(this.model.moeilijkheidswaarde) <= 5 && parseFloat(this.model.moeilijkheidswaarde) >= 0) {
+    if (!isNaN(Number(this.model.moeilijkheidswaarde)) && parseFloat(this.model.moeilijkheidswaarde) <= 5
+      && parseFloat(this.model.moeilijkheidswaarde) >= 0) {
       this.moeilijkheidswaardeClass = 'is-valid';
     } else {
       validity = false;
@@ -138,7 +141,8 @@ export class InvoerScoresComponent implements OnInit {
     }
 
     // specialeAftrekken
-    if (parseFloat(this.model.specialeAftrekken) <= 20 && parseFloat(this.model.specialeAftrekken) >= 0) {
+    if (!isNaN(Number(this.model.specialeAftrekken)) && parseFloat(this.model.specialeAftrekken) <= 20
+      && parseFloat(this.model.specialeAftrekken) >= 0) {
       this.specialeAftrekkenClass = 'is-valid';
     } else {
       validity = false;
