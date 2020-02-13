@@ -27,6 +27,7 @@ export class SlideComponent implements OnInit {
         this.state.GETgeselecteerdeCategorieen().subscribe((response: any) => {
             this.cat = response;
             this.maakCategorieen();
+            console.log(this.allArray); //ditisgoed
             this.vulSlides();
         });
     }
@@ -35,6 +36,7 @@ export class SlideComponent implements OnInit {
         let index = 0;
         setInterval(() => {
             this.maakAllArray();
+            console.log(this.allArray); //hierkloptieniet
             this.slideArray = this.allArray[index];
             this.titel = this.slideArray[0][1];
             if (index < this.allArray.length - 1) {
@@ -42,7 +44,7 @@ export class SlideComponent implements OnInit {
             } else {
                 index = 0;
             }
-        }, 10000);
+        }, 4000);
     }
 
     maakAllArray() { // vult de allArray met alle categorieen die getoond moeten worden

@@ -111,7 +111,6 @@ export class UitvoerPdfComponent implements OnInit {
     this.paginas.forEach((combi) => {
       this.maakTabel(combi[0], combi[1]);
     });
-
     setTimeout(() => {
       // We gaan opslaan. Voor de zekerheid een setTimeout...
       this.saveDoc();
