@@ -108,9 +108,9 @@ export class UitvoerPdfComponent implements OnInit {
   start() {
     this.doc = new jsPDF({});
     this.eerstePagina = true;
-    this.paginas.forEach((combi) => {
+    for (const combi of this.paginas)  {
       this.maakTabel(combi[0], combi[1]);
-    });
+    }
     setTimeout(() => {
       // We gaan opslaan. Voor de zekerheid een setTimeout...
       this.saveDoc();
@@ -119,18 +119,17 @@ export class UitvoerPdfComponent implements OnInit {
 
   maakTabel(niveau, categorie) {
     this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
-      Oefeningen.forEach((oefening) => {
+      for (const oefening of Oefeningen) {
         let entries = [];
-        response.forEach(
-          (team) => {
-            entries = entries.concat(this.createEntriesForTeam(team, oefening));
-          });
+        for (const team of response) {
+          entries = entries.concat(this.createEntriesForTeam(team, oefening));
+        }
         const titel = niveau + ' ' + categorie + ' - ' + oefening;
         if (entries.length) { // alleen iets afdrukken wanneer er iets is om af te drukken
           this.genereerPDF(titel, this.addIndex(this.sortByScore(entries)));
           this.eerstePagina = false;
         }
-      });
+      }
     });
   }
 
@@ -169,7 +168,7 @@ export class UitvoerPdfComponent implements OnInit {
 
   sortByScore(teams) {
     return teams.sort((a, b) => {
-      return  b[b.length - 1] - a[a.length - 1];
+      return b[b.length - 1] - a[a.length - 1];
     });
   }
 
