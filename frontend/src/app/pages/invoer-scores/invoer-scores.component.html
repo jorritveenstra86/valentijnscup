@@ -36,23 +36,23 @@
           <div class="col-sm">
             <div class="form-group">
               <label for="technischInput">Technisch</label>
-              <input type="text" class="form-control" id="technischInput" [(ngModel)]="model.technisch" name="technisch"
+              <input type="text" class="form-control" id="technischInput" [(ngModel)]="model.technisch" [ngClass]="technischClass" name="technisch"
                      required>
             </div>
             <div class="form-group">
               <label for="artistiekInput">Artistiek</label>
-              <input type="text" class="form-control" id="artistiekInput" [(ngModel)]="model.artistiek" name="artistiek"
+              <input type="text" class="form-control" id="artistiekInput" [(ngModel)]="model.artistiek" [ngClass]="artistiekClass" name="artistiek"
                      required>
             </div>
             <div class="form-group">
               <label for="moeilijkheidswaardeInput">Moeilijkheidswaarde</label>
               <input type="text" class="form-control" id="moeilijkheidswaardeInput"
-                     [(ngModel)]="model.moeilijkheidswaarde" name="moeilijkheidswaarde" required>
+                     [(ngModel)]="model.moeilijkheidswaarde" [ngClass]="moeilijkheidswaardeClass" name="moeilijkheidswaarde" required>
             </div>
             <div class="form-group">
               <label for="specialeAftrekkenInput">Speciale aftrekken</label>
               <input type="text" class="form-control" id="specialeAftrekkenInput" [(ngModel)]="model.specialeAftrekken"
-                     name="specialeAftrekken" required>
+                     [ngClass]="specialeAftrekkenClass" name="specialeAftrekken" required>
             </div>
           </div>
         </div>

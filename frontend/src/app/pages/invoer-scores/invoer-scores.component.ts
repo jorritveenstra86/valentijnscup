@@ -26,6 +26,11 @@ export class InvoerScoresComponent implements OnInit {
   public allTeams = [];
   private geselecteerdTeam;
   public oefeningen;
+  public technischClass = '';
+  public artistiekClass = '';
+  public moeilijkheidswaardeClass = '';
+  public specialeAftrekkenClass = '';
+
 
   private oefeningenPerNiveau = {
     'E-instap': [Oefeningen[2]], // Combinatie
@@ -72,7 +77,7 @@ export class InvoerScoresComponent implements OnInit {
     });
   }
 
-   doUpdateFields(response) {
+  doUpdateFields(response) {
     if (this.model.oefening === Oefeningen[0]) { // Balans
       this.model.technisch = response.technisch_balans;
       this.model.artistiek = response.artistiek_balans;
@@ -94,13 +99,52 @@ export class InvoerScoresComponent implements OnInit {
   }
 
   onSubmit(content) {
-    if (parseFloat(this.model.technisch) <= 10 && parseFloat(this.model.artistiek) <= 10) {
+    if (this.checkFieldsValidity()) {
       this.modalService.open(content, {ariaLabelledBy: 'myModal'}).result.then((result) => {
         this.closeResult = `Closed with: ${result}`;
       }, (reason) => {
         this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
       });
+    } else {
+      // TODO specifiekere foutmelding! Nu ziet je alleen de velden oplichten die fout en goed zijn.
+      //  Geen message oid.
     }
+  }
+
+  checkFieldsValidity() {
+    let validity = true;
+    // technisch
+    if (parseFloat(this.model.technisch) <= 10 && parseFloat(this.model.technisch) >= 0) {
+      this.technischClass = 'is-valid';
+    } else {
+      validity = false;
+      this.technischClass = 'is-invalid';
+    }
+
+    // artistiek
+    if (parseFloat(this.model.artistiek) <= 10 && parseFloat(this.model.artistiek) >= 0) {
+      this.artistiekClass = 'is-valid';
+    } else {
+      validity = false;
+      this.artistiekClass = 'is-invalid';
+    }
+
+    // moeilijkheidswaarde
+    if (parseFloat(this.model.moeilijkheidswaarde) <= 5 && parseFloat(this.model.moeilijkheidswaarde) >= 0) {
+      this.moeilijkheidswaardeClass = 'is-valid';
+    } else {
+      validity = false;
+      this.moeilijkheidswaardeClass = 'is-invalid';
+    }
+
+    // specialeAftrekken
+    if (parseFloat(this.model.specialeAftrekken) <= 20 && parseFloat(this.model.specialeAftrekken) >= 0) {
+      this.specialeAftrekkenClass = 'is-valid';
+    } else {
+      validity = false;
+      this.specialeAftrekkenClass = 'is-invalid';
+    }
+    return validity;
   }
 
   private getDismissReason(reason: any): string {
@@ -124,6 +168,10 @@ export class InvoerScoresComponent implements OnInit {
       score: 0.0
     };
     this.geselecteerdTeam = undefined;
+    this.specialeAftrekkenClass = '';
+    this.artistiekClass = '';
+    this.technischClass = '';
+    this.moeilijkheidswaardeClass = '';
   }
 
   opslaanTeams() {
@@ -131,25 +179,25 @@ export class InvoerScoresComponent implements OnInit {
 
     // de gewijzigde velden vullen obv gekozen oefening
     if (this.model.oefening === Oefeningen[0]) { // Balans
-      payload.technisch_balans = (Math.round(parseFloat(this.model.technisch)*100)/100).toFixed(2);
-      payload.artistiek_balans = (Math.round(parseFloat(this.model.artistiek)*100)/100).toFixed(2);
-      payload.moeilijkheid_balans = (Math.round(parseFloat(this.model.moeilijkheidswaarde)*100)/100).toFixed(2);
-      payload.aftrekken_balans = (Math.round(parseFloat(this.model.specialeAftrekken)*100)/100).toFixed(2);
-      payload.score_balans = (Math.round(this.model.score*100)/100).toFixed(2);
+      payload.technisch_balans = (Math.round(parseFloat(this.model.technisch) * 100) / 100).toFixed(2);
+      payload.artistiek_balans = (Math.round(parseFloat(this.model.artistiek) * 100) / 100).toFixed(2);
+      payload.moeilijkheid_balans = (Math.round(parseFloat(this.model.moeilijkheidswaarde) * 100) / 100).toFixed(2);
+      payload.aftrekken_balans = (Math.round(parseFloat(this.model.specialeAftrekken) * 100) / 100).toFixed(2);
+      payload.score_balans = (Math.round(this.model.score * 100) / 100).toFixed(2);
     }
     if (this.model.oefening === Oefeningen[1]) { // Tempo
-      payload.technisch_tempo = (Math.round(parseFloat(this.model.technisch)*100)/100).toFixed(2);
-      payload.artistiek_tempo = (Math.round(parseFloat(this.model.artistiek)*100)/100).toFixed(2);
-      payload.moeilijkheid_tempo = (Math.round(parseFloat(this.model.moeilijkheidswaarde)*100)/100).toFixed(2);
-      payload.aftrekken_tempo = (Math.round(parseFloat(this.model.specialeAftrekken)*100)/100).toFixed(2);
-      payload.score_tempo = (Math.round(this.model.score*100)/100).toFixed(2);
+      payload.technisch_tempo = (Math.round(parseFloat(this.model.technisch) * 100) / 100).toFixed(2);
+      payload.artistiek_tempo = (Math.round(parseFloat(this.model.artistiek) * 100) / 100).toFixed(2);
+      payload.moeilijkheid_tempo = (Math.round(parseFloat(this.model.moeilijkheidswaarde) * 100) / 100).toFixed(2);
+      payload.aftrekken_tempo = (Math.round(parseFloat(this.model.specialeAftrekken) * 100) / 100).toFixed(2);
+      payload.score_tempo = (Math.round(this.model.score * 100) / 100).toFixed(2);
     }
     if (this.model.oefening === Oefeningen[2]) { // Combinatie
-      payload.technisch_combi = (Math.round(parseFloat(this.model.technisch)*100)/100).toFixed(2);
-      payload.artistiek_combi = (Math.round(parseFloat(this.model.artistiek)*100)/100).toFixed(2);
-      payload.moeilijkheid_combi = (Math.round(parseFloat(this.model.moeilijkheidswaarde)*100)/100).toFixed(2);
-      payload.aftrekken_combi = (Math.round(parseFloat(this.model.specialeAftrekken)*100)/100).toFixed(2);
-      payload.score_combi = (Math.round(this.model.score*100)/100).toFixed(2);
+      payload.technisch_combi = (Math.round(parseFloat(this.model.technisch) * 100) / 100).toFixed(2);
+      payload.artistiek_combi = (Math.round(parseFloat(this.model.artistiek) * 100) / 100).toFixed(2);
+      payload.moeilijkheid_combi = (Math.round(parseFloat(this.model.moeilijkheidswaarde) * 100) / 100).toFixed(2);
+      payload.aftrekken_combi = (Math.round(parseFloat(this.model.specialeAftrekken) * 100) / 100).toFixed(2);
+      payload.score_combi = (Math.round(this.model.score * 100) / 100).toFixed(2);
     }
 
     // pas nu de payload klaar is mogen we putTeam aanroepen
