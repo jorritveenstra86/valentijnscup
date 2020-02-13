@@ -1,29 +1,27 @@
 Amber Knol
 Tineke de Zwart
 Nora Visser
-Angela Zevenhuizen
 Maureen Hoogendoorn
 Esther Vogelzang
-Lotte van Sluijs
 Fleur Moorlag
 Lotte Hofstra
 Alicia Mozes
-Dewi Snijder
 Feline Bandringa
-Joelle Boonstra
 Jessica Dijkstra
-Yvonne Henstra
+Ciska Snip
 Kaylee van Dijk
-Mariska de Jong
 Kim Venema
 Danine de Jong
+Evelien Gering
+Grietje Beerda
+Tessa Posma
 Nynke Plantinga
 Emma Riemersma
 Anna Feenstra
 Milina Lipinska
-Grietje Beerda
 Anouk Herweijer
 Jasmijn Gaal
+Djura Yavuz
 Yada Post
 Jirte Ludema
 Bente Dam
@@ -35,35 +33,25 @@ Maaike Mastebroek
 Sofia Belytska
 Sterre Leijssenaar
 Jinthe Hamming
-Pyke Keizer
 Amelyn de Boer
 Caithlyn de Vries
 Xanthia Ster
 Adinda Heemstra
 Lysanne Bethlehem
-Djura Yavuz
 Ise Bosgraaf
-Tessa Posma
+Pyke Keizer
 Kim Vos
 Isa Dijkstra
-Aaf de Jong
-Afke de Jong
-Helena Veenstra
-Brecht van Vleeren
 Kimberley Dokter
 Elize Veenstra
 Lief Diepstraten
 Anique Dorgelo
 Ilaysa Power
-Julia Hassefras
-Milou Besuijen
 Isa Rijkeboer
 Nova Bakker
 Merel Stuurwold
 Noa Cuijpers
 Marrit Nijboer
-Sara van Wijk
-Nynke Flapper
 Suze Wiersma
 Pien Oudshoorn
 Doutzen Plantinga
@@ -81,6 +69,14 @@ Noelle Luten
 Eline Veen
 Jolijn Neuteboom
 Lynn Weinans
+Benthe van Maanen 
+Aaf de Jong
+Afke de Jong
+Helena Veenstra
+Brecht van Vleeren
+Julia Hassefras
+Milou Besuijen
+Sara van Wijk
 Leo Meester
 Danny Swart
 Annaruth Elzinga
@@ -88,9 +84,8 @@ Mirthe vd Graaf
 Fay de Jong
 Sonja Raaijer
 Tessa Posma
-Lisa Mulder
+Lisa Mulder 
 Danique Banga
-Noa Bosgraaf
 Romy Bolk
 Naomi Heidema
 Linsey Meijer

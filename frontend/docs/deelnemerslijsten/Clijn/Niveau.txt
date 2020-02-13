@@ -17,16 +17,13 @@ C-senior
 C-senior 
 C-senior 
 C-senior 
-C-senior 
-C-senior 
-C-senior 
-C-senior 
 C-senior
 C-senior
 C-senior
 C-senior
 C-senior
 C-senior
+C-junior 
 C-junior 
 C-junior 
 C-junior 
@@ -38,8 +35,5 @@ C-junior
 C-junior 
 C-junior 
 C-junior
-C-junior
-C-junior
-C-junior 
 C-junior
 C-junior
