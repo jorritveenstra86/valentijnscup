@@ -14,7 +14,7 @@ import {Oefeningen} from '../../model/entiteiten/oefening';
 export class UitvoerPdfComponent implements OnInit {
   @Input() selectie;
   public filename = 'uitslagen.pdf';
-  private doc = new jsPDF({});
+  private doc;
   private eerstePagina;
   private paginas = [
     ['E-instap', 'Damespaar'],
@@ -106,6 +106,7 @@ export class UitvoerPdfComponent implements OnInit {
   }
 
   start() {
+    this.doc = new jsPDF({});
     this.eerstePagina = true;
     this.paginas.forEach((combi) => {
       this.maakTabel(combi[0], combi[1]);
