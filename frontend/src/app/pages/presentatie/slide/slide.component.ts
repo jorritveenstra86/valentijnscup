@@ -27,15 +27,14 @@ export class SlideComponent implements OnInit {
         this.state.GETgeselecteerdeCategorieen().subscribe((response: any) => {
             this.cat = response;
             this.maakCategorieen();
-            console.log(this.allArray); //ditisgoed
             this.vulSlides();
         });
     }
 
     vulSlides() {
+        this.maakAllArray();
         let index = 0;
         setInterval(() => {
-            this.maakAllArray();
             console.log(this.allArray); //hierkloptieniet
             this.slideArray = this.allArray[index];
             this.titel = this.slideArray[0][1];
@@ -43,8 +42,9 @@ export class SlideComponent implements OnInit {
                 index++;
             } else {
                 index = 0;
+                this.maakAllArray();
             }
-        }, 4000);
+        }, 10000);
     }
 
     maakAllArray() { // vult de allArray met alle categorieen die getoond moeten worden
