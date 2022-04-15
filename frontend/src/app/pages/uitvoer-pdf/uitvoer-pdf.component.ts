@@ -223,8 +223,8 @@ export class UitvoerPdfComponent implements OnInit {
       head,
       body: entries,
       theme: 'grid',
-      headStyles: {fillColor: [252, 15, 192]},
-      bodyStyles: {fillColor: [255, 255, 255], lineColor: [252, 15, 192]}
+      headStyles: {fillColor: [0, 0, 0]},
+      bodyStyles: {fillColor: [255, 255, 255], lineColor: [0, 0, 0]}
     });
   }
 

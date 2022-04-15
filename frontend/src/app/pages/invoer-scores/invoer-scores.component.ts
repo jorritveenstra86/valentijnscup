@@ -48,7 +48,7 @@ export class InvoerScoresComponent implements OnInit {
     'A-jeugd': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
     'A-junior1': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
     'A-junior2': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
-    'A-senioren': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
+    'A-senior': [Oefeningen[0], Oefeningen[1], Oefeningen[2]], // Balans, Tempo, Combinatie
   };
 
   savedScores: Observable<any[]>;
