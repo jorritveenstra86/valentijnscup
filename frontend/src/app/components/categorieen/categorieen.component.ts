@@ -30,6 +30,7 @@ public categorieen = {
         Mixpaar: false,
         Damesgroep: false,
         Herengroep: false,
+        Kwartet: false
       },
       junior: {
         Damespaar: false,
@@ -62,6 +63,20 @@ public categorieen = {
         Herengroep: false,
       },
       senior: {
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
+      },
+      plusjunior: {
+        Damespaar: false,
+        Herenpaar: false,
+        Mixpaar: false,
+        Damesgroep: false,
+        Herengroep: false,
+      },
+      plussenior: {
         Damespaar: false,
         Herenpaar: false,
         Mixpaar: false,
@@ -158,7 +173,9 @@ public categorieen = {
   public Dlijngroups = {
     jeugd: false,
     junior: false,
-    senior: false
+    senior: false,
+    plusjunior: false,
+    plussenior: false
   };
 
   public Clijngroups = {

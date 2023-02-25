@@ -1,4 +1,4 @@
-<div class="container">
+<div style="width: 90%; margin: auto">
     <meta http-equiv="refresh" content="10999">
     <p>&nbsp;</p>
     <div class="row">
@@ -6,7 +6,7 @@
     </div>
     <p>&nbsp;</p>
     <table class="table table-striped">
-        <thead class="thead-dark">
+        <thead class="tablehead">
         <tr>
             <th scope="col">
                 <H4>Plaats</H4>
@@ -41,7 +41,7 @@
         <tr *ngFor="let cat of slideArray">
             <th scope="row"><h4>{{cat[0]}}</h4></th>
             <td> <h4>{{cat[2]}}</h4></td>
-            <td> <h4>{{cat[3]}}<br/>{{cat[4]}}<br/>{{cat[5]}}</h4></td>
+            <td> {{cat[3]}}<br/>{{cat[4]}}<br/>{{cat[5]}}</td>
             <td> <h4>{{cat[6]}}</h4></td>
             <td> <h4>{{cat[7]}}</h4></td>
             <td> <h4>{{cat[8]}}</h4></td>

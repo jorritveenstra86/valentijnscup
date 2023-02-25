@@ -3,6 +3,7 @@ import {Oefeningen} from '../../model/entiteiten/oefening';
 import {Observable} from 'rxjs';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import {TeamService} from '../../shared/team.service';
+import { HuidigeTeamService } from 'src/app/shared/huidigeteam.service';
 
 @Component({
   selector: 'app-invoer-scores',
@@ -40,6 +41,8 @@ export class InvoerScoresComponent implements OnInit {
     'D-jeugd': [Oefeningen[2]], // Combinatie
     'D-junior': [Oefeningen[2]], // Combinatie
     'D-senior': [Oefeningen[2]], // Combinatie
+    'D-plusjunior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
+    'D-plussenior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
     'C-junior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
     'C-senior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
     'B-junior': [Oefeningen[0], Oefeningen[1]], // Balans, Tempo
@@ -53,7 +56,7 @@ export class InvoerScoresComponent implements OnInit {
 
   savedScores: Observable<any[]>;
 
-  constructor(private modalService: NgbModal, private teamService: TeamService) {
+  constructor(private modalService: NgbModal, private teamService: TeamService, private huidigeTeamService: HuidigeTeamService) {
   }
 
   ngOnInit() {
@@ -205,6 +208,7 @@ export class InvoerScoresComponent implements OnInit {
     }
 
     // pas nu de payload klaar is mogen we putTeam aanroepen
+    this.huidigeTeamService.putHuidigeTeam(payload);
     this.teamService.putTeam(payload).subscribe((response: any) => {
       // op dit punt is de PUT succesvol verlopen. Het enige wat we moeten doen is de modal sluiten
       this.modalService.dismissAll();

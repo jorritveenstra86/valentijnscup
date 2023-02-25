@@ -27,6 +27,7 @@ export class UitvoerPdfComponent implements OnInit {
     ['E-jeugd', 'Mixpaar'],
     ['E-jeugd', 'Damesgroep'],
     ['E-jeugd', 'Herengroep'],
+    ['E-jeugd', 'Kwartet'],
     ['E-junior', 'Damespaar'],
     ['E-junior', 'Herenpaar'],
     ['E-junior', 'Mixpaar'],
@@ -52,6 +53,16 @@ export class UitvoerPdfComponent implements OnInit {
     ['D-senior', 'Mixpaar'],
     ['D-senior', 'Damesgroep'],
     ['D-senior', 'Herengroep'],
+    ['D-plusjunior', 'Damespaar'],
+    ['D-plusjunior', 'Herenpaar'],
+    ['D-plusjunior', 'Mixpaar'],
+    ['D-plusjunior', 'Damesgroep'],
+    ['D-plusjunior', 'Herengroep'],
+    ['D-plussenior', 'Damespaar'],
+    ['D-plussenior', 'Herenpaar'],
+    ['D-plussenior', 'Mixpaar'],
+    ['D-plussenior', 'Damesgroep'],
+    ['D-plussenior', 'Herengroep'],
     ['C-junior', 'Damespaar'],
     ['C-junior', 'Herenpaar'],
     ['C-junior', 'Mixpaar'],
@@ -118,6 +129,7 @@ export class UitvoerPdfComponent implements OnInit {
   }
 
   maakTabel(niveau, categorie) {
+    var header = [['Plaats', 'Nr', 'Team', 'Club', 'T', 'A', 'MW', 'Aftr', 'Score']];
     this.teamService.getTeamPerCategorie(niveau, categorie).subscribe((response: any) => {
       for (const oefening of Oefeningen) {
         let entries = [];
@@ -126,7 +138,7 @@ export class UitvoerPdfComponent implements OnInit {
         }
         const titel = niveau + ' ' + categorie + ' - ' + oefening;
         if (entries.length) { // alleen iets afdrukken wanneer er iets is om af te drukken
-          this.genereerPDF(titel, this.addIndex(this.sortByScore(entries)));
+          this.genereerPDF(titel, this.addIndex(this.sortByScore(entries)), header);
           this.eerstePagina = false;
         }
       }
@@ -212,12 +224,12 @@ export class UitvoerPdfComponent implements OnInit {
     }
   }
 
-  genereerPDF(titel, entries) {
+  genereerPDF(titel, entries, header) {
     if (!this.eerstePagina) {
       this.doc.addPage();
     }
     this.doc.text(titel, 14, 15);
-    const head = [['Plaats', 'Nr', 'Team', 'Club', 'T', 'A', 'MW', 'Aftr', 'Score']];
+    const head = header;
     this.doc.autoTable({
       startY: 20,
       head,
@@ -230,5 +242,97 @@ export class UitvoerPdfComponent implements OnInit {
 
   saveDoc() {
     this.doc.save(this.filename);
+  }
+
+  berekenCUP() {
+    var cupTeams = [];
+    this.teamService.getTeams().subscribe( (scores: any) => {
+      for (const score of scores) {
+        if(score.score_balans > 0) {
+          cupTeams.push([score.club, score.score_balans]);
+        }
+        else if(score.score_tempo > 0) {
+          cupTeams.push([score.club, score.score_tempo]);
+        }
+        else if(score.score_combi > 0) {
+          cupTeams.push([score.club, score.score_combi]);
+        }
+      }
+      cupTeams.sort(this.sorteerClubs);
+      cupTeams = this.groepeerClubs(cupTeams);
+      cupTeams = this.berekenGemiddelde(cupTeams);
+      cupTeams.sort(this.sorteerRanking);
+      this.maakPDFVoorCup(cupTeams);
+    });
+  }
+
+  maakPDFVoorCup(cupTeams: any[]) {
+    this.doc = new jsPDF({});
+    var header = [['Plaats', 'Club', 'Score']];
+    if (cupTeams.length) { // alleen iets afdrukken wanneer er iets is om af te drukken
+      this.eerstePagina = true;
+      this.genereerPDF('ValentijnCUP', this.addIndex(this.sortByScore(cupTeams)), header);
+    }
+    setTimeout(() => {
+      // We gaan opslaan. Voor de zekerheid een setTimeout...
+      this.saveDoc();
+    }, 1000);
+    }
+
+  berekenGemiddelde(cupTeams: any[]): any[] {
+    var totaalArray = [];
+    var gemiddeldeArray = [];
+    for (let i = 0; i < cupTeams.length; i++) {
+      if (cupTeams[i].length < 6) {
+        cupTeams.splice(i,1);
+        i=i-1;
+      }
+    };
+    for (let i = 0; i < cupTeams.length; i++) {
+        totaalArray.push([cupTeams[i][0], cupTeams[i][1]]);
+        for (let j = 2; j < cupTeams[i].length; j++) {
+          totaalArray[i].splice(1, 0, (Number(totaalArray[i][1]) + Number(cupTeams[i][j])));
+        }
+    }
+     for (let i = 0; i < totaalArray.length; i++) {
+      gemiddeldeArray.push([totaalArray[i][0], 0]);
+      gemiddeldeArray[i].splice(1,1,(totaalArray[i][1]/(cupTeams[i].length-1)));
+     }
+      return gemiddeldeArray;
+    }
+
+  groepeerClubs(cupTeams: any[]) {
+    var clubArray = [];
+    clubArray.push(cupTeams[0]);
+    for (let i = 1, j = 1, t = 0; i < cupTeams.length; i++) {
+      if (cupTeams[i][0] === cupTeams[i-1][0]) {
+        clubArray[t].splice(j, 0, cupTeams[i][1]);
+        j++;
+      }
+      else {
+        clubArray.push(cupTeams[i]);
+        j = 1;
+        t++;
+      }
+    }
+    return clubArray;
+    }
+
+   sorteerClubs(a, b) {
+    if (a[0] === b[0]) {
+      return 0;
+    }
+    else {
+      return (a[0] < b[0]) ? -1 : 1;
+    }
+  }
+
+  sorteerRanking(a, b) {
+    if (a[1] === b[1]) {
+      return 0;
+    }
+    else {
+      return (a[1] < b[1]) ? 1 : -1;
+    }
   }
 }

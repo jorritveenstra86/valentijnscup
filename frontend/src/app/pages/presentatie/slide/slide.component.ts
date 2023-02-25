@@ -35,7 +35,6 @@ export class SlideComponent implements OnInit {
         this.maakAllArray();
         let index = 0;
         setInterval(() => {
-            console.log(this.allArray); //hierkloptieniet
             this.slideArray = this.allArray[index];
             this.titel = this.slideArray[0][1];
             if (index < this.allArray.length - 1) {
